@@ -1,0 +1,323 @@
+entity_id	truth_pathway	truth_superclass	sanntis_pathway	sanntis_superclass	bgcat_pathway	bgcat_superclass
+BGC0002750	Amino acids and Peptides	Oligopeptides	Shikimates and Phenylpropanoids	Oligopeptides		
+BGC0002751	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002752	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002754	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002755	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002758	Polyketides	Aromatic polyketides;Chromanes;other Polyketides	Polyketides	Diterpenoids		
+BGC0002759	Terpenoids	Diterpenoids;Meroterpenoids	Terpenoids	Meroterpenoids	Polyketides	Meroterpenoids
+BGC0002760	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002765	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002775	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002779	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002786	Terpenoids	Sesquiterpenoids	Terpenoids	Sesquiterpenoids	Terpenoids	Sesquiterpenoids
+BGC0002788	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002789	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002804	Fatty acids	Fatty Acids and Conjugates	Fatty acids	Fatty Acids and Conjugates	Fatty acids	Fatty Acids and Conjugates
+BGC0002805	Alkaloids	Pseudoalkaloids	Alkaloids	Tryptophan alkaloids	Alkaloids	Pseudoalkaloids
+BGC0002806	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002808	Polyketides		Polyketides	Macrolides	Alkaloids	Nicotinic acid alkaloids
+BGC0002810	Amino acids and Peptides;Polyketides	Oligopeptides	Polyketides	Linear polyketides	Polyketides	Macrolides
+BGC0002812	Polyketides;Shikimates and Phenylpropanoids;Terpenoids	Meroterpenoids;Phenolic acids (C6-C1)	Polyketides	Meroterpenoids	Shikimates and Phenylpropanoids	Phenolic acids (C6-C1)
+BGC0002813	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002814	Polyketides	Linear polyketides	Polyketides	Linear polyketides	Polyketides	Linear polyketides
+BGC0002815	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002816	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002825	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002826	Alkaloids		Alkaloids	Oligopeptides		
+BGC0002835	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides		
+BGC0002846	Terpenoids	Sesquiterpenoids;other Terpenoids	Terpenoids	Sesquiterpenoids		
+BGC0002847	Shikimates and Phenylpropanoids	Phenolic acids (C6-C1)	Polyketides	Macrolides	Shikimates and Phenylpropanoids	Phenolic acids (C6-C1)
+BGC0002849	Fatty acids	Fatty Acids and Conjugates	Polyketides	Cyclic polyketides	Fatty acids	Fatty Acids and Conjugates
+BGC0002850	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002851	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002852	Polyketides	Cyclic polyketides	Alkaloids	Tetramate alkaloids	Polyketides	Cyclic polyketides
+BGC0002855	Alkaloids;Terpenoids	Tryptophan alkaloids	Terpenoids	Diterpenoids	Alkaloids	Tryptophan alkaloids
+BGC0002859	Polyketides	Linear polyketides	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides
+BGC0002860	Terpenoids	Diterpenoids	Terpenoids	Diterpenoids	Terpenoids	Sesquiterpenoids
+BGC0002861	Polyketides	Cyclic polyketides	Amino acids and Peptides	Oligopeptides		
+BGC0002862	Polyketides	Linear polyketides	Fatty acids	Fatty Acids and Conjugates	Polyketides	Linear polyketides
+BGC0002863	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0002864	Polyketides	Aromatic polyketides	Alkaloids	Linear polyketides	Polyketides	Aromatic polyketides
+BGC0002865	Polyketides	Chromanes	Polyketides	Cyclic polyketides	Polyketides	Chromanes
+BGC0002866	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Small peptides
+BGC0002867	Polyketides	Chromanes	Polyketides	Chromanes	Polyketides	Chromanes
+BGC0002868	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002869	Fatty acids	Fatty Acids and Conjugates	Polyketides	Linear polyketides	Fatty acids	Fatty Acids and Conjugates
+BGC0002871	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Alkaloids	Peptide alkaloids
+BGC0002872	Fatty acids;Polyketides	Fatty Acids and Conjugates;Linear polyketides	Polyketides	Linear polyketides	Polyketides	Linear polyketides
+BGC0002873	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002877	Polyketides	Cyclic polyketides	Alkaloids	Nicotinic acid alkaloids	Polyketides	Cyclic polyketides
+BGC0002878	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002879	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002880	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002881	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002884	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002886	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002887	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002890	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002892	Amino acids and Peptides	Oligopeptides	Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002904	Polyketides	Linear polyketides	Polyketides	Linear polyketides	Polyketides	Linear polyketides
+BGC0002906	Terpenoids	Triterpenoids	Amino acids and Peptides	Oligopeptides		
+BGC0002911	Shikimates and Phenylpropanoids	other Shikimates and Phenylpropanoids	Polyketides	Macrolides	Shikimates and Phenylpropanoids	other Shikimates and Phenylpropanoids
+BGC0002912	Alkaloids	Serine alkaloids	Alkaloids	Serine alkaloids	Alkaloids	Serine alkaloids
+BGC0002913	Polyketides;Shikimates and Phenylpropanoids	Cyclic polyketides	Amino acids and Peptides	Oligopeptides	Polyketides	Cyclic polyketides
+BGC0002914	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002915	Amino acids and Peptides;Polyketides	Oligopeptides	Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002918	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002919	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Small peptides
+BGC0002926	Fatty acids	other Fatty acids	Polyketides	Linear polyketides	Fatty acids	other Fatty acids
+BGC0002928	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002929	Fatty acids	Fatty Acids and Conjugates	Polyketides	Cyclic polyketides	Fatty acids	Fatty Acids and Conjugates
+BGC0002930	Polyketides;Terpenoids	Meroterpenoids	Terpenoids	Meroterpenoids	Polyketides	Meroterpenoids
+BGC0002931	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002932	Polyketides		Polyketides	Polycyclic aromatic polyketides	Polyketides	Naphthalenes
+BGC0002939	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002940	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002943	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides		
+BGC0002944	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002948	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002949	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002950	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002953	Terpenoids	Diterpenoids	Alkaloids	Meroterpenoids	Terpenoids	Sesquiterpenoids
+BGC0002954	Amino acids and Peptides	Oligopeptides	Carbohydrates	Oligopeptides		
+BGC0002956	Terpenoids	other Terpenoids	Terpenoids	other Terpenoids	Terpenoids	other Terpenoids
+BGC0002957	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002958	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002961	Amino acids and Peptides	Small peptides	Carbohydrates	Nucleosides	Amino acids and Peptides	Small peptides
+BGC0002962	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002964	Polyketides		Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002967	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002968	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides		
+BGC0002969	Terpenoids	Diterpenoids	Terpenoids	Diterpenoids	Terpenoids	Diterpenoids
+BGC0002970	Polyketides	Cyclic polyketides	Polyketides	Cyclic polyketides	Polyketides	Cyclic polyketides
+BGC0002974	Amino acids and Peptides;Polyketides	Oligopeptides	Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002978	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002982	Polyketides		Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0002983	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides
+BGC0002986	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002987	Polyketides;Terpenoids	Meroterpenoids	Polyketides	Cyclic polyketides	Alkaloids	Tetramate alkaloids
+BGC0002988	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0002989	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002990	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002991	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids
+BGC0002992	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002993	Alkaloids;Polyketides		Alkaloids	Tetramate alkaloids	Amino acids and Peptides	Linear polyketides
+BGC0002994	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002995	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0002996	Alkaloids	Anthranilic acid alkaloids;Tryptophan alkaloids	Amino acids and Peptides	Oligopeptides	Alkaloids	Tryptophan alkaloids
+BGC0002999	Polyketides	Aromatic polyketides;Cyclic polyketides	Polyketides	Cyclic polyketides	Polyketides	Cyclic polyketides
+BGC0003000	Alkaloids		Shikimates and Phenylpropanoids	other Shikimates and Phenylpropanoids	Alkaloids	Ornithine alkaloids
+BGC0003002	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003004	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003005	Alkaloids;Amino acids and Peptides	Serine alkaloids	Alkaloids	Serine alkaloids	Alkaloids	Serine alkaloids
+BGC0003006	Polyketides	Linear polyketides	Polyketides	Linear polyketides	Polyketides	Linear polyketides
+BGC0003007	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003010	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003011	Polyketides;Terpenoids	Meroterpenoids	Terpenoids	Diterpenoids	Polyketides	Meroterpenoids
+BGC0003017	Alkaloids		Alkaloids	Nicotinic acid alkaloids	Amino acids and Peptides	Linear polyketides
+BGC0003023	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003025	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003027	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0003028	Polyketides		Polyketides	Nicotinic acid alkaloids	Polyketides	Cyclic polyketides
+BGC0003037	Alkaloids	Nicotinic acid alkaloids	Fatty acids	other Fatty acids	Alkaloids	Nicotinic acid alkaloids
+BGC0003038	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003040	Polyketides;Shikimates and Phenylpropanoids	Coumarins	Polyketides	Macrolides	Shikimates and Phenylpropanoids	Coumarins
+BGC0003041	Terpenoids	Sesquiterpenoids	Terpenoids	Sesquiterpenoids	Terpenoids	Sesquiterpenoids
+BGC0003042	Amino acids and Peptides;Polyketides	Cyclic polyketides	Polyketides	Cyclic polyketides	Amino acids and Peptides	Cyclic polyketides
+BGC0003044	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003047	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003048	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003049	Polyketides		Polyketides	Macrolides	Polyketides	Macrolides
+BGC0003051	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003053	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003054	Terpenoids	Diterpenoids	Terpenoids	Diterpenoids	Polyketides	Linear polyketides
+BGC0003058	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003062	Amino acids and Peptides	Peptide alkaloids;Tetramate alkaloids	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003066	Carbohydrates	Polyols	Carbohydrates	Polyols	Carbohydrates	Polyols
+BGC0003067	Polyketides	Linear polyketides	Polyketides	Polyethers		
+BGC0003069	Amino acids and Peptides	Oligopeptides;Small peptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Small peptides
+BGC0003072	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003073	Terpenoids	Sesquiterpenoids	Terpenoids	Sesquiterpenoids	Terpenoids	Sesquiterpenoids
+BGC0003075	Shikimates and Phenylpropanoids	other Shikimates and Phenylpropanoids	Alkaloids	Small peptides	Shikimates and Phenylpropanoids	other Shikimates and Phenylpropanoids
+BGC0003076	Alkaloids;Amino acids and Peptides	Peptide alkaloids	Alkaloids	Peptide alkaloids	Alkaloids	Peptide alkaloids
+BGC0003077	Shikimates and Phenylpropanoids		Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids
+BGC0003078	Polyketides		Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003079	Alkaloids;Amino acids and Peptides	Peptide alkaloids;Small peptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Small peptides
+BGC0003080	Alkaloids	Histidine alkaloids	Amino acids and Peptides	Oligopeptides	Alkaloids	Histidine alkaloids
+BGC0003082	Alkaloids;Amino acids and Peptides	Peptide alkaloids	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003084	Alkaloids;Amino acids and Peptides	Peptide alkaloids	Amino acids and Peptides	Oligopeptides	Alkaloids	Peptide alkaloids
+BGC0003085	Amino acids and Peptides	Small peptides	Shikimates and Phenylpropanoids	Coumarins		
+BGC0003088	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids
+BGC0003089	Polyketides	Aromatic polyketides	Polyketides	Meroterpenoids	Polyketides	Aromatic polyketides
+BGC0003094	Polyketides	Aromatic polyketides	Polyketides	Naphthalenes	Polyketides	Aromatic polyketides
+BGC0003099	Polyketides;Shikimates and Phenylpropanoids	Coumarins	Polyketides	Cyclic polyketides	Shikimates and Phenylpropanoids	Coumarins
+BGC0003108	Polyketides;Terpenoids	Meroterpenoids	Terpenoids	Diterpenoids	Polyketides	Meroterpenoids
+BGC0003109	Polyketides	Aromatic polyketides	Polyketides	other Polyketides	Polyketides	Aromatic polyketides
+BGC0003114	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003115	Shikimates and Phenylpropanoids	Phenolic acids (C6-C1)	Polyketides	Naphthalenes	Shikimates and Phenylpropanoids	Phenolic acids (C6-C1)
+BGC0003117	Polyketides	Cyclic polyketides	Polyketides	Macrolides	Polyketides	Cyclic polyketides
+BGC0003119	Terpenoids	Diterpenoids;Triterpenoids	Terpenoids	Diterpenoids		
+BGC0003126	Shikimates and Phenylpropanoids	Coumarins	Shikimates and Phenylpropanoids	Coumarins	Shikimates and Phenylpropanoids	Coumarins
+BGC0003130	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003134	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003135	Polyketides		Polyketides	Linear polyketides	Polyketides	Macrolides
+BGC0003137	Polyketides	Polycyclic aromatic polyketides	Polyketides	Cyclic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003140	Terpenoids	Sesquiterpenoids	Terpenoids	Sesquiterpenoids	Terpenoids	Sesquiterpenoids
+BGC0003141	Amino acids and Peptides		Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Small peptides
+BGC0003143	Amino acids and Peptides;Polyketides	Macrolides	Polyketides	Macrolides	Amino acids and Peptides	Macrolides
+BGC0003145	Amino acids and Peptides;Polyketides	Cyclic polyketides	Alkaloids	Cyclic polyketides	Amino acids and Peptides	Cyclic polyketides
+BGC0003151	Polyketides	Cyclic polyketides	Polyketides	Cyclic polyketides	Polyketides	Cyclic polyketides
+BGC0003153	Terpenoids	Diterpenoids	Terpenoids	Diterpenoids		
+BGC0003154	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids	Alkaloids	Tetramate alkaloids
+BGC0003155	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides
+BGC0003156	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides	Alkaloids	Pseudoalkaloids
+BGC0003157	Terpenoids	other Terpenoids	Terpenoids	Diterpenoids	Terpenoids	other Terpenoids
+BGC0003158	Terpenoids	Diterpenoids	Terpenoids	Diterpenoids		
+BGC0003159	Terpenoids	other Terpenoids	Terpenoids	Diterpenoids		
+BGC0003161	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids
+BGC0003162	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids
+BGC0003163	Alkaloids;Terpenoids	Tryptophan alkaloids	Terpenoids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids
+BGC0003164	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides
+BGC0003165	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides	Carbohydrates	Nucleosides
+BGC0003168	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003169	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003170	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003175	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003191	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003194	Terpenoids	Diterpenoids;Sesquiterpenoids	Terpenoids	Diterpenoids	Amino acids and Peptides	Small peptides
+BGC0003195	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Alkaloids	Pseudoalkaloids
+BGC0003196	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides		
+BGC0003197	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Small peptides
+BGC0003198	Terpenoids	other Terpenoids	Fatty acids	Cyclic polyketides	Polyketides	Macrolides
+BGC0003200	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003201	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003202	Terpenoids	Sesquiterpenoids	Terpenoids	Diterpenoids	Terpenoids	Diterpenoids
+BGC0003203	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003205	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003206	Terpenoids	other Terpenoids	Alkaloids	Small peptides		
+BGC0003207	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003209	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003210	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Fatty acids	Fatty Acids and Conjugates
+BGC0003211	Alkaloids	Pseudoalkaloids	Alkaloids	Peptide alkaloids	Amino acids and Peptides	Small peptides
+BGC0003212	Amino acids and Peptides;Polyketides;Shikimates and Phenylpropanoids	Oligopeptides;Small peptides	Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003213	Terpenoids	Triterpenoids	Terpenoids	Triterpenoids	Alkaloids	Tryptophan alkaloids
+BGC0003214	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003221	Alkaloids	Nicotinic acid alkaloids	Alkaloids	Nicotinic acid alkaloids	Alkaloids	Nicotinic acid alkaloids
+BGC0003222	Alkaloids	Nicotinic acid alkaloids	Alkaloids	Nicotinic acid alkaloids	Alkaloids	Nicotinic acid alkaloids
+BGC0003223	Alkaloids	Ornithine alkaloids	Alkaloids	Ornithine alkaloids	Alkaloids	Ornithine alkaloids
+BGC0003224	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Small peptides	Carbohydrates	Aminosugars and aminoglycosides
+BGC0003226	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003227	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003228	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003231	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0003232	Polyketides	Chromanes;Naphthalenes;Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003233	Amino acids and Peptides	Small peptides	Alkaloids	Peptide alkaloids		
+BGC0003234	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003235	Polyketides	Cyclic polyketides	Polyketides	Naphthalenes	Carbohydrates	Nucleosides
+BGC0003237	Alkaloids;Polyketides	Macrolides	Alkaloids	Tetramate alkaloids	Amino acids and Peptides	Cyclic polyketides
+BGC0003238	Alkaloids	Tryptophan alkaloids	Alkaloids	Tetramate alkaloids	Amino acids and Peptides	Oligopeptides
+BGC0003243	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003244	Alkaloids	Tryptophan alkaloids	Alkaloids	Serine alkaloids	Alkaloids	Serine alkaloids
+BGC0003245	Shikimates and Phenylpropanoids	Coumarins	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003246	Alkaloids	Proline alkaloids	Alkaloids	Proline alkaloids	Alkaloids	Proline alkaloids
+BGC0003248	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003250	Amino acids and Peptides;Polyketides	Oligopeptides;Small peptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003251	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides		
+BGC0003252	Alkaloids;Amino acids and Peptides	Peptide alkaloids	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003254	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003255	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003256	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids
+BGC0003257	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003258	Polyketides	Naphthalenes;Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides		
+BGC0003259	Shikimates and Phenylpropanoids	other Shikimates and Phenylpropanoids	Alkaloids	Tryptophan alkaloids	Shikimates and Phenylpropanoids	other Shikimates and Phenylpropanoids
+BGC0003262	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003263	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003266	Polyketides;Shikimates and Phenylpropanoids	Linear polyketides;Phenolic acids (C6-C1)	Polyketides	Linear polyketides	Polyketides	Linear polyketides
+BGC0003267	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0003269	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003270	Polyketides	Aromatic polyketides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0003272	Alkaloids		Polyketides	other Polyketides		
+BGC0003273	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003274	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003275	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003276	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003277	Polyketides		Alkaloids	Peptide alkaloids	Amino acids and Peptides	Linear polyketides
+BGC0003278	Terpenoids	Triterpenoids	Terpenoids	other Terpenoids	Terpenoids	Diterpenoids
+BGC0003279	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003280	Polyketides		Polyketides	Macrolides	Amino acids and Peptides	Oligopeptides
+BGC0003281	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides		
+BGC0003283	Terpenoids	Diterpenoids;Sesquiterpenoids	Terpenoids	Diterpenoids		
+BGC0003286	Alkaloids		Alkaloids	Pseudoalkaloids	Alkaloids	Lysine alkaloids
+BGC0003288	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003289	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003290	Polyketides	Naphthalenes	Polyketides	Naphthalenes	Polyketides	Polycyclic aromatic polyketides
+BGC0003292	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0003295	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003296	Polyketides	Macrolides	Polyketides	Macrolides	Polyketides	Macrolides
+BGC0003297	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003298	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003300	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003303	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003304	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003305	Polyketides		Polyketides	Macrolides	Polyketides	Macrolides
+BGC0003306	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003307	Amino acids and Peptides	Small peptides	Alkaloids	Peptide alkaloids	Alkaloids	Peptide alkaloids
+BGC0003308	Alkaloids;Amino acids and Peptides	Small peptides	Amino acids and Peptides	Oligopeptides	Alkaloids	Pseudoalkaloids
+BGC0003309	Amino acids and Peptides	Small peptides	Alkaloids	Oligopeptides	Amino acids and Peptides	other Amino acids and Peptides
+BGC0003310	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003312	Alkaloids	Serine alkaloids	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003313	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003315	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Small peptides
+BGC0003316	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003317	Terpenoids	other Terpenoids	Terpenoids	other Terpenoids	Terpenoids	other Terpenoids
+BGC0003318	Terpenoids	Sesquiterpenoids	Alkaloids	Tryptophan alkaloids	Terpenoids	Diterpenoids
+BGC0003319	Terpenoids	Sesquiterpenoids	Terpenoids	Tryptophan alkaloids	Alkaloids	Tryptophan alkaloids
+BGC0003320	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003321	Polyketides	Macrolides	Polyketides	Linear polyketides	Polyketides	Linear polyketides
+BGC0003322	Terpenoids	Sesquiterpenoids	Terpenoids	Tryptophan alkaloids	Terpenoids	Sesquiterpenoids
+BGC0003323	Terpenoids	Triterpenoids	Terpenoids	Triterpenoids	Terpenoids	Diterpenoids
+BGC0003324	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides		
+BGC0003326	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003328	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003329	Alkaloids;Amino acids and Peptides	Peptide alkaloids;Small peptides	Amino acids and Peptides	Peptide alkaloids	Alkaloids	Peptide alkaloids
+BGC0003330	Alkaloids	Anthranilic acid alkaloids	Alkaloids	Anthranilic acid alkaloids	Alkaloids	Anthranilic acid alkaloids
+BGC0003331	Terpenoids	Sesquiterpenoids	Terpenoids	Tryptophan alkaloids		
+BGC0003333	Alkaloids		Alkaloids	Anthranilic acid alkaloids	Alkaloids	Nicotinic acid alkaloids
+BGC0003334	Terpenoids	Sesquiterpenoids	Terpenoids	Sesquiterpenoids	Alkaloids	Tetramate alkaloids
+BGC0003337	Amino acids and Peptides;Polyketides;Shikimates and Phenylpropanoids	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003338	Polyketides	other Polyketides	Polyketides	Polycyclic aromatic polyketides	Polyketides	Polycyclic aromatic polyketides
+BGC0003340	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003341	Terpenoids	Diterpenoids	Terpenoids	Diterpenoids	Terpenoids	Sesquiterpenoids
+BGC0003344	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003345	Terpenoids	Diterpenoids;Sesquiterpenoids	Terpenoids	Diterpenoids	Terpenoids	Diterpenoids
+BGC0003346	Fatty acids	other Fatty acids	Alkaloids	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003347	Amino acids and Peptides;Polyketides	Oligopeptides	Alkaloids	Oligopeptides	Alkaloids	Tryptophan alkaloids
+BGC0003348	Alkaloids		Alkaloids	Small peptides	Alkaloids	Histidine alkaloids
+BGC0003349	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Small peptides		
+BGC0003351	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003352	Terpenoids	other Terpenoids	Terpenoids	other Terpenoids		
+BGC0003354	Terpenoids	Triterpenoids	Terpenoids	Triterpenoids	Alkaloids	Tryptophan alkaloids
+BGC0003356	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003357	Fatty acids	Fatty amides	Polyketides	Macrolides		
+BGC0003358	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003359	Terpenoids	Triterpenoids	Terpenoids	Triterpenoids	Alkaloids	Tryptophan alkaloids
+BGC0003360	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003361	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003362	Terpenoids	Meroterpenoids	Polyketides	Meroterpenoids		
+BGC0003363	Alkaloids	Serine alkaloids	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003365	Polyketides	Macrolides	Polyketides	Macrolides	Amino acids and Peptides	Oligopeptides
+BGC0003366	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003367	Alkaloids;Amino acids and Peptides	Histidine alkaloids;Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003368	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003370	Alkaloids;Amino acids and Peptides	Peptide alkaloids;Small peptides;Tryptophan alkaloids	Amino acids and Peptides	Oligopeptides	Alkaloids	Peptide alkaloids
+BGC0003371	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003372	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003373	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003376	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003377	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003378	Terpenoids	Diterpenoids	Terpenoids	Sesquiterpenoids		
+BGC0003379	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Small peptides	Carbohydrates	Nucleosides
+BGC0003380	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Small peptides	Amino acids and Peptides	Small peptides
+BGC0003383	Amino acids and Peptides;Polyketides	Oligopeptides	Amino acids and Peptides	Oligopeptides	Amino acids and Peptides	Oligopeptides
+BGC0003385	Alkaloids	Ornithine alkaloids	Amino acids and Peptides	Oligopeptides		

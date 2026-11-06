@@ -1,0 +1,14 @@
+# Analysis environment: SanntiS (training extras, for its metric code and CLI) + the light worker dependencies.
+# Tool runs use the pinned containers in containers.tsv, not this environment.
+name: sanntisv1-analysis
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.12
+  - nextflow=26.10.3     # SanntiS runner + InterProScan 6
+  - unzip
+  - pip
+  - pip:
+      - pandas>=2.2
+      - pyarrow>=16
+      - matplotlib>=3.9
+      # SanntiS pin: see sanntis.ref (the ref is installed by env/install.sh)

@@ -1,0 +1,81 @@
+set	scope	method_a	method_b	metric	a	b	diff	ci_lo	ci_hi	p	n_boot	n_contigs
+B-shuffled	all	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	f1_macro	0.905549	0.879463	0.0260859	-0.00877925	0.0627749	0.136	1000	375
+B-shuffled	all	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_precision	0.932796	0.996875	-0.0640793	-0.0948143	-0.036511	0	1000	375
+B-shuffled	all	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_recall	0.917333	0.842667	0.0746667	0.0426667	0.106667	0	1000	375
+B-shuffled	all	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_macro_recall	0.879849	0.786794	0.0930544	0.042636	0.151966	0	1000	375
+B-shuffled	all	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	f1_macro_t	0.742964	0.569027	0.173938	0.144407	0.203378	0	1000	375
+B-shuffled	proka	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	f1_macro	0.900066	0.891824	0.0082422	-0.0263753	0.0531056	0.666	1000	281
+B-shuffled	proka	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_precision	0.930909	1	-0.0690909	-0.101696	-0.0373134	0	1000	281
+B-shuffled	proka	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_recall	0.900356	0.843416	0.0569395	0.024911	0.0960854	0.002	1000	281
+B-shuffled	proka	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_macro_recall	0.871202	0.804768	0.0664341	0.01746	0.129217	0.008	1000	281
+B-shuffled	proka	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	f1_macro_t	0.763851	0.582023	0.181829	0.147339	0.217143	0	1000	281
+B-shuffled	euk	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	f1_macro	0.911842	0.831784	0.0800582	0.00259044	0.18694	0.036	1000	94
+B-shuffled	euk	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_precision	0.938144	0.987805	-0.0496605	-0.0909091	-0.00959703	0.024	1000	94
+B-shuffled	euk	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_recall	0.968085	0.840426	0.12766	0.0638298	0.202128	0	1000	94
+B-shuffled	euk	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_macro_recall	0.886975	0.718326	0.168648	0.0483685	0.34615	0	1000	94
+B-shuffled	euk	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	f1_macro_t	0.667895	0.534324	0.133572	0.0770317	0.202753	0	1000	94
+B-shuffled	fungi	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	f1_macro	0.913562	0.839712	0.0738503	-0.00835003	0.18382	0.112	1000	87
+B-shuffled	fungi	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_precision	0.934066	0.987179	-0.0531136	-0.101052	-0.0105851	0.01	1000	87
+B-shuffled	fungi	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_recall	0.977011	0.862069	0.114943	0.0574713	0.183908	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	bgc_macro_recall	0.893939	0.730576	0.163363	0.0388708	0.344993	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	antiSMASH 7.1.0 relaxed (lineage-matched)	f1_macro_t	0.675185	0.544499	0.130686	0.0685603	0.205127	0	1000	87
+B-shuffled	all	SanntiS 1.0	GECCO 0.11.0	f1_macro	0.905549	0.58888	0.316668	0.254881	0.381654	0	1000	375
+B-shuffled	all	SanntiS 1.0	GECCO 0.11.0	bgc_precision	0.932796	0.515734	0.417061	0.328917	0.502011	0	1000	375
+B-shuffled	all	SanntiS 1.0	GECCO 0.11.0	bgc_recall	0.917333	0.773333	0.144	0.104	0.184	0	1000	375
+B-shuffled	all	SanntiS 1.0	GECCO 0.11.0	bgc_macro_recall	0.879849	0.686204	0.193644	0.13039	0.26516	0	1000	375
+B-shuffled	all	SanntiS 1.0	GECCO 0.11.0	f1_macro_t	0.742964	0.479808	0.263157	0.210165	0.317532	0	1000	375
+B-shuffled	proka	SanntiS 1.0	GECCO 0.11.0	f1_macro	0.900066	0.782854	0.117212	0.0677302	0.17538	0	1000	281
+B-shuffled	proka	SanntiS 1.0	GECCO 0.11.0	bgc_precision	0.930909	0.97235	-0.0414411	-0.0772492	0.000403201	0.052	1000	281
+B-shuffled	proka	SanntiS 1.0	GECCO 0.11.0	bgc_recall	0.900356	0.740214	0.160142	0.113879	0.206406	0	1000	281
+B-shuffled	proka	SanntiS 1.0	GECCO 0.11.0	bgc_macro_recall	0.871202	0.655172	0.21603	0.143794	0.293715	0	1000	281
+B-shuffled	proka	SanntiS 1.0	GECCO 0.11.0	f1_macro_t	0.763851	0.673803	0.0900481	0.0455826	0.141171	0	1000	281
+B-shuffled	euk	SanntiS 1.0	GECCO 0.11.0	f1_macro	0.911842	0.368218	0.543624	0.442108	0.633496	0	1000	94
+B-shuffled	euk	SanntiS 1.0	GECCO 0.11.0	bgc_precision	0.938144	0.23662	0.701525	0.634775	0.768092	0	1000	94
+B-shuffled	euk	SanntiS 1.0	GECCO 0.11.0	bgc_recall	0.968085	0.87234	0.0957447	0.0319149	0.170213	0.002	1000	94
+B-shuffled	euk	SanntiS 1.0	GECCO 0.11.0	bgc_macro_recall	0.886975	0.829617	0.0573574	0.0218673	0.123867	0.002	1000	94
+B-shuffled	euk	SanntiS 1.0	GECCO 0.11.0	f1_macro_t	0.667895	0.24468	0.423215	0.343377	0.491011	0	1000	94
+B-shuffled	fungi	SanntiS 1.0	GECCO 0.11.0	f1_macro	0.913562	0.365147	0.548415	0.447791	0.643235	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	GECCO 0.11.0	bgc_precision	0.934066	0.233236	0.70083	0.630888	0.766687	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	GECCO 0.11.0	bgc_recall	0.977011	0.896552	0.0804598	0.0227011	0.149425	0.032	1000	87
+B-shuffled	fungi	SanntiS 1.0	GECCO 0.11.0	bgc_macro_recall	0.893939	0.840516	0.0534235	0.0151669	0.126068	0.012	1000	87
+B-shuffled	fungi	SanntiS 1.0	GECCO 0.11.0	f1_macro_t	0.675185	0.243665	0.43152	0.348616	0.504254	0	1000	87
+B-shuffled	all	SanntiS 1.0	SanntiS 0.9.5.0	f1_macro	0.905549	0.82241	0.0831388	0.0496062	0.120318	0	1000	375
+B-shuffled	all	SanntiS 1.0	SanntiS 0.9.5.0	bgc_precision	0.932796	0.885154	0.0476416	0.00383645	0.091118	0.032	1000	375
+B-shuffled	all	SanntiS 1.0	SanntiS 0.9.5.0	bgc_recall	0.917333	0.84	0.0773333	0.0506667	0.106667	0	1000	375
+B-shuffled	all	SanntiS 1.0	SanntiS 0.9.5.0	bgc_macro_recall	0.879849	0.767972	0.111876	0.0665169	0.166563	0	1000	375
+B-shuffled	all	SanntiS 1.0	SanntiS 0.9.5.0	f1_macro_t	0.742964	0.629597	0.113367	0.0832029	0.146321	0	1000	375
+B-shuffled	proka	SanntiS 1.0	SanntiS 0.9.5.0	f1_macro	0.900066	0.8379	0.0621662	0.0247774	0.106194	0	1000	281
+B-shuffled	proka	SanntiS 1.0	SanntiS 0.9.5.0	bgc_precision	0.930909	0.962343	-0.031434	-0.0684292	0.00513168	0.086	1000	281
+B-shuffled	proka	SanntiS 1.0	SanntiS 0.9.5.0	bgc_recall	0.900356	0.814947	0.0854093	0.0533808	0.117438	0	1000	281
+B-shuffled	proka	SanntiS 1.0	SanntiS 0.9.5.0	bgc_macro_recall	0.871202	0.741956	0.129246	0.0728881	0.195835	0	1000	281
+B-shuffled	proka	SanntiS 1.0	SanntiS 0.9.5.0	f1_macro_t	0.763851	0.711355	0.0524965	0.0193533	0.0903461	0	1000	281
+B-shuffled	euk	SanntiS 1.0	SanntiS 0.9.5.0	f1_macro	0.911842	0.785828	0.126014	0.0734141	0.18734	0	1000	94
+B-shuffled	euk	SanntiS 1.0	SanntiS 0.9.5.0	bgc_precision	0.938144	0.728814	0.209331	0.116012	0.293677	0	1000	94
+B-shuffled	euk	SanntiS 1.0	SanntiS 0.9.5.0	bgc_recall	0.968085	0.914894	0.0531915	0.0106383	0.0957447	0.006	1000	94
+B-shuffled	euk	SanntiS 1.0	SanntiS 0.9.5.0	bgc_macro_recall	0.886975	0.852521	0.0344538	0.00868659	0.0744264	0.006	1000	94
+B-shuffled	euk	SanntiS 1.0	SanntiS 0.9.5.0	f1_macro_t	0.667895	0.328107	0.339788	0.269998	0.398514	0	1000	94
+B-shuffled	fungi	SanntiS 1.0	SanntiS 0.9.5.0	f1_macro	0.913562	0.782506	0.131056	0.0730761	0.1949	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	SanntiS 0.9.5.0	bgc_precision	0.934066	0.720721	0.213345	0.117337	0.301345	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	SanntiS 0.9.5.0	bgc_recall	0.977011	0.91954	0.0574713	0.0114943	0.103448	0.012	1000	87
+B-shuffled	fungi	SanntiS 1.0	SanntiS 0.9.5.0	bgc_macro_recall	0.893939	0.855879	0.0380606	0.0095172	0.0901252	0.012	1000	87
+B-shuffled	fungi	SanntiS 1.0	SanntiS 0.9.5.0	f1_macro_t	0.675185	0.332152	0.343033	0.276062	0.403053	0	1000	87
+B-shuffled	all	SanntiS 1.0	BGC-Prophet 0.1.2	f1_macro	0.905549	0.825517	0.0800321	0.0397159	0.122956	0	1000	375
+B-shuffled	all	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_precision	0.932796	0.883721	0.0490748	-0.00335477	0.109152	0.082	1000	375
+B-shuffled	all	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_recall	0.917333	0.8	0.117333	0.0746667	0.16	0	1000	375
+B-shuffled	all	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_macro_recall	0.879849	0.774506	0.105343	0.0520184	0.158801	0	1000	375
+B-shuffled	all	SanntiS 1.0	BGC-Prophet 0.1.2	f1_macro_t	0.742964	0.742241	0.000723352	-0.0378649	0.0410897	0.926	1000	375
+B-shuffled	proka	SanntiS 1.0	BGC-Prophet 0.1.2	f1_macro	0.900066	0.86475	0.035316	-0.00768974	0.0850575	0.11	1000	281
+B-shuffled	proka	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_precision	0.930909	0.995708	-0.0647991	-0.0990188	-0.0302478	0	1000	281
+B-shuffled	proka	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_recall	0.900356	0.811388	0.088968	0.0427046	0.13532	0	1000	281
+B-shuffled	proka	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_macro_recall	0.871202	0.764236	0.106966	0.0360873	0.177064	0.004	1000	281
+B-shuffled	proka	SanntiS 1.0	BGC-Prophet 0.1.2	f1_macro_t	0.763851	0.806833	-0.0429819	-0.0810256	0.00174139	0.064	1000	281
+B-shuffled	euk	SanntiS 1.0	BGC-Prophet 0.1.2	f1_macro	0.911842	0.700512	0.21133	0.14139	0.304984	0	1000	94
+B-shuffled	euk	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_precision	0.938144	0.648649	0.289496	0.167527	0.399536	0	1000	94
+B-shuffled	euk	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_recall	0.968085	0.765957	0.202128	0.12766	0.287234	0	1000	94
+B-shuffled	euk	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_macro_recall	0.886975	0.761389	0.125586	0.0842122	0.234526	0	1000	94
+B-shuffled	euk	SanntiS 1.0	BGC-Prophet 0.1.2	f1_macro_t	0.667895	0.53445	0.133445	0.0647492	0.209365	0	1000	94
+B-shuffled	fungi	SanntiS 1.0	BGC-Prophet 0.1.2	f1_macro	0.913562	0.711914	0.201648	0.124171	0.295521	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_precision	0.934066	0.654206	0.27986	0.150211	0.387041	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_recall	0.977011	0.804598	0.172414	0.091954	0.264368	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	BGC-Prophet 0.1.2	bgc_macro_recall	0.893939	0.780789	0.11315	0.0628197	0.222294	0	1000	87
+B-shuffled	fungi	SanntiS 1.0	BGC-Prophet 0.1.2	f1_macro_t	0.675185	0.544538	0.130647	0.0575934	0.203801	0	1000	87

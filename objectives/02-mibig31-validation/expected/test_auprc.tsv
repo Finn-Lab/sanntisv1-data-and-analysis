@@ -1,0 +1,17 @@
+set	curve	auprc
+A-isolate	PrecT_vs_RecMacroT	0.866944
+A-isolate	PrecT_vs_RecT	0.888056
+A-isolate	BGCprec_vs_BGCrec	1
+A-isolate	BGCprec_vs_BGCmacrorec	1
+B-isolate	PrecT_vs_RecMacroT	0.888604
+B-isolate	PrecT_vs_RecT	0.901778
+B-isolate	BGCprec_vs_BGCrec	1
+B-isolate	BGCprec_vs_BGCmacrorec	1
+A-shuffled	PrecT_vs_RecMacroT	0.800586
+A-shuffled	PrecT_vs_RecT	0.840649
+A-shuffled	BGCprec_vs_BGCrec	0.988764
+A-shuffled	BGCprec_vs_BGCmacrorec	0.982593
+B-shuffled	PrecT_vs_RecMacroT	0.837871
+B-shuffled	PrecT_vs_RecT	0.86363
+B-shuffled	BGCprec_vs_BGCrec	0.986667
+B-shuffled	BGCprec_vs_BGCmacrorec	0.98125

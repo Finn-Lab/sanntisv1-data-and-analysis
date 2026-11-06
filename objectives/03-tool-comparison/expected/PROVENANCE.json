@@ -1,0 +1,54 @@
+{
+  "frozen": "2026-11-04",
+  "score": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/score",
+  "tools": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/tools",
+  "sanntis_version": "1.0.0b1 (venv sanntis-1.0.0b1)",
+  "analysis_commit": "b76e9b4",
+  "note": "SanntiS 1.0 (v3-active, t* 0.25) and the tool runs of 2026-11-02 (README, 'Tool runs on the v2 sets') on objective 02's v2 isolate / shuffled sets, scored by 04_score.sh on 2026-11-03; a second independent run of score.py gave byte-identical tables",
+  "sources": [
+    {
+      "source": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/score/auprc.tsv",
+      "sha256": "bde2aac813e5b3828848e893dfb256ce977476b2ff3406edb29fb7ce54c56295",
+      "as": "auprc.tsv"
+    },
+    {
+      "source": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/score/curve.tsv",
+      "sha256": "08433b9a2a65c43ec26bf1506ef56826bbbac25a9d8711eed5c279587e7ddc1e",
+      "as": "curve.tsv"
+    },
+    {
+      "source": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/score/metrics.tsv",
+      "sha256": "5f097c3c37aea942bf10aabf64db203990c25fbfe0c0fb44c843694d120eea7a",
+      "as": "metrics.tsv"
+    },
+    {
+      "source": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/score/paired.tsv",
+      "sha256": "6cdd2e8aba13645023bd0f7d74c8aa9598f91e22f112e202245f62f7464fe3b9",
+      "as": "paired.tsv"
+    },
+    {
+      "source": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/score/radar.tsv",
+      "sha256": "45ec73aa0054d526c716eb46225b121daba4a87882a3cd9a1b5076d42ed39bdf",
+      "as": "radar.tsv"
+    },
+    {
+      "source": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/score/strata.tsv",
+      "sha256": "1f349f82ed2fdc6e33ec7f2a5172e1f5d457683e5c26ff08cadc3b0a67960693",
+      "as": "strata.tsv"
+    },
+    {
+      "source": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/score/summary.tsv",
+      "sha256": "13aa14fb572e30ddf65c77182a85b6e93b782438b8f9c8d43c96ca6a2d671d67",
+      "as": "summary.tsv"
+    },
+    {
+      "source": "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data/03/score/paired_bgc.tsv",
+      "sha256": "54a0017dd0ef8e9f2bf3858b472d9443e54ba5e7de8660bb536d3019b885f369",
+      "as": "paired_bgc.tsv"
+    }
+  ],
+  "paired_bgc": {
+    "frozen": "2026-11-05",
+    "note": "03_paired_bgc step of 04_score.sh (workers/paired_bgc.py): SanntiS 1.0 - each tool, paired bootstrap (1,000 replicates, seed 0) of the BGC-level metrics on B-shuffled, from the same tool runs and model as the other tables; docs/FINDINGS.md F-03-5"
+  }
+}

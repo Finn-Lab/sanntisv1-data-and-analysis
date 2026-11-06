@@ -1,0 +1,45 @@
+SanntiS 1.0: data and analyses
+Copyright 2026 EMBL - European Bioinformatics Institute
+
+The code and the tables written by this repository are licensed under the Apache License 2.0 (LICENSE). Some files
+also carry content from third-party resources. That content keeps the terms of its source, listed below, and those
+terms apply to it wherever it is reused.
+
+Third-party data content
+------------------------
+
+GTDB r226 (https://gtdb.ecogenomic.org), CC BY-SA 4.0 (https://gtdb.ecogenomic.org/licenses)
+  The `lineage` columns of
+    objectives/00-data-collection/accessions/pool_v1_genomes.tsv           (rows with source = gtdb)
+    objectives/00-data-collection/accessions/testset_background_genomes.tsv (rows with source = gtdb)
+  are GTDB r226 taxonomy strings and are redistributed under CC BY-SA 4.0
+  (https://creativecommons.org/licenses/by-sa/4.0/). Any adaptation of these columns must be shared under the same
+  licence. Cite: Parks et al., Nucleic Acids Research 2022, doi:10.1093/nar/gkab776.
+
+MIBiG (https://mibig.secondarymetabolites.org), CC BY 4.0
+  MIBiG accessions and the per-BGC values derived from MIBiG entries, e.g.
+  objectives/00-data-collection/accessions/mibig_nuccore_loci.tsv and the MIBiG manifests under
+  objectives/0[12]-*/expected/. Cite: Zdouc et al., Nucleic Acids Research 2025, doi:10.1093/nar/gkae1115 (MIBiG 4.0).
+
+NCBI / INSDC (GenBank, RefSeq, Assembly, Taxonomy)
+  Assembly and nucleotide accessions, and the NCBI Taxonomy lineages of RefSeq eukaryotes. NCBI places no
+  restriction on the use or distribution of these data. Its disclaimer notes that some submitters may claim
+  patent, copyright or other intellectual-property rights in the data they submitted. This repository does not
+  relicense any INSDC record; it only names them by accession. See
+  https://www.ncbi.nlm.nih.gov/home/about/policies/.
+
+Third-party software and model weights
+--------------------------------------
+
+This repository does not redistribute the code, container images or model weights of any third-party tool
+(antiSMASH, fungiSMASH, plantiSMASH, GECCO, SanntiS 0.9.5, BGC-Prophet, BGCat, ESM2, ESM C, InterProScan,
+NPClassifier, ...). Each tool is referenced by name, version, tag or commit, image digest, source
+URL, sha256 and citation (env/containers.tsv, objectives/03-tool-comparison/README.md). The runbooks download the tools from their
+publishers at run time, and the Dockerfiles under env/docker/ are built locally and never pushed to a registry.
+Each tool keeps its own licence.
+
+Zenodo deposits
+---------------
+
+Each deposit listed in env/zenodo.tsv has its own licence and carries its own NOTICE. Deposits contain this
+project's data and the outputs of the tools, never the tools themselves.

@@ -1,0 +1,2 @@
+epochs	best_epochs	val_orf_aucpr	t_star	threshold_low	floor_metric	floor	min_pred_ratio	floor_met
+8	[6, 8, 8, 12, 9]	[0.9106783574123556, 0.9061624515639721, 0.9058315151494941, 0.9242931484732891, 0.9127090054394918]	0.3	0.15	bgc_precision	0.8	0.5	True

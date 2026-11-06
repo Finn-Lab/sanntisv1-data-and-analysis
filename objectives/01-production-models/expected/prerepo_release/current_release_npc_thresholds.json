@@ -1,0 +1,72 @@
+{
+  "pathways": [
+    "Alkaloids",
+    "Amino acids and Peptides",
+    "Carbohydrates",
+    "Fatty acids",
+    "Polyketides",
+    "Shikimates and Phenylpropanoids",
+    "Terpenoids"
+  ],
+  "pathway_thresholds": [
+    0.3750000000000001,
+    0.5000000000000002,
+    0.20000000000000007,
+    0.2750000000000001,
+    0.47500000000000014,
+    0.4000000000000001,
+    0.4000000000000001
+  ],
+  "abstention": {
+    "pw": {
+      "0.8": 0.2508541449890815,
+      "0.9": 0.6210783041361236
+    },
+    "sc": {
+      "0.8": 0.3213304623941702,
+      "0.9": 0.5789874347436975
+    }
+  },
+  "superclasses": [
+    "Aminosugars and aminoglycosides",
+    "Anthranilic acid alkaloids",
+    "Aromatic polyketides",
+    "Chromanes",
+    "Coumarins",
+    "Cyclic polyketides",
+    "Diterpenoids",
+    "Fatty Acids and Conjugates",
+    "Fatty amides",
+    "Histidine alkaloids",
+    "Linear polyketides",
+    "Lysine alkaloids",
+    "Macrolides",
+    "Meroterpenoids",
+    "Naphthalenes",
+    "Nicotinic acid alkaloids",
+    "Nucleosides",
+    "Oligopeptides",
+    "Ornithine alkaloids",
+    "Peptide alkaloids",
+    "Phenolic acids (C6-C1)",
+    "Polycyclic aromatic polyketides",
+    "Polyethers",
+    "Polyols",
+    "Proline alkaloids",
+    "Pseudoalkaloids",
+    "Saccharides",
+    "Serine alkaloids",
+    "Sesquiterpenoids",
+    "Small peptides",
+    "Tetramate alkaloids",
+    "Triterpenoids",
+    "Tryptophan alkaloids",
+    "\u03b2-lactams",
+    "other Alkaloids",
+    "other Amino acids and Peptides",
+    "other Fatty acids",
+    "other Polyketides",
+    "other Shikimates and Phenylpropanoids",
+    "other Terpenoids"
+  ]
+}

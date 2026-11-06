@@ -1,0 +1,9 @@
+tool	version	image	licence	note
+antismash	7.1.0	TODO: built from env/docker/antismash-7.1.0 (biocontainer 7.1.0--pyh7e72e81_1 + its databases)	AGPL-3.0	databases from download-databases (7.1.0 pins: Pfam 35.0, MIBiG 3.1, ...) mounted; bacteria + --taxon fungi
+plantismash	1.0	TODO: built from env/docker/plantismash-1.0 (tag 1.0 = 869a16b)	AGPL-3.0	Python 2.7, Pfam 27.0
+gecco-0.9.5	0.9.5	quay.io/biocontainers/gecco:0.9.5--pyhdfd78af_0@sha256:9f1bdcf94165e8596a452d1adae6098311a398121fc1beaa36ebb17d65e3a58c	GPL-3.0	models embedded
+gecco-0.11.0	0.11.0	quay.io/biocontainers/gecco:0.11.0--pyhdfd78af_0@sha256:c87cb4ce823bffc454b8d4068ce95903f2dbf8d3f0d2d61bedda2dfca403ce48	GPL-3.0	models embedded
+sanntis-0.9.5	0.9.5.0	quay.io/biocontainers/sanntis:0.9.5.0--pyhdfd78af_0@sha256:ebbfe00057d89b266bbd1a376ebd709c798a20278fa1f915d92a5f4728d45f1b	Apache-2.0	bioconda sanntis 0.9.5.0 (reports 0.9.4.1); fed IPS 5.76 via --ip-file
+bgc-prophet	0.1.2	TODO: built from env/docker/bgc-prophet-0.1.2 (python 3.12 + bgc-prophet 0.1.2 + fair-esm 2.0.0 from PyPI)	MIT	the biocontainer cannot run the pipeline (fair-esm 1.0.2, Python 3.14); weights + ESM2 8M fetched from their publishers by 02_tools.sh (sha256-pinned, not redistributed)
+bgcat	4f77517	TODO: built from env/docker/bgcat (HEAD 4f77517, esm 3.2.3, device patch)	MIT	classifier; ESM C 600M weights (non-commercial licence), GPU
+interproscan-5.76	5.76-107.0	docker.io/interpro/interproscan:5.76-107.0@sha256:89678e92fc5e4309f89c063584c0ddbb13e34f0dd7e8dd29da43ce0fc27f0b9a	Apache-2.0	the image has no member databases: mount the 5.76-107.0 data/ at /opt/interproscan/data (CTR_BINDS); on Codon IMAGE_interproscan_5_76=host

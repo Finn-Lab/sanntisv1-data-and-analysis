@@ -1,0 +1,11 @@
+line-length = 120
+target-version = "py312"
+src = ["workers"]
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = ["E741"]
+
+[lint.isort]
+known-first-party = ["sv1"]
+known-third-party = ["sanntis"]

@@ -1,0 +1,4 @@
+release	kind	url	sha256
+4.0	json	https://dl.secondarymetabolites.org/mibig/mibig_json_4.0.tar.gz	986f1a69fb5eeb84fd7c0175ae921304c22fd5f8ed04c96d8c1c0c95a145837b
+4.0	gbk	https://dl.secondarymetabolites.org/mibig/mibig_gbk_4.0.tar.gz	43543f9c85316bc44e555dd2c6c37331b1a56150218b204dc14e623ea66e834b
+5.0rc1	json	https://dl.secondarymetabolites.org/mibig/mibig_json_5.0rc1.tar.bz2	a808260291d8c7f2b097a2facbd085615cea6db17996eac656306c80bc2316fc
