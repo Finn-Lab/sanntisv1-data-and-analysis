@@ -1,0 +1,61 @@
+{
+  "title": "SanntiS 1.0: data and analyses",
+  "upload_type": "software",
+  "description": "<p>Runbooks that reproduce the data, models and analyses behind <a href=\"https://github.com/Finn-Lab/SanntiS\">SanntiS</a> 1.0 (objectives 00-03: data collection, production models, MIBiG 3.1 validation, tool comparison), with the expected results each runbook is checked against.</p><p>Acknowledgement: This work is part of EUREMAP (European Research Infrastructure for Marine Bioprospecting, https://euremap.eu), funded by the European Union's Horizon Europe research and innovation programme under grant agreement No 101131663 (doi:10.3030/101131663). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.</p>",
+  "creators": [
+    {
+      "name": "Sanchez, Santiago",
+      "affiliation": "EMBL - European Bioinformatics Institute"
+    }
+  ],
+  "license": "apache-2.0",
+  "keywords": [
+    "biosynthetic gene clusters",
+    "BGC detection",
+    "natural products",
+    "genome mining",
+    "SanntiS",
+    "MIBiG",
+    "machine learning",
+    "EUREMAP",
+    "benchmark",
+    "reproducibility"
+  ],
+  "communities": [
+    {
+      "identifier": "euremap"
+    }
+  ],
+  "grants": [
+    {
+      "id": "10.13039/501100000780::101131663"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Finn-Lab/SanntiS",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://huggingface.co/microbiome-informatics/sanntis",
+      "relation": "isSupplementTo",
+      "resource_type": "dataset",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data",
+      "relation": "references",
+      "resource_type": "dataset",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1101/2023.05.23.540769",
+      "relation": "references",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "This work is part of EUREMAP (European Research Infrastructure for Marine Bioprospecting, https://euremap.eu), funded by the European Union's Horizon Europe research and innovation programme under grant agreement No 101131663 (doi:10.3030/101131663). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them."
+}
