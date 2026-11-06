@@ -4,8 +4,9 @@
   "description": "<p>Runbooks that reproduce the data, models and analyses behind <a href=\"https://github.com/Finn-Lab/SanntiS\">SanntiS</a> 1.0 (objectives 00-03: data collection, production models, MIBiG 3.1 validation, tool comparison), with the expected results each runbook is checked against.</p><p>Acknowledgement: This work is part of EUREMAP (European Research Infrastructure for Marine Bioprospecting, https://euremap.eu), funded by the European Union's Horizon Europe research and innovation programme under grant agreement No 101131663 (doi:10.3030/101131663). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.</p>",
   "creators": [
     {
-      "name": "Sanchez, Santiago",
-      "affiliation": "EMBL - European Bioinformatics Institute"
+      "name": "Sanchez Fragoso, Jose Santiago",
+      "affiliation": "European Bioinformatics Institute",
+      "orcid": "0000-0001-7018-3891"
     }
   ],
   "license": "apache-2.0",
