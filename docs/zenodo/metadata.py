@@ -24,7 +24,8 @@ HF_DATA = "https://huggingface.co/datasets/microbiome-informatics/sanntis-traini
 HF_MODEL, MODEL_TAG = "https://huggingface.co/microbiome-informatics/sanntis", "v1.0.0-beta.1"
 
 CREATORS = [  # Zenodo "Family, Given"; add "orcid": "0000-..." per person
-    {"name": "Sanchez, Santiago", "affiliation": "EMBL - European Bioinformatics Institute"},
+    {"name": "Sanchez Fragoso, Jose Santiago", "affiliation": "European Bioinformatics Institute",
+     "orcid": "0000-0001-7018-3891"},
 ]
 
 FUNDING = (
