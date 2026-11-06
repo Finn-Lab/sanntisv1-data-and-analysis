@@ -26,7 +26,7 @@ What the results mean (insights, caveats, decisions, with their evidence and sco
 
 | | Where | Licence |
 |---|---|---|
-| SanntiS 1.0 software | [github.com/Finn-Lab/SanntiS](https://github.com/Finn-Lab/SanntiS), tag `v1.0.0-beta.1` (used here; release `v1.0.0`, Zenodo [10.5281/zenodo.24003727](https://doi.org/10.5281/zenodo.24003727), differs only in documentation) | Apache-2.0 |
+| SanntiS 1.0 software | [github.com/Finn-Lab/SanntiS](https://github.com/Finn-Lab/SanntiS), release `v1.0.0`; Zenodo [10.5281/zenodo.24003727](https://doi.org/10.5281/zenodo.24003727) | Apache-2.0 |
 | SanntiS 1.0 model | [huggingface.co/microbiome-informatics/sanntis](https://huggingface.co/microbiome-informatics/sanntis), tag `v1.0.0-beta.1`; Zenodo `sanntis_model` | Apache-2.0 |
 | Training data | [huggingface.co/datasets/microbiome-informatics/sanntis-training-data](https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data), tags `negatives-v1`, `npclassifier-v1`, `mibig-5.0rc1-train`; Zenodo `mibig5_train` | CC BY 4.0 (`negatives/`: CC BY-SA 4.0) |
 | Test sets, MIBiG 3.1 evaluation | Zenodo `nucleotide_testsets_v2`, `v3active_eval_v2` | CC BY 4.0 |
