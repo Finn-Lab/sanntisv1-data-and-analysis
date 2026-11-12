@@ -75,7 +75,7 @@ each() {  # each <jobs> <function> : call <function> with the fields of every st
     # shellcheck disable=SC2046  # every function (helpers and the runbook's) is visible to the workers
     export -f $(declare -F | awk '{print $3}')
     # shellcheck disable=SC2016  # $0 / $@ expand in the child bash
-    xargs -P "$jobs" -L 1 bash -c 'set -euo pipefail; "$0" "$@"' "$fn"
+    xargs -r -P "$jobs" -L 1 bash -c 'set -euo pipefail; "$0" "$@"' "$fn"
 }
 
 sums() {  # sums <dir> <glob> : write <dir>/SHA256SUMS for the files matching <glob> (record of what was fetched)
