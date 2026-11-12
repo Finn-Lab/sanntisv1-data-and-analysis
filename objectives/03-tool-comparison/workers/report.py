@@ -89,6 +89,8 @@ def _paired(path: Path) -> str:
 
 
 def eukaryotes(results: dict, t_star: float, fig_dir: Path, paired_tsv: Path) -> str:
+    if not any("metrics_euk" in r for res in results.values() for r in res.values() if isinstance(r, dict)):
+        return "No eukaryotic contigs in these sets (a trial).\n"
     md = ("Two scopes, chosen so precision is attributable: "
           "on the **isolate** sets the eukaryotic contigs (fungal / protist backbones carrying several test BGCs of "
           "mixed lineages, so precision is per kingdom, not per lineage); on the **shuffled** sets the contigs "
