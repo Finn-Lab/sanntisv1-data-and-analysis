@@ -200,6 +200,9 @@ bgcat() {  # BGCat on the biosynthetic genes antiSMASH 7.1.0 (relaxed) finds in 
     fetch "$ESMC_URL" "$wt/esmc_600m_2024_12_v0.pth" "$ESMC_SHA"  # ESM C 600M (EvolutionaryScale licence)
     local home=${BGCAT_HOME:-/opt/bgcat}  # the repository inside the image (or on this machine with IMAGE_bgcat=host)
     host_env "${BGCAT_ENV:-}"            # IMAGE_bgcat=host: weights go in $home/data/weights (no mount)
+    if [[ $(image bgcat) == host ]]; then  # no mount on the host: link the checked weights into the checkout
+        mkdir -p "$home/data/weights" && ln -sfn "$wt/esmc_600m_2024_12_v0.pth" "$home/data/weights/esmc_600m_2024_12_v0.pth"
+    fi
     CTR_BINDS="${CTR_BINDS:-} $wt:$home/data/weights" ctr bgcat sh -c \
         "cd $home && python embed.py $o/bgcs.json $o/features.json && python classify.py $o/features.json $o/predictions.json" \
         > "$o/bgcat.log" 2>&1 || die "BGCat failed ($o/bgcat.log)"
