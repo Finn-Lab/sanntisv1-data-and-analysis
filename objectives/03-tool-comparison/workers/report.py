@@ -101,6 +101,9 @@ def eukaryotes(results: dict, t_star: float, fig_dir: Path, paired_tsv: Path) ->
         md += f"\n#### Test {test}{note}\n"
         for kind, scope, desc in EUK_SCOPES:
             tools = _lean(results[f"{test}-{kind}"], t_star)
+            if not any(f"metrics_{scope}" in r for r in tools.values()):  # no contigs of that scope (a trial)
+                md += f"\n{test}-{kind}, {desc}: no contigs.\n"
+                continue
             tab, m = _scope_table(tools, scope)
             md += (f"\n{test}-{kind}, {desc}: {int(m['n_contigs'])} contigs, {int(m['n_gt'])} test BGCs.\n\n"
                    f"{tab}\n")
