@@ -4,7 +4,8 @@ SanntiS annotates their proteins at scoring time).
 
 - clean (eukaryotes, here): the RefSeq GBFF without organelle records (mitochondrion, plastid, ...), keeping only
   source + CDS features; a CDS repeating an earlier one's location or name (locus_tag, else gene, else protein_id;
-  alternative transcripts) or with overlapping exons is dropped. antiSMASH 8.0.1 rejects such records; counts per
+  alternative transcripts), with overlapping exons or trans-spliced (exons on both strands or out of order) is
+  dropped. antiSMASH 8.0.1 rejects such records; counts per
   genome in ``cleaned/cleaning.tsv``. A genome left with no CDS (an organelle-only assembly) is not a background
   (``cleaned/dropped.tsv``)
 - prepare (label ``cpu_small``): prokaryotes: pyrodigal on the NCBI genome (single mode; meta below 100 kb);
@@ -35,6 +36,17 @@ from sanntis.runner.tasks import RunnerOptions, Unit, dispatch, write_unit_scrip
 from sv1.archives import sha256
 
 
+def trans_spliced(loc) -> bool:
+    """Exons on both strands, or out of order for their strand (trans-splicing): antiSMASH reads such a join as an
+    origin-spanning exon of a linear record and rejects the record."""
+    parts = list(getattr(loc, "parts", [loc]))
+    strands = {p.strand for p in parts}
+    if len(strands) > 1:
+        return True
+    starts = [int(p.start) for p in parts]
+    return starts != sorted(starts, reverse=strands == {-1})
+
+
 def overlapping_exons(loc) -> bool:
     parts = sorted(getattr(loc, "parts", [loc]), key=lambda p: int(p.start))
     return any(int(b.start) < int(a.end) for a, b in zip(parts, parts[1:], strict=False))
@@ -43,7 +55,7 @@ def overlapping_exons(loc) -> bool:
 def clean_gbff(src: Path, dest: Path) -> dict:
     """RefSeq GBFF → records antiSMASH 8.0.1 accepts (see module doc); returns what was dropped."""
     n = {"organelle_records": 0, "repeated_location_cds": 0, "repeated_name_cds": 0, "overlapping_exon_cds": 0,
-         "cds": 0}
+         "trans_spliced_cds": 0, "cds": 0}
     recs = []
     for rec in read_records(src):
         src_feat = next((f for f in rec.features if f.type == "source"), None)
@@ -55,7 +67,9 @@ def clean_gbff(src: Path, dest: Path) -> dict:
             if f.type != "CDS":
                 continue
             name = next((f.qualifiers[k][0] for k in ("locus_tag", "gene", "protein_id") if f.qualifiers.get(k)), "")
-            if overlapping_exons(f.location):
+            if trans_spliced(f.location):
+                n["trans_spliced_cds"] += 1
+            elif overlapping_exons(f.location):
                 n["overlapping_exon_cds"] += 1
             elif str(f.location) in seen:
                 n["repeated_location_cds"] += 1
