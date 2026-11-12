@@ -94,7 +94,8 @@ train_archives() {  # train_archives <dir> <name> : the <name>_{gbk,json}.tar.gz
     # 10 x n BGCs, written to <dir>/limit/), one path per line
     local g=$1/$2_gbk.tar.gz j=$1/$2_json.tar.gz
     if [[ -n ${LIMIT:-} ]]; then
-        "$PYTHON" -m sv1.archives limit "$g" "$j" "$1/limit" "$((LIMIT * 10))"
+        # + the first 2 x n entries >= BGC0002750: they hold a trial's first n test BGCs (NPC labels in collect)
+        "$PYTHON" -m sv1.archives limit "$g" "$j" "$1/limit" "$((LIMIT * 10))" "$((LIMIT * 2))"
     else
         printf '%s\n%s\n' "$g" "$j"
     fi
