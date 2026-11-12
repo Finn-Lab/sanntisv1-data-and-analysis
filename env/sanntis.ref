@@ -1,13 +1,2 @@
-# SanntiS ref the objectives are written against (one line: <ref> <repo URL>).
-# v1.0.0-beta.1 = the released 1.0 beta (EMG-10233 ingestion: MIBiG by version, MIBiG-format external data,
-# --npc-cache): objectives 01/02. The release model (objective 01) was trained with this version.
-# Objectives 01 and 02 (jobs 14471873 / 14487115, 2026-10-30) ran with the sanntis-1.0.0b1 build (wheel installed
-# 2026-10-30 06:02 UTC, unchanged since), made just before the tag: identical to it but for licence headers and
-# the --npc-cache seeding of training-data collection (absent from the build, so not used; optional in the tag).
-# Objectives 00 and 05 ran on the pre-release development repository (commit 842675a, before EMG-10233);
-# 05's workers/mibig_proteins.py uses the removed CollectOptions(statuses=, nuccore_root=) and needs that
-# code to re-run.
-# Objective 03 on the v2 test sets (2026-11-02/03, its expected/) ran with the same sanntis-1.0.0b1 build; it
-# uses none of the code that differs from the tag. Its test-set scoring code (workers/sv1) is copied from
-# 842675a, where it was removed before the release; its expected/v1sets/ tables are from the 842675a release run.
-v1.0.0-beta.1 https://github.com/Finn-Lab/SanntiS
+# SanntiS ref the objectives run with (one line: <ref> <repo URL>); env/install.sh installs it.
+93bc2360b679a011554df908636feeda64477a4e https://github.com/Finn-Lab/SanntiS

@@ -1,4 +1,0 @@
-Current release bundle (SanntiS --evaluate mode): epochs and t* were tuned on the v3-active CV and transferred.
-Objective 01 tunes on its own pool, so these are reference values, not exact targets: acceptance is OOF
-validation within the CIs of ../../../02-mibig31-validation/expected/release_v1sets/validation_oof.tsv; report t*/epoch changes.
-Moved here on 2026-11-02; expected/ now holds the objective-01 run of 2026-10-30.

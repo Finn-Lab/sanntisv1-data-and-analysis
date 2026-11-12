@@ -1,22 +1,26 @@
 #!/usr/bin/env bash
 # The nucleotide test sets: Test B (MIBiG 5.0rc1 active + pending >= BGC0002750, <= 200 kb: 375 BGCs; Test A = its
-# 178 active entries) inserted into the test-background pool (03_background.sh) as isolate contigs (the 70 backbones)
-# and gene-shuffled genome contigs (one BGC each); worker build_testsets.py. Then the Zenodo deposit (deterministic
-# tarball, sha256 pinned in env/zenodo.tsv as `nucleotide_testsets_v2`).
+# 178 active entries) inserted into the 70 isolate test backbones of negative pool v2 (objective 01's 03_pool.sh;
+# held out of training) as isolate contigs, and into gene-shuffled contigs of the test-background genomes
+# (03_background.sh; none in the pool), one BGC each; worker build_testsets.py. Then the Zenodo deposit
+# (deterministic tarball, sha256 pinned in env/zenodo.tsv as `nucleotide_testsets_v3`).
 #   → $DATA_ROOT/02/testsets/{testsets/<set>/<track>/*.{gbk,cds.parquet,ground_truth.bed}, test_bgcs.parquet,
-#     contigs.tsv, manifest.json}, $DATA_ROOT/02/deposit/sanntisv1_nucleotide_testsets_v2.tar.gz
+#     contigs.tsv, manifest.json}, $DATA_ROOT/02/deposit/sanntisv1_nucleotide_testsets_v3.tar.gz
 # shellcheck source=SCRIPTDIR/../../common/env.sh
 source "$(dirname "$0")/../../common/env.sh"
 here=$REPO/objectives/02-mibig31-validation
 archives=$DATA_ROOT/01/inputs/mibig_5.0rc1-train
 background=$DATA_ROOT/02/background
 out=$DATA_ROOT/02/testsets
-deposit=$DATA_ROOT/02/deposit/sanntisv1_nucleotide_testsets_v2.tar.gz
+pool=$DATA_ROOT/01/pool
+deposit=$DATA_ROOT/02/deposit/sanntisv1_nucleotide_testsets_v3.tar.gz
 
 testsets() {
     [[ -s $archives/manifest.tsv ]] || die "no objective-01 archives in $archives (run objectives/01-production-models/01_inputs.sh)"
     [[ -s $background/background/manifest.json ]] || die "no background pool in $background (run 03_background.sh)"
-    "$PYTHON" "$here/workers/build_testsets.py" --archives "$archives" --background "$background" --out "$out" \
+    [[ -s $pool/v2/manifest.json ]] || die "no negative pool in $pool (run objectives/01-production-models/03_pool.sh)"
+    "$PYTHON" "$here/workers/build_testsets.py" --archives "$archives" --pool "$pool" --pool-version v2 \
+        --background "$background" --out "$out" \
         ${LIMIT:+--limit "$LIMIT"}
     local c=$out/contigs.tsv
     if [[ -z ${LIMIT:-} ]]; then

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Training positives: MIBiG 5.0rc1 active + pending as a MIBiG-format archive pair for `sanntis train --external-gbk /
-# --external-json` (5.0rc1 has no GBK archive, so `--mibig 5.0rc1` cannot be used). Built from objective 00's MIBiG
-# downloads (default), or fetched frozen from Zenodo (MIBIG_TRAIN=deposit). Either way checked against expected/.
+# --external-json` (5.0rc1 has no GBK archive, so `--mibig 5.0rc1` cannot be used), built from objective 00's MIBiG
+# downloads and checked against expected/.
 #   → $DATA_ROOT/01/inputs/mibig_5.0rc1-train/{mibig_5.0rc1-train_{gbk,json}.tar.gz, manifest.tsv, excluded.tsv,
 #     provenance.json}
 #   → $DATA_ROOT/01/deposit/sanntisv1_mibig5.0rc1_train.tar.gz (a build only: the Zenodo file)
@@ -18,7 +18,7 @@ check() {  # the archives hold what expected/ lists, BGC by BGC (source, locus, 
         || die "$bgcs/manifest.tsv differs from expected/mibig_train_manifest.tsv"
     diff -q "$here/expected/mibig_train_excluded.tsv" "$bgcs/excluded.tsv" >/dev/null \
         || die "$bgcs/excluded.tsv differs from expected/mibig_train_excluded.tsv"
-    expect_count "MIBiG 5.0rc1 training BGCs" "$(rows "$bgcs/manifest.tsv" | wc -l)" 2795
+    expect_count "MIBiG 5.0rc1 training BGCs" "$(awk 'NR > 1' "$bgcs/manifest.tsv" | wc -l)" 2795
 }
 
 build() {
@@ -39,13 +39,4 @@ build() {
     else log "deposit sha256 $sha != env/zenodo.tsv ($want): other SanntiS / Biopython? content matches expected/"; fi
 }
 
-fetch() {
-    deposit mibig5_train "$in"
-    check
-}
-
-case ${MIBIG_TRAIN:-build} in
-    build)   step 01_mibig_train 2 8G 1:00:00 build ;;
-    deposit) step 01_mibig_train 1 2G 1:00:00 fetch ;;
-    *) die "MIBIG_TRAIN must be build or deposit (got '$MIBIG_TRAIN')" ;;
-esac
+step 01_mibig_train 2 8G 1:00:00 build

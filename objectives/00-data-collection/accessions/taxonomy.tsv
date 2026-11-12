@@ -1,0 +1,4 @@
+name	url	sha256	dest
+taxdump	https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump_archive/taxdmp_2026-07-01.zip	7afc2d0707abd481baff334bb5c345e9fbd36f4f0d1d912d2660ac18920def05	raw/ncbi/taxdump/taxdmp_2026-07-01.zip
+gtdb_bac120	https://data.gtdb.ecogenomic.org/releases/release226/226.0/bac120_metadata_r226.tsv.gz	45f1614aff80c19752860880b47b3cdeb66def8ff66dc106909b28bb2bd9bcbf	cache/sanntis/gtdb/r226/bac120_metadata_r226.tsv.gz
+gtdb_ar53	https://data.gtdb.ecogenomic.org/releases/release226/226.0/ar53_metadata_r226.tsv.gz	f12310f223e6dd27dc942379de1cfbeec5ebd2b917786cf2ce28695555eab6e5	cache/sanntis/gtdb/r226/ar53_metadata_r226.tsv.gz
