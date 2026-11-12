@@ -5,7 +5,8 @@ SanntiS annotates their proteins at scoring time).
 - clean (eukaryotes, here): the RefSeq GBFF without organelle records (mitochondrion, plastid, ...), keeping only
   source + CDS features; a CDS repeating an earlier one's location or name (locus_tag, else gene, else protein_id;
   alternative transcripts) or with overlapping exons is dropped. antiSMASH 8.0.1 rejects such records; counts per
-  genome in ``cleaned/cleaning.tsv``
+  genome in ``cleaned/cleaning.tsv``. A genome left with no CDS (an organelle-only assembly) is not a background
+  (``cleaned/dropped.tsv``)
 - prepare (label ``cpu_small``): prokaryotes: pyrodigal on the NCBI genome (single mode; meta below 100 kb);
   eukaryotes: the cleaned GBFF CDS → ``prepared/<genome>/{input.gbk, cds.parquet, proteins.faa}``
 - antiSMASH 8.0.1 (label ``antismash``): ``--minimal --genefinding-tool none``, taxon bacteria / fungi
@@ -96,6 +97,13 @@ def genome_table(listing: Path, assemblies: Path, out: Path) -> pd.DataFrame:
         pd.concat([old, pd.DataFrame(rows)]).drop_duplicates("genome", keep="last").sort_values("genome").to_csv(
             log, sep="\t", index=False)
     g["url"] = ""
+    # assemblies with no nuclear CDS (e.g. RefSeq organelle-only genomes) cannot be a background: listed, left out
+    clean = pd.read_csv(cdir / "cleaning.tsv", sep="\t") if (cdir / "cleaning.tsv").exists() else pd.DataFrame()
+    empty = set(clean.loc[clean["cds"] == 0, "genome"]) if len(clean) else set()
+    if empty:
+        g[g["genome"].isin(empty)].to_csv(cdir / "dropped.tsv", sep="\t", index=False)
+        print(f"left out, no nuclear CDS: {sorted(empty)}")
+        g = g[~g["genome"].isin(empty)].reset_index(drop=True)
     return g.reindex(columns=S.GENOME_COLUMNS, fill_value="")
 
 
