@@ -143,7 +143,7 @@ def main(a: argparse.Namespace) -> None:
     pool = out / "background"
     pool.mkdir(exist_ok=True)
     frames = {"genomes.parquet": genomes[["genome", "kingdom", "lineage", "source", "accession", "group"]],
-              "cds.parquet": tables.pop("cds"), **tables}
+              "cds.parquet": tables.pop("cds"), **{k: v for k, v in tables.items() if v is not None}}
     for name, df in frames.items():
         df.reset_index(drop=True).to_parquet(pool / name, index=False)
     kingdom = dict(zip(genomes["genome"], genomes["kingdom"], strict=True))
