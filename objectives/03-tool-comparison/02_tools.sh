@@ -220,7 +220,8 @@ for r in "${runs[@]}"; do
         bgc-prophet)    step "03_tool_$r" 8 32G 12:00:00 prophet ;;
         antismash-*)    step "03_tool_$r" 16 64G 24:00:00 antismash "${r#antismash-}" ;;
         plantismash)    step "03_tool_$r" 8 32G 12:00:00 plantismash ;;
-        bgcat)          step "03_tool_$r" 8 64G 24:00:00 bgcat ;;
+        bgcat)  # its class model is saved for CUDA: a GPU
+            SLURM_ARGS="${SLURM_ARGS:-} ${BGCAT_SLURM_ARGS:--p gpu --gres=gpu:1}" step "03_tool_$r" 8 64G 24:00:00 bgcat ;;
         *) die "unknown run '$r'" ;;
     esac
 done
