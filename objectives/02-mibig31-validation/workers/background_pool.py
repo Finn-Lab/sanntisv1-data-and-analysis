@@ -96,7 +96,7 @@ def genome_table(listing: Path, assemblies: Path, out: Path) -> pd.DataFrame:
         pd.concat([old, pd.DataFrame(rows)]).drop_duplicates("genome", keep="last").sort_values("genome").to_csv(
             log, sep="\t", index=False)
     g["url"] = ""
-    return g[S.GENOME_COLUMNS]
+    return g.reindex(columns=S.GENOME_COLUMNS, fill_value="")
 
 
 def main(a: argparse.Namespace) -> None:
