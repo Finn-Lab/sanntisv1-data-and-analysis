@@ -35,7 +35,7 @@ A file that fails its checksum is deleted and the step stops; re-running downloa
 | `pool_candidates_bacdive.tsv` | 2,521 | candidates: BacDive type strains (BacDive 2026-03-23) with an NCBI assembly, `clean_cds` = 0.9 x their CDS count, priority 0 |
 | `pool_candidates_refseq_fungi.tsv` | 674 | candidates: RefSeq fungal assemblies (`assembly_summary.txt` of 2026-10-29), `clean_cds` = genome size / 2,900 x 0.95, priority 1 |
 | `pool_breadth.tsv` | 205 | the pool v1 prokaryotes; those not planned join the pool with at most 500 CDS each |
-| `pool_exclude.tsv` | 253 | genomes never in the pool: 129 species held out for genome-level evaluation, and the 124 test-background genomes (assemblies; eukaryotes also their species) |
+| `pool_exclude.tsv` | 254 | genomes never in the pool: 129 species held out for genome-level evaluation, the 124 test-background genomes (assemblies; eukaryotes also their species), and one GTDB r226 representative suppressed by NCBI since the release (GCA_946479335.1) |
 | `pool_v2_genomes.tsv` | 897 (735 prokaryotes, 162 fungi) | the plan of negative pool v2 (`sanntis plan-negatives`, objective 01 `02_plan.sh`): genome, accession, lineage, `quota_cds`, plan columns |
 | `testset_background_genomes.tsv` | 124 (102 GTDB r226 prokaryotes, 22 RefSeq fungi / protozoa) | objective 02 `workers/sample_background.py`: no assembly and no species of the pool |
 
