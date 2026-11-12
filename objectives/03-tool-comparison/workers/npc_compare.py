@@ -70,6 +70,9 @@ def main() -> None:
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         npc = SanntisModel.from_pretrained(a.model).npc
+    if npc is None:  # sanntis train switches the NPC head off below 50 NPC-labelled BGCs (a LIMIT trial)
+        print(f"{a.model}: no NPC model in the bundle; no classification comparison")
+        return
     ls = LabelSpace(superclasses=list(npc.superclasses), parents=parents, pathways=list(npc.pathways))
     ids = labelled(labels, sorted(tb.index[tb["test_b"]]))
     truth_pw = {i: set(labels.at[i, "pathway"]) for i in ids}
