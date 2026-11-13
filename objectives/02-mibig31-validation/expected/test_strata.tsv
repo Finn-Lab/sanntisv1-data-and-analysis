@@ -1,0 +1,29 @@
+axis	stratum	n	bgc_macro_recall	recall_macro_t	set
+lineage	fungi	27	0.877778	0.83844	A-isolate
+lineage	other eukaryotes	2	1	1	A-isolate
+lineage	plants	1	1	1	A-isolate
+lineage	prokaryotes	148	0.887179	0.820842	A-isolate
+novelty	near-duplicate	26	0.975	0.951136	A-isolate
+novelty	novel	52	0.763736	0.590129	A-isolate
+novelty	related	100	1	0.965096	A-isolate
+lineage	fungi	87	0.885939	0.853786	B-isolate
+lineage	other eukaryotes	4	1	1	B-isolate
+lineage	plants	3	0.75	0.75	B-isolate
+lineage	prokaryotes	281	0.901361	0.854795	B-isolate
+novelty	near-duplicate	74	0.988889	0.984367	B-isolate
+novelty	novel	83	0.780386	0.651748	B-isolate
+novelty	related	218	0.973608	0.95368	B-isolate
+lineage	fungi	27	0.9	0.850451	A-shuffled
+lineage	other eukaryotes	2	1	1	A-shuffled
+lineage	plants	1	1	1	A-shuffled
+lineage	prokaryotes	148	0.823077	0.755317	A-shuffled
+novelty	near-duplicate	26	0.975	0.936995	A-shuffled
+novelty	novel	52	0.708352	0.507572	A-shuffled
+novelty	related	100	0.955556	0.941028	A-shuffled
+lineage	fungi	87	0.887879	0.850648	B-shuffled
+lineage	other eukaryotes	4	1	1	B-shuffled
+lineage	plants	3	0.75	0.75	B-shuffled
+lineage	prokaryotes	281	0.866481	0.819912	B-shuffled
+novelty	near-duplicate	74	0.988889	0.981243	B-shuffled
+novelty	novel	83	0.744838	0.591632	B-shuffled
+novelty	related	218	0.957861	0.945942	B-shuffled

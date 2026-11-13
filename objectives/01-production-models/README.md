@@ -11,7 +11,20 @@ bash objectives/01-production-models/03_pool.sh     # sanntis build-negatives �
 bash objectives/01-production-models/04_train.sh    # sanntis train (NEGATIVES=<pool dir | Hub revision>)
 ```
 
-Status: TODO (filled from the run).
+Status: run end to end from scratch on Codon (2026-11-12/13): the plan equals `pool_v2_genomes.tsv`, every check
+passes, and the bundle report tables equal `expected/`.
+
+| CV (pooled out-of-fold, t* = 0.20) | All | Prokaryotes | Fungi |
+|---|---|---|---|
+| Recall_T | 0.889 (0.879–0.899) | 0.880 | 0.929 |
+| Precision_T | 0.490 (0.476–0.504) | 0.506 | 0.420 |
+| BGC recall | 0.944 (0.935–0.953) | 0.938 | 0.969 |
+| BGC macro recall | 0.929 (0.917–0.941) | 0.928 | 0.941 |
+| BGC precision | 0.706 (0.689–0.724) | 0.712 | 0.682 |
+| n (BGCs) | 2,626 | 2,137 | 489 |
+
+The validation background is pool v2 itself (lineage-matched negatives), so precision is not comparable with models
+validated on other pools.
 
 ## Inputs
 
@@ -63,7 +76,7 @@ The pool follows the lineages of the positives: per lineage group, negative CDS 
   (CheckM2 >= 90 % / <= 5 %) and RefSeq fungi (priority 1); `pool_exclude.tsv` removed first. Every pool v1
   prokaryote not planned joins with at most 500 CDS.
 - **Build** (`sanntis build-negatives`). Prokaryotic genes called with pyrodigal (single mode; meta below 100 kb),
-  fungal CDS from the RefSeq GenBank (one CDS per gene); antiSMASH 8.0.1 `--minimal --genefinding-tool none`
+  fungal CDS from the RefSeq GenBank (nuclear records only, one CDS per gene); antiSMASH 8.0.1 `--minimal --genefinding-tool none`
   (`--taxon bacteria` / `fungi`); CDS in an antiSMASH region removed, the rest forms BGC-free runs; the longest run of
   >= 50 CDS of 55 prokaryotic and 15 fungal genomes is held out as an isolate test backbone (objective 02's isolate
   set); per genome, `quota_cds` BGC-free CDS drawn as 3 portions of the concatenated runs; InterProScan 6.0.3.0 /
@@ -74,7 +87,12 @@ The pool follows the lineages of the positives: per lineage group, negative CDS 
 | prokaryotes | 735 (367 GTDB r226, 163 BacDive, 205 pool v1) | 517,515 |
 | fungi | 162 (157 RefSeq, 5 pool v1) | 184,731 |
 
-Counts after the build (CDS, portions, backbones, InterProScan coverage): TODO (from the run).
+Counts after the build (`pool/v2/manifest.json`):
+
+| | Genomes | CDS | BGC-free runs (CDS) | CDS in an antiSMASH region | Test backbones | Annotated CDS (portions + backbones) | with InterPro tokens |
+|---|---|---|---|---|---|---|---|
+| prokaryotes | 735 | 3,017,512 | 116,331 (2,794,498) | 223,014 | 55 | 540,087 | 89.4 % |
+| fungi | 162 | 1,948,467 | 18,963 (1,784,367) | 164,100 | 15 | 198,024 | 90.9 % |
 
 ### Recipe
 
@@ -85,6 +103,6 @@ t* = 0.20 (low threshold 0.15).
 
 ## Expected
 
-`expected/mibig_train_{manifest,excluded}.tsv`: the training archives (above). The bundle report tables of the run
-(`tune.tsv`, `validation_oof.tsv`, `validation.tsv` with 95 % CIs, strata, class curves, sweep, NPC validation,
-collected-pool counts, bundle manifest / config): TODO (frozen from the run).
+`expected/mibig_train_{manifest,excluded}.tsv`: the training archives (above). The bundle report tables of the run,
+compared by `04_train.sh`: `validation.tsv` (with 95 % CIs), `validation_strata.tsv`, `validation_class_curves.tsv`,
+`sweep.tsv`, `npc_validation.tsv`.

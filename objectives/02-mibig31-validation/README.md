@@ -14,7 +14,19 @@ bash objectives/02-mibig31-validation/05_score.sh        # InterProScan 6 tokens
 bash objectives/02-mibig31-validation/06_report.sh       # report.md + figures, the v3active_eval_v3 deposit
 ```
 
-Status: TODO (filled from the run).
+Status: run end to end from scratch on Codon (2026-11-13); the tables equal `expected/`.
+
+| t* = 0.20 | Test B isolate | Test B shuffled | Test A isolate | Test A shuffled |
+|---|---|---|---|---|
+| Precision_T | 0.572 | 0.585 | 0.572 | 0.585 |
+| Recall_macro_T | 0.851 | 0.830 | 0.815 | 0.776 |
+| F1_macro_T | 0.684 | 0.686 | 0.672 | 0.667 |
+| BGC precision | 0.902 | 0.895 | 0.902 | 0.895 |
+| BGC macro recall | 0.892 | 0.868 | 0.876 | 0.836 |
+
+CIs, kingdom scopes and strata: `expected/test_metrics.tsv`, `test_strata.tsv`. Out-of-fold validation of the
+v3-active model (2,248 BGCs; background pool v2): Recall_T 0.897, BGC recall 0.941, Precision_T 0.432, BGC precision
+0.652.
 
 ## Steps
 
@@ -55,6 +67,9 @@ build-negatives`' own code: pyrodigal (single; meta < 100 kb) on prokaryotes, th
 antiSMASH 8.0.1 `--minimal`, native mask, BGC-free runs. InterProScan is not run on the backgrounds: the test contigs
 are nucleotide GenBank and SanntiS annotates their proteins when scoring.
 
+*Bigelowiella natans* (GCF_000002455.1) has CDS only on organelle records, so it is not a background
+(`cleaned/dropped.tsv`): the backgrounds are 102 prokaryotic and 21 eukaryotic genomes (`expected/background_counts.tsv`).
+
 ## Test sets (`04_testsets.sh`)
 
 Test B = objective 01's archives with accession >= BGC0002750, active or pending, locus <= 200 kb: **375 BGCs** (281
@@ -83,5 +98,6 @@ antiSMASH region and no test BGC are ignored. Run the scorer as a SLURM step (th
 
 ## Expected (`expected/`)
 
-`v3active_manifest.tsv`: the training archives (above). Frozen from the run: TODO (`background_counts.tsv`, the
-bundle report tables and `test_*.tsv`).
+`v3active_manifest.tsv`: the training archives (above). From the run: `background_counts.tsv` (`03_background.sh`),
+the bundle report tables `npc_validation.tsv`, `sweep.tsv`, `validation_class_curves.tsv`, `validation_strata.tsv`
+(`06_report.sh`) and the scores `test_{auprc,curve,metrics,npc,npc_per_pathway,radar,strata}.tsv` (`05_score.sh`).

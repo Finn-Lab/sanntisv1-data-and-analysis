@@ -10,6 +10,7 @@
 # shellcheck source=SCRIPTDIR/../../common/env.sh
 source "$(dirname "$0")/../../common/env.sh"
 need sanntis nextflow
+here=$REPO/objectives/01-production-models
 d=$DATA_ROOT/01/inputs/mibig_5.0rc1-train
 run=$DATA_ROOT/01/run
 
@@ -26,6 +27,8 @@ train() {
     # collect: 2,795 archived BGCs minus the 18 loci > 200 kb
     expect_count "collected loci" "$("$PYTHON" -c 'import json, sys; print(json.load(open(sys.argv[1]))["counts"]["loci"])' \
         "$run/collect/provenance.json")" 2777
+    compare_expected "$run/bundle/report" "$here/expected" validation.tsv validation_strata.tsv \
+        validation_class_curves.tsv sweep.tsv npc_validation.tsv
 }
 
 step 01_train 4 48G 7-00:00:00 train

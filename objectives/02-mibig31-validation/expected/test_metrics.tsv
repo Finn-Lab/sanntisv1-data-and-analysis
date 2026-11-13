@@ -1,0 +1,341 @@
+set	scope	metric	value	ci_lo	ci_hi
+A-isolate	all	precision_t	0.571595	0.532428	0.613429
+A-isolate	all	recall_t	0.852711	0.810907	0.894403
+A-isolate	all	bgc_precision	0.901734	0.866649	0.93787
+A-isolate	all	bgc_recall	0.921348	0.879306	0.961331
+A-isolate	all	n_gt	178		
+A-isolate	all	n_pred	346		
+A-isolate	all	recall_t[NRPS]	0.920832		
+A-isolate	all	bgc_recall[NRPS]	1		
+A-isolate	all	n_gt[NRPS]	84		
+A-isolate	all	recall_t[PKS]	0.924498		
+A-isolate	all	bgc_recall[PKS]	1		
+A-isolate	all	n_gt[PKS]	64		
+A-isolate	all	recall_t[ribosomal]	0.737569		
+A-isolate	all	bgc_recall[ribosomal]	0.777778		
+A-isolate	all	n_gt[ribosomal]	27		
+A-isolate	all	recall_t[terpene]	0.926389		
+A-isolate	all	bgc_recall[terpene]	0.95		
+A-isolate	all	n_gt[terpene]	20		
+A-isolate	all	recall_t[other]	0.563837		
+A-isolate	all	bgc_recall[other]	0.65		
+A-isolate	all	n_gt[other]	20		
+A-isolate	all	recall_macro_t	0.814625	0.760925	0.871792
+A-isolate	all	bgc_macro_recall	0.875556	0.818957	0.933591
+A-isolate	all	f1_t	0.684411	0.656238	0.713853
+A-isolate	all	f1_macro_t	0.671806	0.643188	0.703952
+A-isolate	all	f1_macro	0.888452	0.854012	0.924664
+A-isolate	all	f2_macro	0.880669	0.833175	0.928036
+A-isolate	proka	precision_t	0.605574		
+A-isolate	proka	recall_t	0.843502		
+A-isolate	proka	bgc_precision	0.896825		
+A-isolate	proka	bgc_recall	0.918919		
+A-isolate	proka	n_gt	148		
+A-isolate	proka	n_pred	252		
+A-isolate	proka	recall_t[NRPS]	0.916079		
+A-isolate	proka	bgc_recall[NRPS]	1		
+A-isolate	proka	n_gt[NRPS]	73		
+A-isolate	proka	recall_t[PKS]	0.910571		
+A-isolate	proka	bgc_recall[PKS]	1		
+A-isolate	proka	n_gt[PKS]	52		
+A-isolate	proka	recall_t[ribosomal]	0.731322		
+A-isolate	proka	bgc_recall[ribosomal]	0.769231		
+A-isolate	proka	n_gt[ribosomal]	26		
+A-isolate	proka	recall_t[terpene]	0.975309		
+A-isolate	proka	bgc_recall[terpene]	1		
+A-isolate	proka	n_gt[terpene]	9		
+A-isolate	proka	recall_t[other]	0.57093		
+A-isolate	proka	bgc_recall[other]	0.666667		
+A-isolate	proka	n_gt[other]	18		
+A-isolate	proka	recall_macro_t	0.820842		
+A-isolate	proka	bgc_macro_recall	0.887179		
+A-isolate	proka	f1_t	0.705005		
+A-isolate	proka	f1_macro_t	0.696965		
+A-isolate	proka	f1_macro	0.891976		
+A-isolate	proka	f2_macro	0.889092		
+A-isolate	euk	precision_t	0.4805		
+A-isolate	euk	recall_t	0.898146		
+A-isolate	euk	bgc_precision	0.914894		
+A-isolate	euk	bgc_recall	0.933333		
+A-isolate	euk	n_gt	30		
+A-isolate	euk	n_pred	94		
+A-isolate	euk	recall_t[NRPS]	0.952381		
+A-isolate	euk	bgc_recall[NRPS]	1		
+A-isolate	euk	n_gt[NRPS]	11		
+A-isolate	euk	recall_t[PKS]	0.984848		
+A-isolate	euk	bgc_recall[PKS]	1		
+A-isolate	euk	n_gt[PKS]	12		
+A-isolate	euk	recall_t[ribosomal]	0.9		
+A-isolate	euk	bgc_recall[ribosomal]	1		
+A-isolate	euk	n_gt[ribosomal]	1		
+A-isolate	euk	recall_t[terpene]	0.886364		
+A-isolate	euk	bgc_recall[terpene]	0.909091		
+A-isolate	euk	n_gt[terpene]	11		
+A-isolate	euk	recall_t[other]	0.5		
+A-isolate	euk	bgc_recall[other]	0.5		
+A-isolate	euk	n_gt[other]	2		
+A-isolate	euk	recall_macro_t	0.844719		
+A-isolate	euk	bgc_macro_recall	0.881818		
+A-isolate	euk	f1_t	0.626062		
+A-isolate	euk	f1_macro_t	0.612559		
+A-isolate	euk	f1_macro	0.898051		
+A-isolate	euk	f2_macro	0.888241		
+A-isolate	all	n_contigs	70		
+B-isolate	all	precision_t	0.571595	0.532428	0.613429
+B-isolate	all	recall_t	0.879958	0.850177	0.908727
+B-isolate	all	bgc_precision	0.901734	0.866649	0.93787
+B-isolate	all	bgc_recall	0.928	0.9	0.954667
+B-isolate	all	n_gt	375		
+B-isolate	all	n_pred	346		
+B-isolate	all	recall_t[NRPS]	0.93557		
+B-isolate	all	bgc_recall[NRPS]	0.993902		
+B-isolate	all	n_gt[NRPS]	164		
+B-isolate	all	recall_t[PKS]	0.941644		
+B-isolate	all	bgc_recall[PKS]	0.986207		
+B-isolate	all	n_gt[PKS]	145		
+B-isolate	all	recall_t[ribosomal]	0.720566		
+B-isolate	all	bgc_recall[ribosomal]	0.765625		
+B-isolate	all	n_gt[ribosomal]	64		
+B-isolate	all	recall_t[terpene]	0.942506		
+B-isolate	all	bgc_recall[terpene]	0.953488		
+B-isolate	all	n_gt[terpene]	43		
+B-isolate	all	recall_t[saccharide]	1		
+B-isolate	all	bgc_recall[saccharide]	1		
+B-isolate	all	n_gt[saccharide]	10		
+B-isolate	all	recall_t[other]	0.563837		
+B-isolate	all	bgc_recall[other]	0.65		
+B-isolate	all	n_gt[other]	20		
+B-isolate	all	recall_macro_t	0.850687	0.811175	0.89584
+B-isolate	all	bgc_macro_recall	0.891537	0.850392	0.93523
+B-isolate	all	f1_t	0.693022	0.665675	0.721395
+B-isolate	all	f1_macro_t	0.683758	0.655596	0.715048
+B-isolate	all	f1_macro	0.896607	0.86805	0.926703
+B-isolate	all	f2_macro	0.893558	0.858557	0.930272
+B-isolate	proka	precision_t	0.605574		
+B-isolate	proka	recall_t	0.861625		
+B-isolate	proka	bgc_precision	0.896825		
+B-isolate	proka	bgc_recall	0.918149		
+B-isolate	proka	n_gt	281		
+B-isolate	proka	n_pred	252		
+B-isolate	proka	recall_t[NRPS]	0.936576		
+B-isolate	proka	bgc_recall[NRPS]	1		
+B-isolate	proka	n_gt[NRPS]	130		
+B-isolate	proka	recall_t[PKS]	0.918362		
+B-isolate	proka	bgc_recall[PKS]	0.979592		
+B-isolate	proka	n_gt[PKS]	98		
+B-isolate	proka	recall_t[ribosomal]	0.717718		
+B-isolate	proka	bgc_recall[ribosomal]	0.761905		
+B-isolate	proka	n_gt[ribosomal]	63		
+B-isolate	proka	recall_t[terpene]	0.985185		
+B-isolate	proka	bgc_recall[terpene]	1		
+B-isolate	proka	n_gt[terpene]	15		
+B-isolate	proka	recall_t[saccharide]	1		
+B-isolate	proka	bgc_recall[saccharide]	1		
+B-isolate	proka	n_gt[saccharide]	10		
+B-isolate	proka	recall_t[other]	0.57093		
+B-isolate	proka	bgc_recall[other]	0.666667		
+B-isolate	proka	n_gt[other]	18		
+B-isolate	proka	recall_macro_t	0.854795		
+B-isolate	proka	bgc_macro_recall	0.901361		
+B-isolate	proka	f1_t	0.711257		
+B-isolate	proka	f1_macro_t	0.708919		
+B-isolate	proka	f1_macro	0.899087		
+B-isolate	proka	f2_macro	0.90045		
+B-isolate	euk	precision_t	0.4805		
+B-isolate	euk	recall_t	0.934761		
+B-isolate	euk	bgc_precision	0.914894		
+B-isolate	euk	bgc_recall	0.957447		
+B-isolate	euk	n_gt	94		
+B-isolate	euk	n_pred	94		
+B-isolate	euk	recall_t[NRPS]	0.931722		
+B-isolate	euk	bgc_recall[NRPS]	0.970588		
+B-isolate	euk	n_gt[NRPS]	34		
+B-isolate	euk	recall_t[PKS]	0.990191		
+B-isolate	euk	bgc_recall[PKS]	1		
+B-isolate	euk	n_gt[PKS]	47		
+B-isolate	euk	recall_t[ribosomal]	0.9		
+B-isolate	euk	bgc_recall[ribosomal]	1		
+B-isolate	euk	n_gt[ribosomal]	1		
+B-isolate	euk	recall_t[terpene]	0.919643		
+B-isolate	euk	bgc_recall[terpene]	0.928571		
+B-isolate	euk	n_gt[terpene]	28		
+B-isolate	euk	recall_t[other]	0.5		
+B-isolate	euk	bgc_recall[other]	0.5		
+B-isolate	euk	n_gt[other]	2		
+B-isolate	euk	recall_macro_t	0.848311		
+B-isolate	euk	bgc_macro_recall	0.879832		
+B-isolate	euk	f1_t	0.634727		
+B-isolate	euk	f1_macro_t	0.613501		
+B-isolate	euk	f1_macro	0.89702		
+B-isolate	euk	f2_macro	0.886628		
+B-isolate	all	n_contigs	70		
+A-shuffled	all	precision_t	0.585419	0.552501	0.61869
+A-shuffled	all	recall_t	0.822321	0.773202	0.869079
+A-shuffled	all	bgc_precision	0.895288	0.861379	0.928777
+A-shuffled	all	bgc_recall	0.893258	0.849434	0.936308
+A-shuffled	all	n_gt	178		
+A-shuffled	all	n_pred	382		
+A-shuffled	all	recall_t[NRPS]	0.906879		
+A-shuffled	all	bgc_recall[NRPS]	1		
+A-shuffled	all	n_gt[NRPS]	84		
+A-shuffled	all	recall_t[PKS]	0.923904		
+A-shuffled	all	bgc_recall[PKS]	1		
+A-shuffled	all	n_gt[PKS]	64		
+A-shuffled	all	recall_t[ribosomal]	0.623372		
+A-shuffled	all	bgc_recall[ribosomal]	0.62963		
+A-shuffled	all	n_gt[ribosomal]	27		
+A-shuffled	all	recall_t[terpene]	0.875		
+A-shuffled	all	bgc_recall[terpene]	0.95		
+A-shuffled	all	n_gt[terpene]	20		
+A-shuffled	all	recall_t[other]	0.551337		
+A-shuffled	all	bgc_recall[other]	0.6		
+A-shuffled	all	n_gt[other]	20		
+A-shuffled	all	recall_macro_t	0.776098	0.709319	0.83742
+A-shuffled	all	bgc_macro_recall	0.835926	0.774207	0.896299
+A-shuffled	all	f1_t	0.683937	0.655067	0.710244
+A-shuffled	all	f1_macro_t	0.667407	0.634691	0.699673
+A-shuffled	all	f1_macro	0.864589	0.825494	0.90049
+A-shuffled	all	f2_macro	0.84716	0.794776	0.89528
+A-shuffled	proka	precision_t	0.599911		
+A-shuffled	proka	recall_t	0.803332		
+A-shuffled	proka	bgc_precision	0.868966		
+A-shuffled	proka	bgc_recall	0.878378		
+A-shuffled	proka	n_gt	148		
+A-shuffled	proka	n_pred	290		
+A-shuffled	proka	recall_t[NRPS]	0.900675		
+A-shuffled	proka	bgc_recall[NRPS]	1		
+A-shuffled	proka	n_gt[NRPS]	73		
+A-shuffled	proka	recall_t[PKS]	0.90984		
+A-shuffled	proka	bgc_recall[PKS]	1		
+A-shuffled	proka	n_gt[PKS]	52		
+A-shuffled	proka	recall_t[ribosomal]	0.612732		
+A-shuffled	proka	bgc_recall[ribosomal]	0.615385		
+A-shuffled	proka	n_gt[ribosomal]	26		
+A-shuffled	proka	recall_t[terpene]	0.796296		
+A-shuffled	proka	bgc_recall[terpene]	0.888889		
+A-shuffled	proka	n_gt[terpene]	9		
+A-shuffled	proka	recall_t[other]	0.557041		
+A-shuffled	proka	bgc_recall[other]	0.611111		
+A-shuffled	proka	n_gt[other]	18		
+A-shuffled	proka	recall_macro_t	0.755317		
+A-shuffled	proka	bgc_macro_recall	0.823077		
+A-shuffled	proka	f1_t	0.686877		
+A-shuffled	proka	f1_macro_t	0.668704		
+A-shuffled	proka	f1_macro	0.845399		
+A-shuffled	proka	f2_macro	0.831863		
+A-shuffled	euk	precision_t	0.539737		
+A-shuffled	euk	recall_t	0.916003		
+A-shuffled	euk	bgc_precision	0.978261		
+A-shuffled	euk	bgc_recall	0.966667		
+A-shuffled	euk	n_gt	30		
+A-shuffled	euk	n_pred	92		
+A-shuffled	euk	recall_t[NRPS]	0.948052		
+A-shuffled	euk	bgc_recall[NRPS]	1		
+A-shuffled	euk	n_gt[NRPS]	11		
+A-shuffled	euk	recall_t[PKS]	0.984848		
+A-shuffled	euk	bgc_recall[PKS]	1		
+A-shuffled	euk	n_gt[PKS]	12		
+A-shuffled	euk	recall_t[ribosomal]	0.9		
+A-shuffled	euk	bgc_recall[ribosomal]	1		
+A-shuffled	euk	n_gt[ribosomal]	1		
+A-shuffled	euk	recall_t[terpene]	0.939394		
+A-shuffled	euk	bgc_recall[terpene]	1		
+A-shuffled	euk	n_gt[terpene]	11		
+A-shuffled	euk	recall_t[other]	0.5		
+A-shuffled	euk	bgc_recall[other]	0.5		
+A-shuffled	euk	n_gt[other]	2		
+A-shuffled	euk	recall_macro_t	0.854459		
+A-shuffled	euk	bgc_macro_recall	0.9		
+A-shuffled	euk	f1_t	0.679243		
+A-shuffled	euk	f1_macro_t	0.661576		
+A-shuffled	euk	f1_macro	0.9375		
+A-shuffled	euk	f2_macro	0.914634		
+A-shuffled	all	n_contigs	375		
+B-shuffled	all	precision_t	0.585419	0.552501	0.61869
+B-shuffled	all	recall_t	0.85884	0.827356	0.887693
+B-shuffled	all	bgc_precision	0.895288	0.861379	0.928777
+B-shuffled	all	bgc_recall	0.906667	0.877333	0.933333
+B-shuffled	all	n_gt	375		
+B-shuffled	all	n_pred	382		
+B-shuffled	all	recall_t[NRPS]	0.912921		
+B-shuffled	all	bgc_recall[NRPS]	0.981707		
+B-shuffled	all	n_gt[NRPS]	164		
+B-shuffled	all	recall_t[PKS]	0.941009		
+B-shuffled	all	bgc_recall[PKS]	0.986207		
+B-shuffled	all	n_gt[PKS]	145		
+B-shuffled	all	recall_t[ribosomal]	0.674178		
+B-shuffled	all	bgc_recall[ribosomal]	0.6875		
+B-shuffled	all	n_gt[ribosomal]	64		
+B-shuffled	all	recall_t[terpene]	0.918605		
+B-shuffled	all	bgc_recall[terpene]	0.953488		
+B-shuffled	all	n_gt[terpene]	43		
+B-shuffled	all	recall_t[saccharide]	0.978947		
+B-shuffled	all	bgc_recall[saccharide]	1		
+B-shuffled	all	n_gt[saccharide]	10		
+B-shuffled	all	recall_t[other]	0.551337		
+B-shuffled	all	bgc_recall[other]	0.6		
+B-shuffled	all	n_gt[other]	20		
+B-shuffled	all	recall_macro_t	0.8295	0.780682	0.870241
+B-shuffled	all	bgc_macro_recall	0.86815	0.823852	0.909248
+B-shuffled	all	f1_t	0.696248	0.670654	0.719934
+B-shuffled	all	f1_macro_t	0.686407	0.66008	0.71368
+B-shuffled	all	f1_macro	0.88151	0.851947	0.910323
+B-shuffled	all	f2_macro	0.873446	0.837311	0.907266
+B-shuffled	proka	precision_t	0.599911		
+B-shuffled	proka	recall_t	0.835907		
+B-shuffled	proka	bgc_precision	0.868966		
+B-shuffled	proka	bgc_recall	0.88968		
+B-shuffled	proka	n_gt	281		
+B-shuffled	proka	n_pred	290		
+B-shuffled	proka	recall_t[NRPS]	0.918217		
+B-shuffled	proka	bgc_recall[NRPS]	0.992308		
+B-shuffled	proka	n_gt[NRPS]	130		
+B-shuffled	proka	recall_t[PKS]	0.916892		
+B-shuffled	proka	bgc_recall[PKS]	0.979592		
+B-shuffled	proka	n_gt[PKS]	98		
+B-shuffled	proka	recall_t[ribosomal]	0.670594		
+B-shuffled	proka	bgc_recall[ribosomal]	0.68254		
+B-shuffled	proka	n_gt[ribosomal]	63		
+B-shuffled	proka	recall_t[terpene]	0.877778		
+B-shuffled	proka	bgc_recall[terpene]	0.933333		
+B-shuffled	proka	n_gt[terpene]	15		
+B-shuffled	proka	recall_t[saccharide]	0.978947		
+B-shuffled	proka	bgc_recall[saccharide]	1		
+B-shuffled	proka	n_gt[saccharide]	10		
+B-shuffled	proka	recall_t[other]	0.557041		
+B-shuffled	proka	bgc_recall[other]	0.611111		
+B-shuffled	proka	n_gt[other]	18		
+B-shuffled	proka	recall_macro_t	0.819912		
+B-shuffled	proka	bgc_macro_recall	0.866481		
+B-shuffled	proka	f1_t	0.698515		
+B-shuffled	proka	f1_macro_t	0.692867		
+B-shuffled	proka	f1_macro	0.867721		
+B-shuffled	proka	f2_macro	0.866976		
+B-shuffled	euk	precision_t	0.539737		
+B-shuffled	euk	recall_t	0.927395		
+B-shuffled	euk	bgc_precision	0.978261		
+B-shuffled	euk	bgc_recall	0.957447		
+B-shuffled	euk	n_gt	94		
+B-shuffled	euk	n_pred	92		
+B-shuffled	euk	recall_t[NRPS]	0.892672		
+B-shuffled	euk	bgc_recall[NRPS]	0.941176		
+B-shuffled	euk	n_gt[NRPS]	34		
+B-shuffled	euk	recall_t[PKS]	0.991296		
+B-shuffled	euk	bgc_recall[PKS]	1		
+B-shuffled	euk	n_gt[PKS]	47		
+B-shuffled	euk	recall_t[ribosomal]	0.9		
+B-shuffled	euk	bgc_recall[ribosomal]	1		
+B-shuffled	euk	n_gt[ribosomal]	1		
+B-shuffled	euk	recall_t[terpene]	0.940476		
+B-shuffled	euk	bgc_recall[terpene]	0.964286		
+B-shuffled	euk	n_gt[terpene]	28		
+B-shuffled	euk	recall_t[other]	0.5		
+B-shuffled	euk	bgc_recall[other]	0.5		
+B-shuffled	euk	n_gt[other]	2		
+B-shuffled	euk	recall_macro_t	0.844889		
+B-shuffled	euk	bgc_macro_recall	0.881092		
+B-shuffled	euk	f1_t	0.682351		
+B-shuffled	euk	f1_macro_t	0.658688		
+B-shuffled	euk	f1_macro	0.927138		
+B-shuffled	euk	f2_macro	0.898951		
+B-shuffled	all	n_contigs	375		

@@ -1,0 +1,53 @@
+pathway	ap	f1	support	input	set
+Alkaloids	0.664322	0.603175	24	true loci	A-isolate
+Amino acids and Peptides	0.993882	0.954545	87	true loci	A-isolate
+Fatty acids	0.350347	0	3	true loci	A-isolate
+Polyketides	0.871532	0.737864	54	true loci	A-isolate
+Shikimates and Phenylpropanoids	0.241146	0	6	true loci	A-isolate
+Terpenoids	0.966014	0.954545	23	true loci	A-isolate
+Alkaloids	0.637391	0.528302	19	predicted regions	A-isolate
+Amino acids and Peptides	0.988274	0.957746	71	predicted regions	A-isolate
+Fatty acids	0.517241	0.666667	2	predicted regions	A-isolate
+Polyketides	0.851615	0.734694	52	predicted regions	A-isolate
+Shikimates and Phenylpropanoids	0.38247	0	6	predicted regions	A-isolate
+Terpenoids	1	1	16	predicted regions	A-isolate
+Alkaloids	0.73484	0.685185	43	true loci	B-isolate
+Amino acids and Peptides	0.984407	0.939683	155	true loci	B-isolate
+Carbohydrates	1	0.923077	6	true loci	B-isolate
+Fatty acids	0.205575	0	8	true loci	B-isolate
+Polyketides	0.865633	0.77686	123	true loci	B-isolate
+Shikimates and Phenylpropanoids	0.284025	0	15	true loci	B-isolate
+Terpenoids	0.960661	0.930233	45	true loci	B-isolate
+Alkaloids	0.719365	0.597938	37	predicted regions	B-isolate
+Amino acids and Peptides	0.973404	0.936803	135	predicted regions	B-isolate
+Carbohydrates	0.875	0.833333	6	predicted regions	B-isolate
+Fatty acids	0.1792	0.25	6	predicted regions	B-isolate
+Polyketides	0.836846	0.751131	114	predicted regions	B-isolate
+Shikimates and Phenylpropanoids	0.389805	0	15	predicted regions	B-isolate
+Terpenoids	0.98662	0.958904	37	predicted regions	B-isolate
+Alkaloids	0.664322	0.603175	24	true loci	A-shuffled
+Amino acids and Peptides	0.993882	0.954545	87	true loci	A-shuffled
+Fatty acids	0.350347	0	3	true loci	A-shuffled
+Polyketides	0.871532	0.737864	54	true loci	A-shuffled
+Shikimates and Phenylpropanoids	0.241146	0	6	true loci	A-shuffled
+Terpenoids	0.966014	0.954545	23	true loci	A-shuffled
+Alkaloids	0.662428	0.557377	22	predicted regions	A-shuffled
+Amino acids and Peptides	0.993067	0.961039	77	predicted regions	A-shuffled
+Fatty acids	0.522222	0.666667	2	predicted regions	A-shuffled
+Polyketides	0.867429	0.75	54	predicted regions	A-shuffled
+Shikimates and Phenylpropanoids	0.327937	0	6	predicted regions	A-shuffled
+Terpenoids	0.987338	0.923077	21	predicted regions	A-shuffled
+Alkaloids	0.73484	0.685185	43	true loci	B-shuffled
+Amino acids and Peptides	0.984407	0.939683	155	true loci	B-shuffled
+Carbohydrates	1	0.923077	6	true loci	B-shuffled
+Fatty acids	0.205575	0	8	true loci	B-shuffled
+Polyketides	0.865633	0.77686	123	true loci	B-shuffled
+Shikimates and Phenylpropanoids	0.284025	0	15	true loci	B-shuffled
+Terpenoids	0.960661	0.930233	45	true loci	B-shuffled
+Alkaloids	0.730017	0.641509	40	predicted regions	B-shuffled
+Amino acids and Peptides	0.987342	0.954386	143	predicted regions	B-shuffled
+Carbohydrates	1	0.857143	6	predicted regions	B-shuffled
+Fatty acids	0.262665	0.222222	7	predicted regions	B-shuffled
+Polyketides	0.862351	0.766667	122	predicted regions	B-shuffled
+Shikimates and Phenylpropanoids	0.362999	0	15	predicted regions	B-shuffled
+Terpenoids	0.969054	0.902439	42	predicted regions	B-shuffled
