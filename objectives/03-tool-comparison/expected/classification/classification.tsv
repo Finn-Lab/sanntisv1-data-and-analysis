@@ -1,0 +1,6 @@
+method	subset	coverage	n	pathway_top1	n_superclass	superclass_top1	superclass_top3
+SanntiS 1.2.0 NPC	all labelled	1	322	0.875776	301	0.747508	0.877076
+SanntiS 1.2.0 NPC	BGCat-covered	0.900621	290	0.896552	271	0.771218	0.900369
+BGCat	BGCat-covered	0.900621	290	0.872414	271	0.804428	0.867159
+SanntiS 1.2.0 NPC	BGCat-covered, not in MIBiG 4.0	0.385093	124	0.91129	118	0.771186	0.923729
+BGCat	BGCat-covered, not in MIBiG 4.0	0.385093	124	0.782258	118	0.652542	0.762712

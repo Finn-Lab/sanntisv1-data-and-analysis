@@ -20,7 +20,26 @@ bash objectives/03-tool-comparison/05_classification.sh   # BGCat vs SanntiS NPC
 bash objectives/03-tool-comparison/06_report.sh           # report.md + figures
 ```
 
-Status: TODO (filled from the run).
+Status: run end to end from scratch on Codon (2026-11-13); every tool ran and the tables equal `expected/`.
+
+Test B (375 BGCs), at each method's own calls (SanntiS 1.2.0 at t* = 0.20):
+
+| Method | isolate F1_macro_T | isolate BGC precision | isolate BGC macro recall | shuffled F1_macro_T | shuffled BGC precision | shuffled BGC macro recall |
+|---|---|---|---|---|---|---|
+| SanntiS 1.2.0 | 0.684 | 0.902 | 0.892 | 0.686 | 0.895 | 0.868 |
+| antiSMASH 7.1.0 relaxed | 0.614 | 0.985 | 0.840 | 0.568 | 0.997 | 0.779 |
+| antiSMASH 7.1.0 strict | 0.592 | 1.000 | 0.773 | 0.543 | 1.000 | 0.677 |
+| antiSMASH 7.1.0 loose | 0.508 | 0.756 | 0.864 | 0.407 | 0.650 | 0.830 |
+| GECCO 0.9.5 / 0.11.0 | 0.508 | 0.565 | 0.749 | 0.473 | 0.495 | 0.714 |
+| SanntiS 0.9.5.0 | 0.597 | 0.809 | 0.813 | 0.632 | 0.868 | 0.805 |
+| BGC-Prophet 0.1.2 | 0.524 | 0.745 | 0.523 | 0.743 | 0.840 | 0.800 |
+
+Paired over contigs (SanntiS 1.2.0 − antiSMASH 7.1.0 relaxed, 95 % CI): fungal shuffled contigs F1_macro_T +0.103
+(+0.064 to +0.151), BGC recall +0.103 (+0.046 to +0.172); eukaryotic isolate contigs F1_macro_T +0.085 (+0.030 to
++0.151); BGC precision not resolved on either scope. On B-shuffled (all), class-averaged BGC recall +0.089 (+0.042
+to +0.145) over antiSMASH relaxed; BGC-level F1 (`f1_macro`) +0.007 (−0.028 to +0.047), as antiSMASH's BGC
+precision is higher (`paired_bgc.tsv`). Product classification on the 290 BGCs BGCat covers: pathway top-1 SanntiS
+NPC 0.897, BGCat 0.872; superclass top-1 0.771 / 0.804; on the 124 of them not in MIBiG 4.0, 0.911 / 0.782.
 
 ## Inputs
 
@@ -85,8 +104,8 @@ on the isolate sets (several BGCs per contig).
 
 ## Expected (`expected/`)
 
-Frozen from the run: TODO (`summary.tsv`, `metrics.tsv` with the proka / euk / fungi scopes and CIs, `strata.tsv`,
-`radar.tsv`, `curve.tsv`, `auprc.tsv`, `paired.tsv`, `paired_bgc.tsv`, `classification/`); `04_score.sh` and
+From the run: `summary.tsv`, `metrics.tsv` (with the proka / euk / fungi scopes and CIs), `strata.tsv`, `radar.tsv`,
+`curve.tsv`, `auprc.tsv`, `paired.tsv`, `paired_bgc.tsv` and `classification/classification.tsv`; `04_score.sh` and
 `05_classification.sh` compare every one.
 
 ## Caveats for the paper
