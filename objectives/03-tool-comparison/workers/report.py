@@ -2,7 +2,7 @@
 
     python report.py --score DIR [--classification DIR] --out DIR
 
-Figures and tables follow the SanntiS 1.0 validation report (``sv1.figures``): per test set the metric table with
+Figures and tables follow the SanntiS 1.2.0 validation report (``sv1.figures``): per test set the metric table with
 95% CIs, the SanntiS threshold sweep with each tool as a point, and Recall_T / BGC recall radars over class, lineage
 and novelty strata.
 """
@@ -27,7 +27,7 @@ def detection(results: dict, t_star: float, fig_dir: Path) -> str:
         key = name.replace("-", "_").lower()
         rows, krows = [], []
         for tool, res in tools.items():
-            label = f"SanntiS 1.0 (t* = {t_star:.2f})" if tool == "SanntiS" else tool
+            label = f"SanntiS 1.2.0 (t* = {t_star:.2f})" if tool == "SanntiS" else tool
             rows.append(f"| {label} | " + " | ".join(_fmt(res["metrics"][x], res["ci"].get(x)) for x in M.METRICS)
                         + " |")
             kr = {"Method": label}
@@ -39,7 +39,7 @@ def detection(results: dict, t_star: float, fig_dir: Path) -> str:
         fig_sweep(tools["SanntiS"]["curve"], t_star, {t: r["metrics"] for t, r in tools.items() if t != "SanntiS"},
                   name, fig_dir / f"{key}_sweep.png")
         picked = [next((t for t in tools if t.startswith(p)), None) for p in RADAR_METHODS]
-        rad = {(f"SanntiS 1.0 (t* = {t_star:.2f})" if t == "SanntiS" else t): tools[t]["radar"]
+        rad = {(f"SanntiS 1.2.0 (t* = {t_star:.2f})" if t == "SanntiS" else t): tools[t]["radar"]
                for t in dict.fromkeys(picked) if t and "radar" in tools[t]}
         figs = " ".join(_radar(rad, metric, label, name, fig_dir / f"{key}_radar_{metric}.png")
                         for metric, label in (("recall_t", "Recall_T"), ("bgc_recall", "BGC recall")))
@@ -59,7 +59,8 @@ EUK_SCOPES = (("isolate", "euk", "eukaryotic contigs (all their predictions and 
 def _lean(tools: dict, t_star: float) -> dict[str, dict]:
     """The report's reduced method list (RADAR_METHODS: one antiSMASH level, one GECCO version), labelled."""
     picked = [next((t for t in tools if t.startswith(p)), None) for p in RADAR_METHODS]
-    return {(f"SanntiS 1.0 (t* = {t_star:.2f})" if t == "SanntiS" else t): tools[t] for t in dict.fromkeys(picked) if t}
+    return {(f"SanntiS 1.2.0 (t* = {t_star:.2f})" if t == "SanntiS" else t): tools[t]
+            for t in dict.fromkeys(picked) if t}
 
 
 def _scope_table(tools: dict[str, dict], scope: str) -> tuple[str, dict]:
@@ -78,10 +79,10 @@ def _paired(path: Path) -> str:
     p = p[p["set"].str.startswith("B-") & ((p["set"].str.endswith("isolate")) == (p["scope"] == "euk"))]
     rows = [{"Set, scope": f"{r.set}, {'fungal' if r.scope == 'fungi' else 'eukaryotic contigs'} "
                            f"({r.n_contigs} contigs)",
-             "Metric": M.METRIC_LABELS[r.metric], "SanntiS 1.0": f"{r.a:.3f}", "fungiSMASH": f"{r.b:.3f}",
+             "Metric": M.METRIC_LABELS[r.metric], "SanntiS 1.2.0": f"{r.a:.3f}", "fungiSMASH": f"{r.b:.3f}",
              "Difference (95% CI)": f"{r.diff:+.3f} ({r.ci_lo:+.3f} to {r.ci_hi:+.3f})",
              "p": "< 0.001" if r.p < 1 / r.n_boot else f"{r.p:.3f}"} for r in p.itertuples()]
-    return ("\n#### SanntiS 1.0 vs fungiSMASH, paired (Test B)\n\nSanntiS 1.0 − antiSMASH 7.1.0 relaxed "
+    return ("\n#### SanntiS 1.2.0 vs fungiSMASH, paired (Test B)\n\nSanntiS 1.2.0 − antiSMASH 7.1.0 relaxed "
             "(lineage-matched). Paired bootstrap: each replicate resamples the scope's contigs once and scores both "
             "methods on it; 95% percentile interval, two-sided bootstrap p (resolution 1 / replicates; replicates "
             "with a difference of exactly 0 count in both tails). Test A and the shuffled eukaryotic scope in "
@@ -89,18 +90,23 @@ def _paired(path: Path) -> str:
 
 
 def eukaryotes(results: dict, t_star: float, fig_dir: Path, paired_tsv: Path) -> str:
+    if not any("metrics_euk" in r for res in results.values() for r in res.values() if isinstance(r, dict)):
+        return "No eukaryotic contigs in these sets (a trial).\n"
     md = ("Two scopes, chosen so precision is attributable: "
           "on the **isolate** sets the eukaryotic contigs (fungal / protist backbones carrying several test BGCs of "
           "mixed lineages, so precision is per kingdom, not per lineage); on the **shuffled** sets the contigs "
           "whose one test BGC is fungal (precision and recall both about fungal BGCs). Precision does not depend "
           "on the test pool on the isolate sets (same contigs for A and B); on the shuffled fungal scope it does "
-          "(the pool picks the contigs). 95% CIs: bootstrap over the contigs of the scope. Methods: SanntiS 1.0, "
+          "(the pool picks the contigs). 95% CIs: bootstrap over the contigs of the scope. Methods: SanntiS 1.2.0, "
           "antiSMASH 7.1.0 relaxed (lineage-matched: fungiSMASH, plantiSMASH over plant BGCs), GECCO 0.11.0 "
           "(regions identical to 0.9.5), SanntiS 0.9.5.0, BGC-Prophet 0.1.2.\n")
     for test, note in (("B", ""), ("A", " (fewer BGCs, wider CIs: supplementary to Test B)")):
         md += f"\n#### Test {test}{note}\n"
         for kind, scope, desc in EUK_SCOPES:
             tools = _lean(results[f"{test}-{kind}"], t_star)
+            if not any(f"metrics_{scope}" in r for r in tools.values()):  # no contigs of that scope (a trial)
+                md += f"\n{test}-{kind}, {desc}: no contigs.\n"
+                continue
             tab, m = _scope_table(tools, scope)
             md += (f"\n{test}-{kind}, {desc}: {int(m['n_contigs'])} contigs, {int(m['n_gt'])} test BGCs.\n\n"
                    f"{tab}\n")
@@ -134,7 +140,7 @@ def _delta_fig(results: dict, t_star: float, path: Path) -> str:
             ax.grid(axis="x", color=GRID, linewidth=0.6)
             for y, lab in enumerate(labels):
                 r = tools[lab]
-                mk, col = style("SanntiS" if lab.startswith("SanntiS 1.0") else lab)
+                mk, col = style("SanntiS" if lab.startswith("SanntiS 1.2.0") else lab)
                 a, b = r["metrics_proka"][x], r["metrics_euk"][x]
                 lo, hi = r["ci_euk"][x]
                 ax.plot([a, b], [y, y], color=INK2, lw=1, alpha=0.5, zorder=1)
@@ -167,12 +173,12 @@ def main() -> None:
     fig_dir = a.out / "figures"
     fig_dir.mkdir(parents=True, exist_ok=True)
     r = pickle.loads((a.score / "results.pkl").read_bytes())
-    md = ["# SanntiS 1.0: tool comparison\n",
+    md = ["# SanntiS 1.2.0: tool comparison\n",
           "Every method on the same contigs and CDS (objective 02's nucleotide test sets on backgrounds disjoint from "
           "the training negatives: isolate = MIBiG test BGCs inserted into BGC-free genome stretches; shuffled = into "
-          "gene-shuffled genome contigs), scored with the SanntiS 1.0 metric code. Test A: MIBiG 5.0rc1 active "
+          "gene-shuffled genome contigs), scored with the SanntiS 1.2.0 metric code. Test A: MIBiG 5.0rc1 active "
           "entries new since v3 (>= BGC0002750); Test B: active + pending. "
-          "SanntiS 1.0 is the model trained on v3-active (objective 02) at its operating threshold t*. antiSMASH is "
+          "SanntiS 1.2.0 is the model trained on v3-active (objective 02) at its operating threshold t*. antiSMASH is "
           "lineage-matched: bacteria on prokaryotic contigs, fungiSMASH on eukaryotic ones, plantiSMASH 1.0 for "
           "regions over plant BGCs. 95% CIs: bootstrap over source contigs.\n",
           "## Detection\n", detection(r["results"], r["t_star"], fig_dir),
@@ -180,7 +186,7 @@ def main() -> None:
     if a.classification and (a.classification / "classification.tsv").exists():
         c = pd.read_csv(a.classification / "classification.tsv", sep="\t").round(3)
         md += ["\n## Product classification (NPClassifier)\n",
-               "Test B BGCs with an NPClassifier label; SanntiS 1.0 NPC on the true loci, BGCat on the biosynthetic "
+               "Test B BGCs with an NPClassifier label; SanntiS 1.2.0 NPC on the true loci, BGCat on the biosynthetic "
                "genes antiSMASH 7.1.0 finds in them (its documented input), ranking rolled up from NPClassifier "
                "classes. Superclasses in the SanntiS label space (rare ones folded to `other <pathway>`).\n",
                md_table(c), ""]

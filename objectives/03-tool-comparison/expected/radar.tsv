@@ -1,401 +1,401 @@
 sector	axis	n	recall_t	bgc_recall	set	tool
-class	NRPS	84	0.927609	1	A-isolate	SanntiS
-class	PKS	64	0.957785	1	A-isolate	SanntiS
-class	ribosomal	27	0.783799	0.814815	A-isolate	SanntiS
-class	terpene	20	0.9	0.9	A-isolate	SanntiS
-class	other	20	0.686841	0.7	A-isolate	SanntiS
-lineage	prokaryotes	148	0.863642	0.912162	A-isolate	SanntiS
-lineage	fungi	27	0.975309	1	A-isolate	SanntiS
+class	NRPS	84	0.920832	1	A-isolate	SanntiS
+class	PKS	64	0.924498	1	A-isolate	SanntiS
+class	ribosomal	27	0.737569	0.777778	A-isolate	SanntiS
+class	terpene	20	0.926389	0.95	A-isolate	SanntiS
+class	other	20	0.563837	0.65	A-isolate	SanntiS
+lineage	prokaryotes	148	0.843502	0.918919	A-isolate	SanntiS
+lineage	fungi	27	0.886829	0.925926	A-isolate	SanntiS
 lineage	plants	1	1	1	A-isolate	SanntiS
-lineage	other eukaryotes	2	0.9375	1	A-isolate	SanntiS
-novelty	novel	50	0.660679	0.78	A-isolate	SanntiS
-novelty	related	101	0.96065	0.980198	A-isolate	SanntiS
-novelty	near-duplicate	27	0.998805	1	A-isolate	SanntiS
-class	NRPS	84	0.98063	0.988095	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	PKS	64	0.906116	0.9375	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	ribosomal	27	0.775064	0.814815	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	terpene	20	0.645	0.7	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	other	20	0.664516	0.7	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-lineage	prokaryotes	148	0.881472	0.905405	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-lineage	fungi	27	0.759135	0.814815	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	other eukaryotes	2	1	1	A-isolate	SanntiS
+novelty	novel	52	0.571595	0.75	A-isolate	SanntiS
+novelty	related	100	0.973722	1	A-isolate	SanntiS
+novelty	near-duplicate	26	0.949519	0.961538	A-isolate	SanntiS
+class	NRPS	84	0.983121	1	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	PKS	64	0.903657	0.953125	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	ribosomal	27	0.849138	0.888889	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	terpene	20	0.695	0.75	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	other	20	0.520968	0.55	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	prokaryotes	148	0.888037	0.918919	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	fungi	27	0.722098	0.777778	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
 lineage	plants	1	0	0	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
 lineage	other eukaryotes	2	0.5	0.5	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	novel	50	0.698822	0.72	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	related	101	0.908424	0.940594	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	near-duplicate	27	0.93565	0.962963	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	NRPS	84	0.954178	0.97619	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	PKS	64	0.889672	0.9375	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	novel	52	0.693918	0.730769	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+novelty	related	100	0.904509	0.94	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+novelty	near-duplicate	26	0.976599	1	A-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	NRPS	84	0.950717	0.97619	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	PKS	64	0.895026	0.953125	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
 class	ribosomal	27	0.680556	0.703704	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	terpene	20	0.645	0.7	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	other	20	0.614516	0.65	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-lineage	prokaryotes	148	0.847416	0.878378	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-lineage	fungi	27	0.711516	0.777778	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	terpene	20	0.695	0.75	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	other	20	0.470968	0.5	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+lineage	prokaryotes	148	0.837089	0.871622	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+lineage	fungi	27	0.674479	0.740741	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
 lineage	plants	1	0	0	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
 lineage	other eukaryotes	2	0.5	0.5	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	novel	50	0.645779	0.68	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	related	101	0.874878	0.910891	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	near-duplicate	27	0.925068	0.962963	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	NRPS	84	0.982901	0.988095	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-class	PKS	64	0.93138	0.953125	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-class	ribosomal	27	0.812101	0.851852	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	novel	52	0.623684	0.673077	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	related	100	0.855627	0.89	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	near-duplicate	26	0.96561	1	A-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	NRPS	84	0.984522	1	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+class	PKS	64	0.926216	0.96875	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+class	ribosomal	27	0.849138	0.888889	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
 class	terpene	20	0.695	0.75	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-class	other	20	0.689516	0.75	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	prokaryotes	148	0.905911	0.925676	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	fungi	27	0.782011	0.851852	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+class	other	20	0.560253	0.65	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	prokaryotes	148	0.899723	0.932432	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	fungi	27	0.744974	0.814815	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
 lineage	plants	1	0	0	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
 lineage	other eukaryotes	2	0.5	0.5	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	novel	50	0.774286	0.8	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	related	101	0.912993	0.940594	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	near-duplicate	27	0.93565	0.962963	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-class	NRPS	84	0.783555	0.952381	A-isolate	GECCO 0.9.5
-class	PKS	64	0.83646	0.921875	A-isolate	GECCO 0.9.5
-class	ribosomal	27	0.518607	0.555556	A-isolate	GECCO 0.9.5
-class	terpene	20	0.701432	0.75	A-isolate	GECCO 0.9.5
-class	other	20	0.286072	0.4	A-isolate	GECCO 0.9.5
-lineage	prokaryotes	148	0.66434	0.783784	A-isolate	GECCO 0.9.5
-lineage	fungi	27	0.765738	0.851852	A-isolate	GECCO 0.9.5
+novelty	novel	52	0.728259	0.788462	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	related	100	0.910123	0.94	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	near-duplicate	26	0.976599	1	A-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+class	NRPS	84	0.781439	0.940476	A-isolate	GECCO 0.9.5
+class	PKS	64	0.836994	0.921875	A-isolate	GECCO 0.9.5
+class	ribosomal	27	0.449588	0.481481	A-isolate	GECCO 0.9.5
+class	terpene	20	0.741111	0.8	A-isolate	GECCO 0.9.5
+class	other	20	0.333462	0.4	A-isolate	GECCO 0.9.5
+lineage	prokaryotes	148	0.656491	0.763514	A-isolate	GECCO 0.9.5
+lineage	fungi	27	0.794518	0.888889	A-isolate	GECCO 0.9.5
 lineage	plants	1	1	1	A-isolate	GECCO 0.9.5
-lineage	other eukaryotes	2	0.74375	1	A-isolate	GECCO 0.9.5
-novelty	novel	50	0.387689	0.6	A-isolate	GECCO 0.9.5
-novelty	related	101	0.806654	0.881188	A-isolate	GECCO 0.9.5
-novelty	near-duplicate	27	0.76401	0.851852	A-isolate	GECCO 0.9.5
-class	NRPS	84	0.783555	0.952381	A-isolate	GECCO 0.11.0
-class	PKS	64	0.83646	0.921875	A-isolate	GECCO 0.11.0
-class	ribosomal	27	0.518607	0.555556	A-isolate	GECCO 0.11.0
-class	terpene	20	0.701432	0.75	A-isolate	GECCO 0.11.0
-class	other	20	0.286072	0.4	A-isolate	GECCO 0.11.0
-lineage	prokaryotes	148	0.66434	0.783784	A-isolate	GECCO 0.11.0
-lineage	fungi	27	0.765738	0.851852	A-isolate	GECCO 0.11.0
+lineage	other eukaryotes	2	0.775	1	A-isolate	GECCO 0.9.5
+novelty	novel	52	0.381281	0.576923	A-isolate	GECCO 0.9.5
+novelty	related	100	0.808766	0.87	A-isolate	GECCO 0.9.5
+novelty	near-duplicate	26	0.786904	0.884615	A-isolate	GECCO 0.9.5
+class	NRPS	84	0.781439	0.940476	A-isolate	GECCO 0.11.0
+class	PKS	64	0.836994	0.921875	A-isolate	GECCO 0.11.0
+class	ribosomal	27	0.449588	0.481481	A-isolate	GECCO 0.11.0
+class	terpene	20	0.741111	0.8	A-isolate	GECCO 0.11.0
+class	other	20	0.333462	0.4	A-isolate	GECCO 0.11.0
+lineage	prokaryotes	148	0.656491	0.763514	A-isolate	GECCO 0.11.0
+lineage	fungi	27	0.794518	0.888889	A-isolate	GECCO 0.11.0
 lineage	plants	1	1	1	A-isolate	GECCO 0.11.0
-lineage	other eukaryotes	2	0.74375	1	A-isolate	GECCO 0.11.0
-novelty	novel	50	0.387689	0.6	A-isolate	GECCO 0.11.0
-novelty	related	101	0.806654	0.881188	A-isolate	GECCO 0.11.0
-novelty	near-duplicate	27	0.76401	0.851852	A-isolate	GECCO 0.11.0
-class	NRPS	84	0.900705	1	A-isolate	SanntiS 0.9.5.0
-class	PKS	64	0.921418	0.984375	A-isolate	SanntiS 0.9.5.0
-class	ribosomal	27	0.567497	0.62963	A-isolate	SanntiS 0.9.5.0
+lineage	other eukaryotes	2	0.775	1	A-isolate	GECCO 0.11.0
+novelty	novel	52	0.381281	0.576923	A-isolate	GECCO 0.11.0
+novelty	related	100	0.808766	0.87	A-isolate	GECCO 0.11.0
+novelty	near-duplicate	26	0.786904	0.884615	A-isolate	GECCO 0.11.0
+class	NRPS	84	0.895177	1	A-isolate	SanntiS 0.9.5.0
+class	PKS	64	0.917082	0.984375	A-isolate	SanntiS 0.9.5.0
+class	ribosomal	27	0.428859	0.481481	A-isolate	SanntiS 0.9.5.0
 class	terpene	20	0.85	0.85	A-isolate	SanntiS 0.9.5.0
-class	other	20	0.572494	0.6	A-isolate	SanntiS 0.9.5.0
-lineage	prokaryotes	148	0.781203	0.858108	A-isolate	SanntiS 0.9.5.0
-lineage	fungi	27	0.939859	0.962963	A-isolate	SanntiS 0.9.5.0
+class	other	20	0.642857	0.65	A-isolate	SanntiS 0.9.5.0
+lineage	prokaryotes	148	0.760432	0.837838	A-isolate	SanntiS 0.9.5.0
+lineage	fungi	27	0.946914	0.962963	A-isolate	SanntiS 0.9.5.0
 lineage	plants	1	1	1	A-isolate	SanntiS 0.9.5.0
 lineage	other eukaryotes	2	0.90625	1	A-isolate	SanntiS 0.9.5.0
-novelty	novel	50	0.492336	0.64	A-isolate	SanntiS 0.9.5.0
-novelty	related	101	0.929777	0.970297	A-isolate	SanntiS 0.9.5.0
-novelty	near-duplicate	27	0.936388	0.962963	A-isolate	SanntiS 0.9.5.0
-class	NRPS	84	0.640799	0.666667	A-isolate	BGC-Prophet 0.1.2
-class	PKS	64	0.673693	0.703125	A-isolate	BGC-Prophet 0.1.2
-class	ribosomal	27	0.107143	0.111111	A-isolate	BGC-Prophet 0.1.2
-class	terpene	20	0.3875	0.4	A-isolate	BGC-Prophet 0.1.2
-class	other	20	0.290625	0.3	A-isolate	BGC-Prophet 0.1.2
-lineage	prokaryotes	148	0.473664	0.493243	A-isolate	BGC-Prophet 0.1.2
-lineage	fungi	27	0.683091	0.703704	A-isolate	BGC-Prophet 0.1.2
-lineage	plants	1	0	0	A-isolate	BGC-Prophet 0.1.2
+novelty	novel	52	0.517764	0.653846	A-isolate	SanntiS 0.9.5.0
+novelty	related	100	0.926882	0.97	A-isolate	SanntiS 0.9.5.0
+novelty	near-duplicate	26	0.819664	0.846154	A-isolate	SanntiS 0.9.5.0
+class	NRPS	84	0.668265	0.714286	A-isolate	BGC-Prophet 0.1.2
+class	PKS	64	0.76189	0.8125	A-isolate	BGC-Prophet 0.1.2
+class	ribosomal	27	0.248158	0.259259	A-isolate	BGC-Prophet 0.1.2
+class	terpene	20	0.490598	0.5	A-isolate	BGC-Prophet 0.1.2
+class	other	20	0.326047	0.35	A-isolate	BGC-Prophet 0.1.2
+lineage	prokaryotes	148	0.546524	0.587838	A-isolate	BGC-Prophet 0.1.2
+lineage	fungi	27	0.629362	0.666667	A-isolate	BGC-Prophet 0.1.2
+lineage	plants	1	1	1	A-isolate	BGC-Prophet 0.1.2
 lineage	other eukaryotes	2	0.5	0.5	A-isolate	BGC-Prophet 0.1.2
-novelty	novel	50	0.353314	0.38	A-isolate	BGC-Prophet 0.1.2
-novelty	related	101	0.625404	0.643564	A-isolate	BGC-Prophet 0.1.2
-novelty	near-duplicate	27	0.322751	0.333333	A-isolate	BGC-Prophet 0.1.2
-class	NRPS	84	0.926434	1	A-shuffled	SanntiS
-class	PKS	64	0.954182	1	A-shuffled	SanntiS
-class	ribosomal	27	0.662635	0.703704	A-shuffled	SanntiS
-class	terpene	20	0.894444	0.9	A-shuffled	SanntiS
-class	other	20	0.628937	0.65	A-shuffled	SanntiS
-lineage	prokaryotes	148	0.838248	0.891892	A-shuffled	SanntiS
-lineage	fungi	27	0.934905	0.962963	A-shuffled	SanntiS
+novelty	novel	52	0.425648	0.480769	A-isolate	BGC-Prophet 0.1.2
+novelty	related	100	0.65243	0.69	A-isolate	BGC-Prophet 0.1.2
+novelty	near-duplicate	26	0.480831	0.5	A-isolate	BGC-Prophet 0.1.2
+class	NRPS	84	0.906879	1	A-shuffled	SanntiS
+class	PKS	64	0.923904	1	A-shuffled	SanntiS
+class	ribosomal	27	0.623372	0.62963	A-shuffled	SanntiS
+class	terpene	20	0.875	0.95	A-shuffled	SanntiS
+class	other	20	0.551337	0.6	A-shuffled	SanntiS
+lineage	prokaryotes	148	0.803332	0.878378	A-shuffled	SanntiS
+lineage	fungi	27	0.90667	0.962963	A-shuffled	SanntiS
 lineage	plants	1	1	1	A-shuffled	SanntiS
-lineage	other eukaryotes	2	0.96875	1	A-shuffled	SanntiS
-novelty	novel	50	0.573828	0.7	A-shuffled	SanntiS
-novelty	related	101	0.968133	0.990099	A-shuffled	SanntiS
-novelty	near-duplicate	27	0.954361	0.962963	A-shuffled	SanntiS
+lineage	other eukaryotes	2	1	1	A-shuffled	SanntiS
+novelty	novel	52	0.492918	0.692308	A-shuffled	SanntiS
+novelty	related	100	0.963317	0.98	A-shuffled	SanntiS
+novelty	near-duplicate	26	0.938835	0.961538	A-shuffled	SanntiS
 class	NRPS	84	0.98063	0.988095	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 class	PKS	64	0.888928	0.921875	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 class	ribosomal	27	0.687101	0.703704	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	terpene	20	0.67	0.75	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	other	20	0.520968	0.55	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-lineage	prokaryotes	148	0.838594	0.858108	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	terpene	20	0.595	0.65	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	other	20	0.525	0.55	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	prokaryotes	148	0.83576	0.851351	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 lineage	fungi	27	0.740616	0.814815	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-lineage	plants	1	1	1	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	plants	1	0	0	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 lineage	other eukaryotes	2	0.5	0.5	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	novel	50	0.602822	0.62	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	related	101	0.896791	0.930693	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	near-duplicate	27	0.940429	0.962963	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+novelty	novel	52	0.608483	0.634615	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+novelty	related	100	0.890759	0.92	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+novelty	near-duplicate	26	0.922009	0.923077	A-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 class	NRPS	84	0.93218	0.940476	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
 class	PKS	64	0.864672	0.90625	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
 class	ribosomal	27	0.518519	0.518519	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-class	terpene	20	0.67	0.75	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-class	other	20	0.470968	0.5	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-lineage	prokaryotes	148	0.778539	0.797297	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+class	terpene	20	0.595	0.65	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+class	other	20	0.475	0.5	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+lineage	prokaryotes	148	0.775705	0.790541	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
 lineage	fungi	27	0.692997	0.777778	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-lineage	plants	1	1	1	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+lineage	plants	1	0	0	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
 lineage	other eukaryotes	2	0.5	0.5	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	novel	50	0.502822	0.52	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	related	101	0.848393	0.881188	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	near-duplicate	27	0.929847	0.962963	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-class	NRPS	84	0.982361	0.988095	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	novel	52	0.512329	0.538462	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	related	100	0.841877	0.87	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	near-duplicate	26	0.91102	0.923077	A-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+class	NRPS	84	0.98203	0.988095	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
 class	PKS	64	0.909924	0.9375	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
 class	ribosomal	27	0.724138	0.740741	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-class	terpene	20	0.72	0.8	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-class	other	20	0.595968	0.65	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	prokaryotes	148	0.868131	0.885135	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	fungi	27	0.763492	0.851852	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	plants	1	1	1	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+class	terpene	20	0.645	0.7	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+class	other	20	0.603571	0.65	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	prokaryotes	148	0.868971	0.885135	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	fungi	27	0.744974	0.814815	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	plants	1	0	0	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
 lineage	other eukaryotes	2	0.5	0.5	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	novel	50	0.692822	0.72	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	related	101	0.901359	0.930693	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	near-duplicate	27	0.941458	0.962963	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-class	NRPS	84	0.779111	0.928571	A-shuffled	GECCO 0.9.5
-class	PKS	64	0.809707	0.90625	A-shuffled	GECCO 0.9.5
-class	ribosomal	27	0.4898	0.555556	A-shuffled	GECCO 0.9.5
-class	terpene	20	0.799167	0.85	A-shuffled	GECCO 0.9.5
-class	other	20	0.255286	0.3	A-shuffled	GECCO 0.9.5
-lineage	prokaryotes	148	0.651518	0.756757	A-shuffled	GECCO 0.9.5
-lineage	fungi	27	0.837111	0.925926	A-shuffled	GECCO 0.9.5
-lineage	plants	1	1	1	A-shuffled	GECCO 0.9.5
+novelty	novel	52	0.696395	0.730769	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	related	100	0.895373	0.92	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	near-duplicate	26	0.922009	0.923077	A-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+class	NRPS	84	0.751067	0.892857	A-shuffled	GECCO 0.9.5
+class	PKS	64	0.782188	0.875	A-shuffled	GECCO 0.9.5
+class	ribosomal	27	0.48204	0.555556	A-shuffled	GECCO 0.9.5
+class	terpene	20	0.691111	0.75	A-shuffled	GECCO 0.9.5
+class	other	20	0.377161	0.45	A-shuffled	GECCO 0.9.5
+lineage	prokaryotes	148	0.663241	0.77027	A-shuffled	GECCO 0.9.5
+lineage	fungi	27	0.710075	0.814815	A-shuffled	GECCO 0.9.5
+lineage	plants	1	0	0	A-shuffled	GECCO 0.9.5
 lineage	other eukaryotes	2	0.74375	1	A-shuffled	GECCO 0.9.5
-novelty	novel	50	0.39555	0.58	A-shuffled	GECCO 0.9.5
-novelty	related	101	0.820238	0.881188	A-shuffled	GECCO 0.9.5
-novelty	near-duplicate	27	0.699728	0.814815	A-shuffled	GECCO 0.9.5
-class	NRPS	84	0.779111	0.928571	A-shuffled	GECCO 0.11.0
-class	PKS	64	0.809707	0.90625	A-shuffled	GECCO 0.11.0
-class	ribosomal	27	0.4898	0.555556	A-shuffled	GECCO 0.11.0
-class	terpene	20	0.799167	0.85	A-shuffled	GECCO 0.11.0
-class	other	20	0.255286	0.3	A-shuffled	GECCO 0.11.0
-lineage	prokaryotes	148	0.651518	0.756757	A-shuffled	GECCO 0.11.0
-lineage	fungi	27	0.837111	0.925926	A-shuffled	GECCO 0.11.0
-lineage	plants	1	1	1	A-shuffled	GECCO 0.11.0
+novelty	novel	52	0.414762	0.634615	A-shuffled	GECCO 0.9.5
+novelty	related	100	0.77596	0.83	A-shuffled	GECCO 0.9.5
+novelty	near-duplicate	26	0.755984	0.846154	A-shuffled	GECCO 0.9.5
+class	NRPS	84	0.751067	0.892857	A-shuffled	GECCO 0.11.0
+class	PKS	64	0.782188	0.875	A-shuffled	GECCO 0.11.0
+class	ribosomal	27	0.48204	0.555556	A-shuffled	GECCO 0.11.0
+class	terpene	20	0.691111	0.75	A-shuffled	GECCO 0.11.0
+class	other	20	0.377161	0.45	A-shuffled	GECCO 0.11.0
+lineage	prokaryotes	148	0.663241	0.77027	A-shuffled	GECCO 0.11.0
+lineage	fungi	27	0.710075	0.814815	A-shuffled	GECCO 0.11.0
+lineage	plants	1	0	0	A-shuffled	GECCO 0.11.0
 lineage	other eukaryotes	2	0.74375	1	A-shuffled	GECCO 0.11.0
-novelty	novel	50	0.39555	0.58	A-shuffled	GECCO 0.11.0
-novelty	related	101	0.820238	0.881188	A-shuffled	GECCO 0.11.0
-novelty	near-duplicate	27	0.699728	0.814815	A-shuffled	GECCO 0.11.0
-class	NRPS	84	0.890662	0.988095	A-shuffled	SanntiS 0.9.5.0
-class	PKS	64	0.906085	0.96875	A-shuffled	SanntiS 0.9.5.0
-class	ribosomal	27	0.45083	0.518519	A-shuffled	SanntiS 0.9.5.0
-class	terpene	20	0.781944	0.8	A-shuffled	SanntiS 0.9.5.0
-class	other	20	0.474107	0.5	A-shuffled	SanntiS 0.9.5.0
-lineage	prokaryotes	148	0.738164	0.817568	A-shuffled	SanntiS 0.9.5.0
-lineage	fungi	27	0.900617	0.925926	A-shuffled	SanntiS 0.9.5.0
+novelty	novel	52	0.414762	0.634615	A-shuffled	GECCO 0.11.0
+novelty	related	100	0.77596	0.83	A-shuffled	GECCO 0.11.0
+novelty	near-duplicate	26	0.755984	0.846154	A-shuffled	GECCO 0.11.0
+class	NRPS	84	0.888542	0.988095	A-shuffled	SanntiS 0.9.5.0
+class	PKS	64	0.91296	0.96875	A-shuffled	SanntiS 0.9.5.0
+class	ribosomal	27	0.437183	0.481481	A-shuffled	SanntiS 0.9.5.0
+class	terpene	20	0.85	0.85	A-shuffled	SanntiS 0.9.5.0
+class	other	20	0.525619	0.55	A-shuffled	SanntiS 0.9.5.0
+lineage	prokaryotes	148	0.750002	0.824324	A-shuffled	SanntiS 0.9.5.0
+lineage	fungi	27	0.913404	0.925926	A-shuffled	SanntiS 0.9.5.0
 lineage	plants	1	1	1	A-shuffled	SanntiS 0.9.5.0
-lineage	other eukaryotes	2	1	1	A-shuffled	SanntiS 0.9.5.0
-novelty	novel	50	0.42306	0.56	A-shuffled	SanntiS 0.9.5.0
-novelty	related	101	0.916433	0.960396	A-shuffled	SanntiS 0.9.5.0
-novelty	near-duplicate	27	0.846379	0.888889	A-shuffled	SanntiS 0.9.5.0
-class	NRPS	84	0.908213	0.952381	A-shuffled	BGC-Prophet 0.1.2
-class	PKS	64	0.897979	0.953125	A-shuffled	BGC-Prophet 0.1.2
-class	ribosomal	27	0.387464	0.407407	A-shuffled	BGC-Prophet 0.1.2
-class	terpene	20	0.770833	0.8	A-shuffled	BGC-Prophet 0.1.2
-class	other	20	0.57215	0.6	A-shuffled	BGC-Prophet 0.1.2
-lineage	prokaryotes	148	0.765005	0.804054	A-shuffled	BGC-Prophet 0.1.2
-lineage	fungi	27	0.871583	0.925926	A-shuffled	BGC-Prophet 0.1.2
+lineage	other eukaryotes	2	0.90625	1	A-shuffled	SanntiS 0.9.5.0
+novelty	novel	52	0.444199	0.576923	A-shuffled	SanntiS 0.9.5.0
+novelty	related	100	0.930299	0.97	A-shuffled	SanntiS 0.9.5.0
+novelty	near-duplicate	26	0.859479	0.884615	A-shuffled	SanntiS 0.9.5.0
+class	NRPS	84	0.908052	0.952381	A-shuffled	BGC-Prophet 0.1.2
+class	PKS	64	0.903826	0.9375	A-shuffled	BGC-Prophet 0.1.2
+class	ribosomal	27	0.410011	0.481481	A-shuffled	BGC-Prophet 0.1.2
+class	terpene	20	0.716239	0.75	A-shuffled	BGC-Prophet 0.1.2
+class	other	20	0.75	0.75	A-shuffled	BGC-Prophet 0.1.2
+lineage	prokaryotes	148	0.813363	0.851351	A-shuffled	BGC-Prophet 0.1.2
+lineage	fungi	27	0.754296	0.814815	A-shuffled	BGC-Prophet 0.1.2
 lineage	plants	1	0	0	A-shuffled	BGC-Prophet 0.1.2
-lineage	other eukaryotes	2	1	1	A-shuffled	BGC-Prophet 0.1.2
-novelty	novel	50	0.605106	0.66	A-shuffled	BGC-Prophet 0.1.2
-novelty	related	101	0.860625	0.891089	A-shuffled	BGC-Prophet 0.1.2
-novelty	near-duplicate	27	0.799077	0.851852	A-shuffled	BGC-Prophet 0.1.2
-class	NRPS	164	0.940415	0.993902	B-isolate	SanntiS
-class	PKS	145	0.955045	0.986207	B-isolate	SanntiS
-class	ribosomal	64	0.767421	0.796875	B-isolate	SanntiS
-class	terpene	43	0.930233	0.930233	B-isolate	SanntiS
-class	saccharide	10	0.990909	1	B-isolate	SanntiS
-class	other	20	0.686841	0.7	B-isolate	SanntiS
-lineage	prokaryotes	281	0.878515	0.918149	B-isolate	SanntiS
-lineage	fungi	87	0.973904	0.988506	B-isolate	SanntiS
+lineage	other eukaryotes	2	0.5	0.5	A-shuffled	BGC-Prophet 0.1.2
+novelty	novel	52	0.738501	0.788462	A-shuffled	BGC-Prophet 0.1.2
+novelty	related	100	0.833742	0.87	A-shuffled	BGC-Prophet 0.1.2
+novelty	near-duplicate	26	0.767979	0.807692	A-shuffled	BGC-Prophet 0.1.2
+class	NRPS	164	0.93557	0.993902	B-isolate	SanntiS
+class	PKS	145	0.941644	0.986207	B-isolate	SanntiS
+class	ribosomal	64	0.720566	0.765625	B-isolate	SanntiS
+class	terpene	43	0.942506	0.953488	B-isolate	SanntiS
+class	saccharide	10	1	1	B-isolate	SanntiS
+class	other	20	0.563837	0.65	B-isolate	SanntiS
+lineage	prokaryotes	281	0.861625	0.918149	B-isolate	SanntiS
+lineage	fungi	87	0.941006	0.965517	B-isolate	SanntiS
 lineage	plants	3	0.666667	0.666667	B-isolate	SanntiS
-lineage	other eukaryotes	4	0.96875	1	B-isolate	SanntiS
-novelty	novel	81	0.660985	0.753086	B-isolate	SanntiS
-novelty	related	219	0.955884	0.977169	B-isolate	SanntiS
-novelty	near-duplicate	75	0.994519	1	B-isolate	SanntiS
-class	NRPS	164	0.969	0.981707	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	PKS	145	0.912993	0.944828	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	ribosomal	64	0.73198	0.75	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	terpene	43	0.686047	0.72093	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	saccharide	10	0.873974	1	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	other	20	0.664516	0.7	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-lineage	prokaryotes	281	0.875531	0.900356	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-lineage	fungi	87	0.82761	0.862069	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	other eukaryotes	4	1	1	B-isolate	SanntiS
+novelty	novel	83	0.591821	0.746988	B-isolate	SanntiS
+novelty	related	218	0.954934	0.977064	B-isolate	SanntiS
+novelty	near-duplicate	74	0.982264	0.986486	B-isolate	SanntiS
+class	NRPS	164	0.969695	0.987805	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	PKS	145	0.897389	0.937931	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	ribosomal	64	0.759821	0.796875	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	terpene	43	0.732558	0.767442	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	saccharide	10	0.896029	1	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	other	20	0.520968	0.55	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	prokaryotes	281	0.872296	0.903915	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	fungi	87	0.825056	0.862069	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
 lineage	plants	3	0	0	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
 lineage	other eukaryotes	4	0.75	0.75	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	novel	81	0.692549	0.728395	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	related	219	0.889243	0.913242	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	near-duplicate	75	0.935808	0.96	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	NRPS	164	0.925334	0.945122	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	PKS	145	0.898839	0.937931	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	ribosomal	64	0.675234	0.6875	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	terpene	43	0.678295	0.72093	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	saccharide	10	0.481666	0.6	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	other	20	0.614516	0.65	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-lineage	prokaryotes	281	0.83623	0.864769	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-lineage	fungi	87	0.797321	0.83908	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	novel	83	0.700521	0.746988	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+novelty	related	218	0.878588	0.908257	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+novelty	near-duplicate	74	0.948911	0.972973	B-isolate	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	NRPS	164	0.923929	0.957317	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	PKS	145	0.886682	0.931034	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	ribosomal	64	0.673075	0.703125	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	terpene	43	0.70155	0.744186	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	saccharide	10	0.519277	0.8	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	other	20	0.470968	0.5	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+lineage	prokaryotes	281	0.824937	0.864769	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+lineage	fungi	87	0.783272	0.827586	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
 lineage	plants	3	0	0	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
 lineage	other eukaryotes	4	0.75	0.75	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	novel	81	0.659607	0.703704	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	related	219	0.858185	0.885845	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	near-duplicate	75	0.879691	0.906667	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
-class	NRPS	164	0.974425	0.981707	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-class	PKS	145	0.935365	0.958621	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-class	ribosomal	64	0.76323	0.78125	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	novel	83	0.644276	0.698795	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	related	218	0.84113	0.876147	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	near-duplicate	74	0.893387	0.932432	B-isolate	antiSMASH 7.1.0 strict (lineage-matched)
+class	NRPS	164	0.975255	0.987805	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+class	PKS	145	0.933498	0.965517	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+class	ribosomal	64	0.765029	0.8125	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
 class	terpene	43	0.732558	0.767442	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-class	saccharide	10	0.975446	1	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-class	other	20	0.689516	0.75	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	prokaryotes	281	0.901164	0.918149	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	fungi	87	0.846843	0.885057	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+class	saccharide	10	0.97222	1	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+class	other	20	0.560253	0.65	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	prokaryotes	281	0.894854	0.925267	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	fungi	87	0.835719	0.873563	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
 lineage	plants	3	0	0	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
 lineage	other eukaryotes	4	0.75	0.75	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	novel	81	0.743428	0.777778	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	related	219	0.904649	0.922374	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	near-duplicate	75	0.954221	0.973333	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
-class	NRPS	164	0.801216	0.939024	B-isolate	GECCO 0.9.5
-class	PKS	145	0.822312	0.903448	B-isolate	GECCO 0.9.5
-class	ribosomal	64	0.476887	0.53125	B-isolate	GECCO 0.9.5
-class	terpene	43	0.720652	0.767442	B-isolate	GECCO 0.9.5
-class	saccharide	10	0.741608	0.8	B-isolate	GECCO 0.9.5
-class	other	20	0.286072	0.4	B-isolate	GECCO 0.9.5
-lineage	prokaryotes	281	0.67175	0.775801	B-isolate	GECCO 0.9.5
-lineage	fungi	87	0.838442	0.908046	B-isolate	GECCO 0.9.5
-lineage	plants	3	0.333333	0.333333	B-isolate	GECCO 0.9.5
-lineage	other eukaryotes	4	0.871875	1	B-isolate	GECCO 0.9.5
-novelty	novel	81	0.421776	0.617284	B-isolate	GECCO 0.9.5
-novelty	related	219	0.792533	0.86758	B-isolate	GECCO 0.9.5
-novelty	near-duplicate	75	0.779535	0.826667	B-isolate	GECCO 0.9.5
-class	NRPS	164	0.801216	0.939024	B-isolate	GECCO 0.11.0
-class	PKS	145	0.822312	0.903448	B-isolate	GECCO 0.11.0
-class	ribosomal	64	0.476887	0.53125	B-isolate	GECCO 0.11.0
-class	terpene	43	0.720652	0.767442	B-isolate	GECCO 0.11.0
-class	saccharide	10	0.741608	0.8	B-isolate	GECCO 0.11.0
-class	other	20	0.286072	0.4	B-isolate	GECCO 0.11.0
-lineage	prokaryotes	281	0.67175	0.775801	B-isolate	GECCO 0.11.0
-lineage	fungi	87	0.838442	0.908046	B-isolate	GECCO 0.11.0
-lineage	plants	3	0.333333	0.333333	B-isolate	GECCO 0.11.0
-lineage	other eukaryotes	4	0.871875	1	B-isolate	GECCO 0.11.0
-novelty	novel	81	0.421776	0.617284	B-isolate	GECCO 0.11.0
-novelty	related	219	0.792533	0.86758	B-isolate	GECCO 0.11.0
-novelty	near-duplicate	75	0.779535	0.826667	B-isolate	GECCO 0.11.0
-class	NRPS	164	0.90644	0.987805	B-isolate	SanntiS 0.9.5.0
-class	PKS	145	0.926873	0.972414	B-isolate	SanntiS 0.9.5.0
-class	ribosomal	64	0.585501	0.65625	B-isolate	SanntiS 0.9.5.0
-class	terpene	43	0.767442	0.767442	B-isolate	SanntiS 0.9.5.0
-class	saccharide	10	0.86545	0.9	B-isolate	SanntiS 0.9.5.0
-class	other	20	0.572494	0.6	B-isolate	SanntiS 0.9.5.0
-lineage	prokaryotes	281	0.785322	0.857651	B-isolate	SanntiS 0.9.5.0
-lineage	fungi	87	0.916887	0.931034	B-isolate	SanntiS 0.9.5.0
+novelty	novel	83	0.738489	0.807229	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	related	218	0.890695	0.912844	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	near-duplicate	74	0.96886	0.986486	B-isolate	antiSMASH 7.1.0 loose (lineage-matched)
+class	NRPS	164	0.810462	0.939024	B-isolate	GECCO 0.9.5
+class	PKS	145	0.85135	0.924138	B-isolate	GECCO 0.9.5
+class	ribosomal	64	0.412539	0.46875	B-isolate	GECCO 0.9.5
+class	terpene	43	0.791673	0.860465	B-isolate	GECCO 0.9.5
+class	saccharide	10	0.822378	0.9	B-isolate	GECCO 0.9.5
+class	other	20	0.333462	0.4	B-isolate	GECCO 0.9.5
+lineage	prokaryotes	281	0.666499	0.765125	B-isolate	GECCO 0.9.5
+lineage	fungi	87	0.879919	0.942529	B-isolate	GECCO 0.9.5
+lineage	plants	3	0.742424	1	B-isolate	GECCO 0.9.5
+lineage	other eukaryotes	4	0.8875	1	B-isolate	GECCO 0.9.5
+novelty	novel	83	0.427907	0.626506	B-isolate	GECCO 0.9.5
+novelty	related	218	0.803465	0.866972	B-isolate	GECCO 0.9.5
+novelty	near-duplicate	74	0.796554	0.851351	B-isolate	GECCO 0.9.5
+class	NRPS	164	0.810462	0.939024	B-isolate	GECCO 0.11.0
+class	PKS	145	0.85135	0.924138	B-isolate	GECCO 0.11.0
+class	ribosomal	64	0.412539	0.46875	B-isolate	GECCO 0.11.0
+class	terpene	43	0.791673	0.860465	B-isolate	GECCO 0.11.0
+class	saccharide	10	0.822378	0.9	B-isolate	GECCO 0.11.0
+class	other	20	0.333462	0.4	B-isolate	GECCO 0.11.0
+lineage	prokaryotes	281	0.666499	0.765125	B-isolate	GECCO 0.11.0
+lineage	fungi	87	0.879919	0.942529	B-isolate	GECCO 0.11.0
+lineage	plants	3	0.742424	1	B-isolate	GECCO 0.11.0
+lineage	other eukaryotes	4	0.8875	1	B-isolate	GECCO 0.11.0
+novelty	novel	83	0.427907	0.626506	B-isolate	GECCO 0.11.0
+novelty	related	218	0.803465	0.866972	B-isolate	GECCO 0.11.0
+novelty	near-duplicate	74	0.796554	0.851351	B-isolate	GECCO 0.11.0
+class	NRPS	164	0.905604	0.987805	B-isolate	SanntiS 0.9.5.0
+class	PKS	145	0.923296	0.972414	B-isolate	SanntiS 0.9.5.0
+class	ribosomal	64	0.499141	0.578125	B-isolate	SanntiS 0.9.5.0
+class	terpene	43	0.790698	0.790698	B-isolate	SanntiS 0.9.5.0
+class	saccharide	10	0.856643	0.9	B-isolate	SanntiS 0.9.5.0
+class	other	20	0.642857	0.65	B-isolate	SanntiS 0.9.5.0
+lineage	prokaryotes	281	0.765496	0.839858	B-isolate	SanntiS 0.9.5.0
+lineage	fungi	87	0.940423	0.954023	B-isolate	SanntiS 0.9.5.0
 lineage	plants	3	0.666667	0.666667	B-isolate	SanntiS 0.9.5.0
 lineage	other eukaryotes	4	0.953125	1	B-isolate	SanntiS 0.9.5.0
-novelty	novel	81	0.513461	0.654321	B-isolate	SanntiS 0.9.5.0
-novelty	related	219	0.898208	0.940639	B-isolate	SanntiS 0.9.5.0
-novelty	near-duplicate	75	0.906124	0.92	B-isolate	SanntiS 0.9.5.0
-class	NRPS	164	0.565994	0.585366	B-isolate	BGC-Prophet 0.1.2
-class	PKS	145	0.648273	0.668966	B-isolate	BGC-Prophet 0.1.2
-class	ribosomal	64	0.268486	0.28125	B-isolate	BGC-Prophet 0.1.2
-class	terpene	43	0.436047	0.44186	B-isolate	BGC-Prophet 0.1.2
-class	saccharide	10	0.681818	0.7	B-isolate	BGC-Prophet 0.1.2
-class	other	20	0.290625	0.3	B-isolate	BGC-Prophet 0.1.2
-lineage	prokaryotes	281	0.491453	0.508897	B-isolate	BGC-Prophet 0.1.2
-lineage	fungi	87	0.605127	0.62069	B-isolate	BGC-Prophet 0.1.2
-lineage	plants	3	0	0	B-isolate	BGC-Prophet 0.1.2
-lineage	other eukaryotes	4	0.25	0.25	B-isolate	BGC-Prophet 0.1.2
-novelty	novel	81	0.395684	0.419753	B-isolate	BGC-Prophet 0.1.2
-novelty	related	219	0.598407	0.616438	B-isolate	BGC-Prophet 0.1.2
-novelty	near-duplicate	75	0.381905	0.386667	B-isolate	BGC-Prophet 0.1.2
-class	NRPS	164	0.940259	0.993902	B-shuffled	SanntiS
-class	PKS	145	0.952624	0.986207	B-shuffled	SanntiS
-class	ribosomal	64	0.674514	0.71875	B-shuffled	SanntiS
-class	terpene	43	0.927649	0.930233	B-shuffled	SanntiS
-class	saccharide	10	0.995455	1	B-shuffled	SanntiS
-class	other	20	0.628937	0.65	B-shuffled	SanntiS
-lineage	prokaryotes	281	0.855899	0.900356	B-shuffled	SanntiS
-lineage	fungi	87	0.959004	0.977011	B-shuffled	SanntiS
+novelty	novel	83	0.528014	0.662651	B-isolate	SanntiS 0.9.5.0
+novelty	related	218	0.895123	0.940367	B-isolate	SanntiS 0.9.5.0
+novelty	near-duplicate	74	0.861779	0.878378	B-isolate	SanntiS 0.9.5.0
+class	NRPS	164	0.566376	0.609756	B-isolate	BGC-Prophet 0.1.2
+class	PKS	145	0.703896	0.737931	B-isolate	BGC-Prophet 0.1.2
+class	ribosomal	64	0.272542	0.296875	B-isolate	BGC-Prophet 0.1.2
+class	terpene	43	0.437488	0.44186	B-isolate	BGC-Prophet 0.1.2
+class	saccharide	10	0.663636	0.7	B-isolate	BGC-Prophet 0.1.2
+class	other	20	0.326047	0.35	B-isolate	BGC-Prophet 0.1.2
+lineage	prokaryotes	281	0.490184	0.530249	B-isolate	BGC-Prophet 0.1.2
+lineage	fungi	87	0.59417	0.609195	B-isolate	BGC-Prophet 0.1.2
+lineage	plants	3	0.666667	0.666667	B-isolate	BGC-Prophet 0.1.2
+lineage	other eukaryotes	4	0.75	0.75	B-isolate	BGC-Prophet 0.1.2
+novelty	novel	83	0.408059	0.46988	B-isolate	BGC-Prophet 0.1.2
+novelty	related	218	0.55857	0.587156	B-isolate	BGC-Prophet 0.1.2
+novelty	near-duplicate	74	0.524287	0.540541	B-isolate	BGC-Prophet 0.1.2
+class	NRPS	164	0.912921	0.981707	B-shuffled	SanntiS
+class	PKS	145	0.941009	0.986207	B-shuffled	SanntiS
+class	ribosomal	64	0.674178	0.6875	B-shuffled	SanntiS
+class	terpene	43	0.918605	0.953488	B-shuffled	SanntiS
+class	saccharide	10	0.978947	1	B-shuffled	SanntiS
+class	other	20	0.551337	0.6	B-shuffled	SanntiS
+lineage	prokaryotes	281	0.835907	0.88968	B-shuffled	SanntiS
+lineage	fungi	87	0.933047	0.965517	B-shuffled	SanntiS
 lineage	plants	3	0.666667	0.666667	B-shuffled	SanntiS
-lineage	other eukaryotes	4	0.984375	1	B-shuffled	SanntiS
-novelty	novel	81	0.587331	0.691358	B-shuffled	SanntiS
-novelty	related	219	0.953746	0.977169	B-shuffled	SanntiS
-novelty	near-duplicate	75	0.979125	0.986667	B-shuffled	SanntiS
+lineage	other eukaryotes	4	1	1	B-shuffled	SanntiS
+novelty	novel	83	0.532701	0.698795	B-shuffled	SanntiS
+novelty	related	218	0.942599	0.958716	B-shuffled	SanntiS
+novelty	near-duplicate	74	0.977896	0.986486	B-shuffled	SanntiS
 class	NRPS	164	0.966967	0.97561	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 class	PKS	145	0.888787	0.910345	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 class	ribosomal	64	0.631121	0.640625	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	terpene	43	0.697674	0.744186	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	terpene	43	0.662791	0.697674	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 class	saccharide	10	0.840641	0.9	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	other	20	0.520968	0.55	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-lineage	prokaryotes	281	0.829456	0.843416	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	other	20	0.525	0.55	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	prokaryotes	281	0.827963	0.839858	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 lineage	fungi	87	0.819309	0.862069	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-lineage	plants	3	0.333333	0.333333	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+lineage	plants	3	0	0	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
 lineage	other eukaryotes	4	0.75	0.75	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	novel	81	0.607163	0.62963	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	related	219	0.863906	0.885845	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-novelty	near-duplicate	75	0.933084	0.946667	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
-class	NRPS	164	0.915693	0.926829	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	novel	83	0.610604	0.638554	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+novelty	related	218	0.860988	0.880734	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+novelty	near-duplicate	74	0.926513	0.932432	B-shuffled	antiSMASH 7.1.0 relaxed (lineage-matched)
+class	NRPS	164	0.912034	0.920732	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
 class	PKS	145	0.871184	0.896552	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
 class	ribosomal	64	0.544375	0.546875	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-class	terpene	43	0.689922	0.744186	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-class	saccharide	10	0.508333	0.6	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-class	other	20	0.470968	0.5	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-lineage	prokaryotes	281	0.778882	0.793594	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+class	terpene	43	0.655039	0.697674	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+class	saccharide	10	0.448333	0.5	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+class	other	20	0.475	0.5	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+lineage	prokaryotes	281	0.775254	0.786477	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
 lineage	fungi	87	0.78902	0.83908	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-lineage	plants	3	0.333333	0.333333	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+lineage	plants	3	0	0	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
 lineage	other eukaryotes	4	0.75	0.75	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	novel	81	0.545235	0.567901	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	related	219	0.826365	0.849315	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-novelty	near-duplicate	75	0.884967	0.906667	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
-class	NRPS	164	0.97308	0.981707	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-class	PKS	145	0.927032	0.944828	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-class	ribosomal	64	0.662371	0.671875	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-class	terpene	43	0.72093	0.767442	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-class	saccharide	10	0.957934	1	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-class	other	20	0.595968	0.65	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	prokaryotes	281	0.86671	0.879004	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	fungi	87	0.829601	0.873563	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-lineage	plants	3	0.333333	0.333333	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	novel	83	0.550169	0.578313	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	related	218	0.823275	0.844037	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+novelty	near-duplicate	74	0.869637	0.878378	B-shuffled	antiSMASH 7.1.0 strict (lineage-matched)
+class	NRPS	164	0.973304	0.981707	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+class	PKS	145	0.918196	0.937931	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+class	ribosomal	64	0.670893	0.6875	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+class	terpene	43	0.686047	0.72093	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+class	saccharide	10	0.964386	1	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+class	other	20	0.603571	0.65	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	prokaryotes	281	0.864764	0.879004	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	fungi	87	0.823854	0.862069	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+lineage	plants	3	0	0	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
 lineage	other eukaryotes	4	0.75	0.75	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	novel	81	0.678962	0.703704	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	related	219	0.881938	0.899543	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-novelty	near-duplicate	75	0.954407	0.973333	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
-class	NRPS	164	0.793205	0.914634	B-shuffled	GECCO 0.9.5
-class	PKS	145	0.801137	0.889655	B-shuffled	GECCO 0.9.5
-class	ribosomal	64	0.407264	0.46875	B-shuffled	GECCO 0.9.5
-class	terpene	43	0.715521	0.744186	B-shuffled	GECCO 0.9.5
-class	saccharide	10	0.741608	0.8	B-shuffled	GECCO 0.9.5
-class	other	20	0.255286	0.3	B-shuffled	GECCO 0.9.5
-lineage	prokaryotes	281	0.645633	0.740214	B-shuffled	GECCO 0.9.5
-lineage	fungi	87	0.836307	0.896552	B-shuffled	GECCO 0.9.5
-lineage	plants	3	0.333333	0.333333	B-shuffled	GECCO 0.9.5
-lineage	other eukaryotes	4	0.621875	0.75	B-shuffled	GECCO 0.9.5
-novelty	novel	81	0.421838	0.592593	B-shuffled	GECCO 0.9.5
-novelty	related	219	0.766025	0.83105	B-shuffled	GECCO 0.9.5
-novelty	near-duplicate	75	0.743212	0.8	B-shuffled	GECCO 0.9.5
-class	NRPS	164	0.793205	0.914634	B-shuffled	GECCO 0.11.0
-class	PKS	145	0.801137	0.889655	B-shuffled	GECCO 0.11.0
-class	ribosomal	64	0.407264	0.46875	B-shuffled	GECCO 0.11.0
-class	terpene	43	0.715521	0.744186	B-shuffled	GECCO 0.11.0
-class	saccharide	10	0.741608	0.8	B-shuffled	GECCO 0.11.0
-class	other	20	0.255286	0.3	B-shuffled	GECCO 0.11.0
-lineage	prokaryotes	281	0.645633	0.740214	B-shuffled	GECCO 0.11.0
-lineage	fungi	87	0.836307	0.896552	B-shuffled	GECCO 0.11.0
-lineage	plants	3	0.333333	0.333333	B-shuffled	GECCO 0.11.0
-lineage	other eukaryotes	4	0.621875	0.75	B-shuffled	GECCO 0.11.0
-novelty	novel	81	0.421838	0.592593	B-shuffled	GECCO 0.11.0
-novelty	related	219	0.766025	0.83105	B-shuffled	GECCO 0.11.0
-novelty	near-duplicate	75	0.743212	0.8	B-shuffled	GECCO 0.11.0
-class	NRPS	164	0.892841	0.97561	B-shuffled	SanntiS 0.9.5.0
-class	PKS	145	0.927398	0.972414	B-shuffled	SanntiS 0.9.5.0
-class	ribosomal	64	0.456077	0.515625	B-shuffled	SanntiS 0.9.5.0
-class	terpene	43	0.735788	0.744186	B-shuffled	SanntiS 0.9.5.0
-class	saccharide	10	0.877098	0.9	B-shuffled	SanntiS 0.9.5.0
-class	other	20	0.474107	0.5	B-shuffled	SanntiS 0.9.5.0
-lineage	prokaryotes	281	0.743666	0.814947	B-shuffled	SanntiS 0.9.5.0
-lineage	fungi	87	0.904932	0.91954	B-shuffled	SanntiS 0.9.5.0
-lineage	plants	3	0.666667	0.666667	B-shuffled	SanntiS 0.9.5.0
-lineage	other eukaryotes	4	1	1	B-shuffled	SanntiS 0.9.5.0
-novelty	novel	81	0.457172	0.592593	B-shuffled	SanntiS 0.9.5.0
-novelty	related	219	0.882033	0.922374	B-shuffled	SanntiS 0.9.5.0
-novelty	near-duplicate	75	0.846708	0.866667	B-shuffled	SanntiS 0.9.5.0
-class	NRPS	164	0.846453	0.884146	B-shuffled	BGC-Prophet 0.1.2
-class	PKS	145	0.869317	0.910345	B-shuffled	BGC-Prophet 0.1.2
-class	ribosomal	64	0.541112	0.578125	B-shuffled	BGC-Prophet 0.1.2
-class	terpene	43	0.646318	0.674419	B-shuffled	BGC-Prophet 0.1.2
-class	saccharide	10	0.972727	1	B-shuffled	BGC-Prophet 0.1.2
-class	other	20	0.57215	0.6	B-shuffled	BGC-Prophet 0.1.2
-lineage	prokaryotes	281	0.769183	0.811388	B-shuffled	BGC-Prophet 0.1.2
-lineage	fungi	87	0.778384	0.804598	B-shuffled	BGC-Prophet 0.1.2
+novelty	novel	83	0.688884	0.722892	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	related	218	0.873226	0.889908	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+novelty	near-duplicate	74	0.947749	0.959459	B-shuffled	antiSMASH 7.1.0 loose (lineage-matched)
+class	NRPS	164	0.77958	0.908537	B-shuffled	GECCO 0.9.5
+class	PKS	145	0.801247	0.889655	B-shuffled	GECCO 0.9.5
+class	ribosomal	64	0.40338	0.46875	B-shuffled	GECCO 0.9.5
+class	terpene	43	0.716997	0.767442	B-shuffled	GECCO 0.9.5
+class	saccharide	10	0.737063	0.8	B-shuffled	GECCO 0.9.5
+class	other	20	0.377161	0.45	B-shuffled	GECCO 0.9.5
+lineage	prokaryotes	281	0.653824	0.754448	B-shuffled	GECCO 0.9.5
+lineage	fungi	87	0.804737	0.885057	B-shuffled	GECCO 0.9.5
+lineage	plants	3	0	0	B-shuffled	GECCO 0.9.5
+lineage	other eukaryotes	4	0.871875	1	B-shuffled	GECCO 0.9.5
+novelty	novel	83	0.419993	0.626506	B-shuffled	GECCO 0.9.5
+novelty	related	218	0.750579	0.821101	B-shuffled	GECCO 0.9.5
+novelty	near-duplicate	74	0.793766	0.837838	B-shuffled	GECCO 0.9.5
+class	NRPS	164	0.77958	0.908537	B-shuffled	GECCO 0.11.0
+class	PKS	145	0.801247	0.889655	B-shuffled	GECCO 0.11.0
+class	ribosomal	64	0.40338	0.46875	B-shuffled	GECCO 0.11.0
+class	terpene	43	0.716997	0.767442	B-shuffled	GECCO 0.11.0
+class	saccharide	10	0.737063	0.8	B-shuffled	GECCO 0.11.0
+class	other	20	0.377161	0.45	B-shuffled	GECCO 0.11.0
+lineage	prokaryotes	281	0.653824	0.754448	B-shuffled	GECCO 0.11.0
+lineage	fungi	87	0.804737	0.885057	B-shuffled	GECCO 0.11.0
+lineage	plants	3	0	0	B-shuffled	GECCO 0.11.0
+lineage	other eukaryotes	4	0.871875	1	B-shuffled	GECCO 0.11.0
+novelty	novel	83	0.419993	0.626506	B-shuffled	GECCO 0.11.0
+novelty	related	218	0.750579	0.821101	B-shuffled	GECCO 0.11.0
+novelty	near-duplicate	74	0.793766	0.837838	B-shuffled	GECCO 0.11.0
+class	NRPS	164	0.903153	0.981707	B-shuffled	SanntiS 0.9.5.0
+class	PKS	145	0.920401	0.965517	B-shuffled	SanntiS 0.9.5.0
+class	ribosomal	64	0.449074	0.515625	B-shuffled	SanntiS 0.9.5.0
+class	terpene	43	0.810631	0.813953	B-shuffled	SanntiS 0.9.5.0
+class	saccharide	10	0.938581	1	B-shuffled	SanntiS 0.9.5.0
+class	other	20	0.525619	0.55	B-shuffled	SanntiS 0.9.5.0
+lineage	prokaryotes	281	0.753628	0.825623	B-shuffled	SanntiS 0.9.5.0
+lineage	fungi	87	0.940995	0.954023	B-shuffled	SanntiS 0.9.5.0
+lineage	plants	3	0.333333	0.333333	B-shuffled	SanntiS 0.9.5.0
+lineage	other eukaryotes	4	0.953125	1	B-shuffled	SanntiS 0.9.5.0
+novelty	novel	83	0.472868	0.60241	B-shuffled	SanntiS 0.9.5.0
+novelty	related	218	0.892697	0.93578	B-shuffled	SanntiS 0.9.5.0
+novelty	near-duplicate	74	0.872872	0.891892	B-shuffled	SanntiS 0.9.5.0
+class	NRPS	164	0.846784	0.884146	B-shuffled	BGC-Prophet 0.1.2
+class	PKS	145	0.859768	0.889655	B-shuffled	BGC-Prophet 0.1.2
+class	ribosomal	64	0.567758	0.625	B-shuffled	BGC-Prophet 0.1.2
+class	terpene	43	0.627708	0.651163	B-shuffled	BGC-Prophet 0.1.2
+class	saccharide	10	0.976923	1	B-shuffled	BGC-Prophet 0.1.2
+class	other	20	0.75	0.75	B-shuffled	BGC-Prophet 0.1.2
+lineage	prokaryotes	281	0.809956	0.846975	B-shuffled	BGC-Prophet 0.1.2
+lineage	fungi	87	0.701267	0.735632	B-shuffled	BGC-Prophet 0.1.2
 lineage	plants	3	0	0	B-shuffled	BGC-Prophet 0.1.2
 lineage	other eukaryotes	4	0.5	0.5	B-shuffled	BGC-Prophet 0.1.2
-novelty	novel	81	0.597178	0.666667	B-shuffled	BGC-Prophet 0.1.2
-novelty	related	219	0.806834	0.835616	B-shuffled	BGC-Prophet 0.1.2
-novelty	near-duplicate	75	0.810557	0.84	B-shuffled	BGC-Prophet 0.1.2
+novelty	novel	83	0.710455	0.759036	B-shuffled	BGC-Prophet 0.1.2
+novelty	related	218	0.807814	0.844037	B-shuffled	BGC-Prophet 0.1.2
+novelty	near-duplicate	74	0.750496	0.77027	B-shuffled	BGC-Prophet 0.1.2

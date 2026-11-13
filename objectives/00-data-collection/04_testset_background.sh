@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Background genomes of objective 02's test sets, none in negative pool v1 (102 GTDB r226 prokaryotes, 22 RefSeq
-# eukaryotes; selection: objective 02 workers/sample_background.py) from NCBI Datasets (md5-checked package).
+# Background genomes of objective 02's shuffled test set, none in negative pool v2 (102 GTDB r226 prokaryotes, 22
+# RefSeq eukaryotes; selection: objective 02 workers/sample_background.py) from NCBI Datasets (md5-checked package).
 # Eukaryotes also with their annotated GenBank (RefSeq CDS); prokaryotes get gene calls in objective 02.
 #   → $DATA_ROOT/raw/ncbi/assemblies/<acc>/<acc>.fna.gz (+ .gff.gz, euk: .gbff.gz, assembly_data_report.jsonl)
 # shellcheck source=SCRIPTDIR/../../common/env.sh
@@ -12,10 +12,10 @@ out=$DATA_ROOT/raw/ncbi/assemblies
 genomes() {
     local n
     # no trailing blank field: `xargs -L 1` would join the next line to it
-    rows "$list" | awk -F'\t' -v o="$out" '$3 == "euk" {print $1, o, "gbff"; next} {print $1, o}' \
+    rows_per_kingdom "$list" 3 | awk -F'\t' -v o="$out" '$3 == "euk" {print $1, o, "gbff"; next} {print $1, o}' \
         | each "${JOBS:-4}" fetch_assembly
-    n=$(rows "$list" | cut -f1 | while read -r a; do [[ -e $out/$a/done ]] && echo; done | wc -l)
-    expect_count "test-background genomes" "$n" "$(rows "$list" | wc -l)"
+    n=$(rows_per_kingdom "$list" 3 | cut -f1 | while read -r a; do [[ -e $out/$a/done ]] && echo; done | wc -l)
+    expect_count "test-background genomes" "$n" "$(rows_per_kingdom "$list" 3 | wc -l)"
 }
 
 step testset_background 4 4G 12:00:00 genomes

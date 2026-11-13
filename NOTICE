@@ -9,10 +9,9 @@ Third-party data content
 ------------------------
 
 GTDB r226 (https://gtdb.ecogenomic.org), CC BY-SA 4.0 (https://gtdb.ecogenomic.org/licenses)
-  The `lineage` columns of
-    objectives/00-data-collection/accessions/pool_v1_genomes.tsv           (rows with source = gtdb)
+  The `lineage` column of
     objectives/00-data-collection/accessions/testset_background_genomes.tsv (rows with source = gtdb)
-  are GTDB r226 taxonomy strings and are redistributed under CC BY-SA 4.0
+  holds GTDB r226 taxonomy strings, which are redistributed under CC BY-SA 4.0
   (https://creativecommons.org/licenses/by-sa/4.0/). Any adaptation of these columns must be shared under the same
   licence. Cite: Parks et al., Nucleic Acids Research 2022, doi:10.1093/nar/gkab776.
 

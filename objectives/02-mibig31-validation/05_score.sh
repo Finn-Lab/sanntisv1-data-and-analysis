@@ -20,7 +20,7 @@ tokens() {
         --container-engine "$CONTAINER_ENGINE" "${nf[@]}"
 }
 
-step 02_tokens 2 16G 24:00:00 tokens
+step 02_tokens 2 48G 2-00:00:00 tokens  # memory: the InterProScan 6 Nextflow heads (common/env.sh)
 
 score() {
     local model=${MODEL:-$DATA_ROOT/02/run/bundle}
@@ -31,13 +31,12 @@ score() {
     "$PYTHON" "$here/workers/score_testsets.py" --testsets "$ts/testsets" --test-bgcs "$ts/test_bgcs.parquet" \
         --tokens "$eval/tokens.parquet" --model "$model" \
         --train-entities "${TRAIN_ENTITIES:-$DATA_ROOT/02/run/entities/entities.parquet}" \
-        --labels-loci "$DATA_ROOT/01/run/collect/loci.parquet" --expected "$here/expected/release_v1sets" --out "$eval"
+        --labels-loci "$DATA_ROOT/01/run/collect/loci.parquet" --out "$eval"
     ln -sfn "$(realpath "$model")" "$eval/bundle"  # objective 03: V3ACTIVE_EVAL=$eval
     expect_count "scored test sets" "$(find "$eval/score" -name '*.pkl' | wc -l)" 4
     column -t "$eval/score/summary.tsv"
-    # the frozen tables of this run (expected/; release_v1sets/ = the reference columns above)
-    "$PYTHON" -m sv1.expected compare "$eval/score" "$here/expected" --files test_auprc.tsv test_curve.tsv \
-        test_metrics.tsv test_npc_per_pathway.tsv test_npc.tsv test_radar.tsv test_strata.tsv
+    compare_expected "$eval/score" "$here/expected" test_auprc.tsv test_curve.tsv test_metrics.tsv \
+        test_npc_per_pathway.tsv test_npc.tsv test_radar.tsv test_strata.tsv
 }
 
 step 02_score 4 16G 12:00:00 score

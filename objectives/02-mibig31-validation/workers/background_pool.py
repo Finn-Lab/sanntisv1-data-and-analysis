@@ -4,8 +4,10 @@ SanntiS annotates their proteins at scoring time).
 
 - clean (eukaryotes, here): the RefSeq GBFF without organelle records (mitochondrion, plastid, ...), keeping only
   source + CDS features; a CDS repeating an earlier one's location or name (locus_tag, else gene, else protein_id;
-  alternative transcripts) or with overlapping exons is dropped. antiSMASH 8.0.1 rejects such records; counts per
-  genome in ``cleaned/cleaning.tsv``
+  alternative transcripts), with overlapping exons or trans-spliced (exons on both strands or out of order) is
+  dropped. antiSMASH 8.0.1 rejects such records; counts per
+  genome in ``cleaned/cleaning.tsv``. A genome left with no CDS (an organelle-only assembly) is not a background
+  (``cleaned/dropped.tsv``)
 - prepare (label ``cpu_small``): prokaryotes: pyrodigal on the NCBI genome (single mode; meta below 100 kb);
   eukaryotes: the cleaned GBFF CDS → ``prepared/<genome>/{input.gbk, cds.parquet, proteins.faa}``
 - antiSMASH 8.0.1 (label ``antismash``): ``--minimal --genefinding-tool none``, taxon bacteria / fungi
@@ -34,6 +36,17 @@ from sanntis.runner.tasks import RunnerOptions, Unit, dispatch, write_unit_scrip
 from sv1.archives import sha256
 
 
+def trans_spliced(loc) -> bool:
+    """Exons on both strands, or out of order for their strand (trans-splicing): antiSMASH reads such a join as an
+    origin-spanning exon of a linear record and rejects the record."""
+    parts = list(getattr(loc, "parts", [loc]))
+    strands = {p.strand for p in parts}
+    if len(strands) > 1:
+        return True
+    starts = [int(p.start) for p in parts]
+    return starts != sorted(starts, reverse=strands == {-1})
+
+
 def overlapping_exons(loc) -> bool:
     parts = sorted(getattr(loc, "parts", [loc]), key=lambda p: int(p.start))
     return any(int(b.start) < int(a.end) for a, b in zip(parts, parts[1:], strict=False))
@@ -42,7 +55,7 @@ def overlapping_exons(loc) -> bool:
 def clean_gbff(src: Path, dest: Path) -> dict:
     """RefSeq GBFF → records antiSMASH 8.0.1 accepts (see module doc); returns what was dropped."""
     n = {"organelle_records": 0, "repeated_location_cds": 0, "repeated_name_cds": 0, "overlapping_exon_cds": 0,
-         "cds": 0}
+         "trans_spliced_cds": 0, "cds": 0}
     recs = []
     for rec in read_records(src):
         src_feat = next((f for f in rec.features if f.type == "source"), None)
@@ -54,7 +67,9 @@ def clean_gbff(src: Path, dest: Path) -> dict:
             if f.type != "CDS":
                 continue
             name = next((f.qualifiers[k][0] for k in ("locus_tag", "gene", "protein_id") if f.qualifiers.get(k)), "")
-            if overlapping_exons(f.location):
+            if trans_spliced(f.location):
+                n["trans_spliced_cds"] += 1
+            elif overlapping_exons(f.location):
                 n["overlapping_exon_cds"] += 1
             elif str(f.location) in seen:
                 n["repeated_location_cds"] += 1
@@ -96,7 +111,14 @@ def genome_table(listing: Path, assemblies: Path, out: Path) -> pd.DataFrame:
         pd.concat([old, pd.DataFrame(rows)]).drop_duplicates("genome", keep="last").sort_values("genome").to_csv(
             log, sep="\t", index=False)
     g["url"] = ""
-    return g[S.GENOME_COLUMNS]
+    # assemblies with no nuclear CDS (e.g. RefSeq organelle-only genomes) cannot be a background: listed, left out
+    clean = pd.read_csv(cdir / "cleaning.tsv", sep="\t") if (cdir / "cleaning.tsv").exists() else pd.DataFrame()
+    empty = set(clean.loc[clean["cds"] == 0, "genome"]) if len(clean) else set()
+    if empty:
+        g[g["genome"].isin(empty)].to_csv(cdir / "dropped.tsv", sep="\t", index=False)
+        print(f"left out, no nuclear CDS: {sorted(empty)}")
+        g = g[~g["genome"].isin(empty)].reset_index(drop=True)
+    return g.reindex(columns=S.GENOME_COLUMNS, fill_value="")
 
 
 def main(a: argparse.Namespace) -> None:
@@ -121,7 +143,7 @@ def main(a: argparse.Namespace) -> None:
     pool = out / "background"
     pool.mkdir(exist_ok=True)
     frames = {"genomes.parquet": genomes[["genome", "kingdom", "lineage", "source", "accession", "group"]],
-              "cds.parquet": tables.pop("cds"), **tables}
+              "cds.parquet": tables.pop("cds"), **{k: v for k, v in tables.items() if v is not None}}
     for name, df in frames.items():
         df.reset_index(drop=True).to_parquet(pool / name, index=False)
     kingdom = dict(zip(genomes["genome"], genomes["kingdom"], strict=True))

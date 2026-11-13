@@ -20,6 +20,18 @@ export SANNTIS_CACHE=${SANNTIS_CACHE:-$DATA_ROOT/cache/sanntis}
 export PYTHON=${PYTHON:-python}                      # the analysis environment's interpreter (env/install.sh)
 export PYTHONPATH=$REPO/workers${PYTHONPATH:+:$PYTHONPATH}
 export NF_CONFIG=${NF_CONFIG:-}                      # Nextflow config(s) for SanntiS / InterProScan 6 (space-separated)
+# LIMIT=n (a trial on a separate DATA_ROOT): first rows of the tables, 10 x n training BGCs, 1 detector epoch
+[[ -z ${LIMIT:-} ]] || export SANNTIS_DEBUG_MAX_EPOCHS=${SANNTIS_DEBUG_MAX_EPOCHS:-1}
+# InterProScan 6 through SanntiS: 4 cores per task; on SLURM 16 chunk runs at once x 40 queued tasks each (about
+# 2,500 cores; one Nextflow head per chunk run in the step's job, see the step memory); the precalculated-match
+# lookup only when the Matches API serves the pinned InterPro release (else every protein is computed locally)
+export SANNTIS_IPS6_CPUS=${SANNTIS_IPS6_CPUS:-4}
+export SANNTIS_IPS6_LOOKUP=${SANNTIS_IPS6_LOOKUP:-auto}
+if [[ $RUNNER == slurm ]]; then
+    export SANNTIS_IPS6_PARALLEL=${SANNTIS_IPS6_PARALLEL:-16} SANNTIS_IPS6_QUEUE_SIZE=${SANNTIS_IPS6_QUEUE_SIZE:-40}
+    export SANNTIS_IPS6_SUBMIT_RATE=${SANNTIS_IPS6_SUBMIT_RATE:-100/1min}
+    export NXF_OPTS=${NXF_OPTS:--Xms256m -Xmx2g}
+fi
 
 set -euo pipefail
 # shellcheck source=SCRIPTDIR/lib.sh

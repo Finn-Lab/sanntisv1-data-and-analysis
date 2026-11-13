@@ -5,6 +5,7 @@
 # shellcheck source=SCRIPTDIR/../../common/env.sh
 source "$(dirname "$0")/../../common/env.sh"
 need curl sha256sum
+LIMIT=  # small and checked in full by objective 01: always complete, also in a trial
 acc=$REPO/objectives/00-data-collection/accessions
 out=$DATA_ROOT/raw/mibig
 

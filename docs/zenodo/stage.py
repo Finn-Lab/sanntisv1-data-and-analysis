@@ -4,9 +4,9 @@
 
 Deposits (env/zenodo.tsv names), each a deterministic tarball checked against the sha256 recorded in env/zenodo.tsv:
 - mibig5_train: objective 01's 01_inputs.sh, the training archives            ($DATA_ROOT/01/deposit/)
-- nucleotide_testsets_v2: objective 02's 04_testsets.sh, the test sets         ($DATA_ROOT/02/deposit/)
-- v3active_eval_v2: objective 02's 06_report.sh, the MIBiG 3.1 evaluation      ($DATA_ROOT/02/deposit/)
-- sanntis_model: the SanntiS 1.0 model bundle, built here from its Hugging Face Hub release tag (MODEL_TAG below),
+- nucleotide_testsets_v3: objective 02's 04_testsets.sh, the test sets         ($DATA_ROOT/02/deposit/)
+- v3active_eval_v3: objective 02's 06_report.sh, the MIBiG 3.1 evaluation      ($DATA_ROOT/02/deposit/)
+- sanntis_model: the SanntiS 1.2.0 model bundle, built here from its Hugging Face Hub release tag (MODEL_TAG below),
   every file checked against the Hub's sha256; needs huggingface_hub (in the SanntiS environment).
 Writes <out>/<deposit file stem>/<file>.tar.gz + SHA256SUMS + NOTICE.md (notices.py; licence from env/zenodo.tsv;
 upload all three to the record) and <out>/<deposit file stem>.zenodo.json, the record's metadata (metadata.py; not a
@@ -25,10 +25,10 @@ from notices import notice  # docs/zenodo/notices.py: NOTICE.md next to each tar
 REPO = Path(__file__).resolve().parents[2]
 DATA_ROOT = Path(os.environ.get("DATA_ROOT",
                                 "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data"))
-MODEL_REPO, MODEL_TAG = "microbiome-informatics/sanntis", "v1.0.0-beta.1"
+MODEL_REPO, MODEL_TAG = "microbiome-informatics/sanntis", "v1.2.0"
 BUILT = {  # env/zenodo.tsv deposit -> the tarball a runbook built
-    "nucleotide_testsets_v2": DATA_ROOT / "02" / "deposit" / "sanntisv1_nucleotide_testsets_v2.tar.gz",
-    "v3active_eval_v2": DATA_ROOT / "02" / "deposit" / "sanntisv1_v3active_eval_v2.tar.gz",
+    "nucleotide_testsets_v3": DATA_ROOT / "02" / "deposit" / "sanntisv1_nucleotide_testsets_v3.tar.gz",
+    "v3active_eval_v3": DATA_ROOT / "02" / "deposit" / "sanntisv1_v3active_eval_v3.tar.gz",
     "mibig5_train": DATA_ROOT / "01" / "deposit" / "sanntisv1_mibig5.0rc1_train.tar.gz",
 }
 

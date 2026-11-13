@@ -1,4 +1,4 @@
-"""Score SanntiS 1.0 and the other tools on the nucleotide test sets, every method on the same contigs and CDS,
+"""Score SanntiS 1.2.0 and the other tools on the nucleotide test sets, every method on the same contigs and CDS,
 with the SanntiS metric code (`sanntis.train.metrics`).
 
     python score.py --testsets DIR --tools DIR --model BUNDLE --test-bgcs PARQUET --tokens PARQUET --out DIR
@@ -209,7 +209,7 @@ def main() -> None:
     results = {k: results[k] for k in order}
     (a.out / "results.pkl").write_bytes(pickle.dumps({"t_star": t_star, "results": results}))
     pd.DataFrame(rows).to_csv(a.out / "summary.tsv", sep="\t", index=False)
-    if prows:  # SanntiS 1.0 − antiSMASH relaxed, paired over contigs, on the eukaryotic / fungal scopes
+    if prows:  # SanntiS 1.2.0 − antiSMASH relaxed, paired over contigs, on the eukaryotic / fungal scopes
         pd.DataFrame(prows).to_csv(a.out / "paired.tsv", sep="\t", index=False, float_format="%.6g")
     expected.write(results, a.out)
     log.info("wrote %s", a.out)

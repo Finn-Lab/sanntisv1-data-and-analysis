@@ -175,11 +175,11 @@ def main() -> None:
                           figs / f"radar_{metric}.png", styles=STYLES, fill="B-isolate")
         radars.append(f"![{label} radar](figures/radar_{metric}.png)")
 
-    md = ["# SanntiS 1.0: MIBiG 3.1 validation\n",
+    md = ["# SanntiS 1.2.0: MIBiG 3.1 validation\n",
           "A SanntiS model trained on v3-active (MIBiG entries with accession < BGC0002750, active or pending in "
           "5.0rc1) and scored on the entries added since (>= BGC0002750): Test A = active, Test B = active + pending, "
           "each inserted into isolate and gene-shuffled nucleotide contigs whose genomes are not in the training "
-          "negative pool. Metrics: the SanntiS 1.0 metric code at the model's operating threshold t*; 95% CIs by "
+          "negative pool. Metrics: the SanntiS 1.2.0 metric code at the model's operating threshold t*; 95% CIs by "
           "bootstrap over source contigs. Reference columns and dashed curves: the pre-split release run (v3-active "
           "of 2,416 BGCs, test backgrounds from pool v1 genomes) — a reference, not a target.\n",
           "## Training\n", training(a.run, exp),

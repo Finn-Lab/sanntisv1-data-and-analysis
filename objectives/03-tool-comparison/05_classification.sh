@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Product classification of the test BGCs: SanntiS 1.0 NPC (v3-active model, true loci) vs BGCat (02_tools.sh bgcat
+# Product classification of the test BGCs: SanntiS 1.2.0 NPC (v3-active model, true loci) vs BGCat (02_tools.sh bgcat
 # on the v2 isolate set), in the SanntiS NPC label space.
 #   → $DATA_ROOT/03/classification/{classification.tsv,classification_per_bgc.tsv}
 # shellcheck source=SCRIPTDIR/../../common/env.sh
@@ -25,9 +25,8 @@ classification() {
         --labels "$in/v3active_eval/labels" --model "$in/v3active_eval/bundle" --bgcat "$pred" \
         --npc-index "$DATA_ROOT/cache/npclassifier/index_v1.json" --mibig4-json "$v4" --out "$out"
     # the frozen tables (expected/classification/, from these BGCat predictions; PROVENANCE.json)
-    if [[ -s $o/expected/classification/classification.tsv ]]; then
-        "$PYTHON" -m sv1.expected compare "$out" "$o/expected/classification"
-    fi
+    [[ -s $out/classification.tsv ]] || { [[ -n ${LIMIT:-} ]] && return 0; die "no $out/classification.tsv"; }
+    compare_expected "$out" "$o/expected/classification" classification.tsv
 }
 
 step 03_classification 2 8G 1:00:00 classification

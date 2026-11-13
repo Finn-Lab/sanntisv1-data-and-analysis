@@ -75,7 +75,7 @@ each() {  # each <jobs> <function> : call <function> with the fields of every st
     # shellcheck disable=SC2046  # every function (helpers and the runbook's) is visible to the workers
     export -f $(declare -F | awk '{print $3}')
     # shellcheck disable=SC2016  # $0 / $@ expand in the child bash
-    xargs -P "$jobs" -L 1 bash -c 'set -euo pipefail; "$0" "$@"' "$fn"
+    xargs -r -P "$jobs" -L 1 bash -c 'set -euo pipefail; "$0" "$@"' "$fn"
 }
 
 sums() {  # sums <dir> <glob> : write <dir>/SHA256SUMS for the files matching <glob> (record of what was fetched)
@@ -84,6 +84,30 @@ sums() {  # sums <dir> <glob> : write <dir>/SHA256SUMS for the files matching <g
 
 rows() {  # rows <table> : data rows of a TSV (LIMIT=n keeps the first n: a trial run, use a separate DATA_ROOT)
     awk -v n="${LIMIT:-0}" 'NR > 1 && (n == 0 || NR <= n + 1)' "$1"  # awk, not head: no SIGPIPE under pipefail
+}
+
+rows_per_kingdom() {  # rows_per_kingdom <table> <kingdom column> : like rows, LIMIT=n keeps the first n per kingdom
+    awk -F'\t' -v n="${LIMIT:-0}" -v k="$2" 'NR > 1 && (n == 0 || ++c[$k] <= n)' "$1"
+}
+
+train_archives() {  # train_archives <dir> <name> : the <name>_{gbk,json}.tar.gz pair of <dir> (LIMIT=n: a subset of
+    # 10 x n BGCs, written to <dir>/limit/), one path per line
+    local g=$1/$2_gbk.tar.gz j=$1/$2_json.tar.gz
+    if [[ -n ${LIMIT:-} ]]; then
+        # + the first 2 x n entries >= BGC0002750: they hold a trial's first n test BGCs (NPC labels in collect)
+        "$PYTHON" -m sv1.archives limit "$g" "$j" "$1/limit" "$((LIMIT * 10))" "$((LIMIT * 2))"
+    else
+        printf '%s\n%s\n' "$g" "$j"
+    fi
+}
+
+compare_expected() {  # compare_expected <new dir> <expected dir> <file>... : the frozen tables of a full run
+    # (expected/) vs this run's, with sv1.expected (6 significant digits); not in a LIMIT trial, nor before freezing
+    [[ -z ${LIMIT:-} ]] || { log "LIMIT: $2 not compared"; return 0; }
+    local f missing=()
+    for f in "${@:3}"; do [[ -e $2/$f ]] || missing+=("$f"); done
+    if ((${#missing[@]})); then log "not frozen in $2 (no comparison): ${missing[*]}"; return 0; fi
+    "$PYTHON" -m sv1.expected compare "$1" "$2" --files "${@:3}"
 }
 
 expect_count() {  # expect_count <label> <found> <expected>

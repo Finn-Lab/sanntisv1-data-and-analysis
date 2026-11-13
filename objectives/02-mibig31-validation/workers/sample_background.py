@@ -1,13 +1,15 @@
-"""Test-background genomes, disjoint from the training negative pool v1: run once by the maintainers; the selection
-is frozen as ``objectives/00-data-collection/accessions/testset_background_genomes.tsv`` (the reproducible input).
+"""Test-background genomes of the shuffled test set, disjoint from the training negative pool v2: run once by the
+maintainers after the pool plan; the selection is frozen as
+``objectives/00-data-collection/accessions/testset_background_genomes.tsv`` (the reproducible input) and its
+assemblies are added to ``pool_exclude.tsv``.
 
-Same sampling code as ``sanntis build-negatives`` (``sanntis.negpool.sample``), with pool v1 removed first:
-- prokaryotes: GTDB r226 species representatives not in pool v1 (any GCA / GCF version of its assemblies),
-  ``balanced_sample`` over phyla, ``n_proka`` genomes, seed 43 (pool v1: 205, seed 42);
-- eukaryotes: RefSeq fungi + protozoa (the groups of pool v1) not in pool v1 and of none of its NCBI species,
-  ``REFSEQ_GROUPS`` genomes per phylum (seed 1; pool v1: 0), then ``n_euk`` of them drawn per group in proportion.
+Same sampling code as ``sanntis build-negatives`` (``sanntis.negpool.sample``), with the pool removed first:
+- prokaryotes: GTDB r226 species representatives of no GTDB species of a pool assembly (any GCA / GCF version),
+  ``balanced_sample`` over phyla, ``n_proka`` genomes, seed 43;
+- eukaryotes: RefSeq fungi + protozoa not in the pool and of none of its NCBI species, ``REFSEQ_GROUPS`` genomes
+  per phylum (seed 1), then ``n_euk`` of them drawn per group in proportion.
 
-    python sample_background.py <pool_v1_genomes.tsv> <out tsv> [n_proka=102] [n_euk=22]
+    python sample_background.py <pool_v2_genomes.tsv> <out tsv> [n_proka=102] [n_euk=22]
 """
 
 import re
@@ -32,9 +34,13 @@ def core(acc: str) -> str:
 def proka(pool: pd.DataFrame, n: int) -> pd.DataFrame:
     df = pd.concat([pd.read_csv(t, sep="\t", dtype=str, low_memory=False) for t in S.gtdb_tables("226")],
                    ignore_index=True)
-    df = df[df["gtdb_representative"].str.lower().eq("t")].copy()
     taken = {core(a) for a in pool["accession"]}
-    df = df[~df["accession"].map(core).isin(taken)]
+    # GTDB species of the pool's assemblies (representatives or not): no background shares one
+    species = set(df.loc[df["accession"].map(core).isin(taken), "gtdb_taxonomy"].str.extract(r"s__([^;]+)")[0]
+                  .dropna())
+    df = df[df["gtdb_representative"].str.lower().eq("t")].copy()
+    df = df[~df["accession"].map(core).isin(taken)
+            & ~df["gtdb_taxonomy"].str.extract(r"s__([^;]+)")[0].isin(species)]
     df = df.join(S.split_gtdb_taxonomy(df["gtdb_taxonomy"]))
     df = df[df["phylum"].notna()]
     s = S.balanced_sample(df, "phylum", n, seed=43)
@@ -44,19 +50,18 @@ def proka(pool: pd.DataFrame, n: int) -> pd.DataFrame:
 
 
 def euk(pool: pd.DataFrame, n: int) -> pd.DataFrame:
-    groups = sorted(set(pool.loc[pool["kingdom"] == "euk", "group"]))
+    groups = ["fungi", "protozoa"]
     root = cache_dir("refseq") / datetime.now(UTC).strftime("%Y-%m-%d")
     summaries = {g: S.fetch(S.REFSEQ_SUMMARY.format(group=S.REFSEQ_GROUPS[g][1]), root / f"assembly_summary_{g}.txt")
                  for g in groups}
     taken = {core(a) for a in pool["accession"]}
-    species = {seg.split("__", 1)[1] for lin in pool.loc[pool["kingdom"] == "euk", "lineage"]
-               for seg in lin.split(";") if seg.startswith("species__")}
+    species = set(pool.loc[pool["kingdom"] == "euk", "species"]) - {""}
     trimmed = {}
-    for g, p in summaries.items():  # pool v1 out before sampling, so the per-phylum draw fills from the rest
+    for g, p in summaries.items():  # the pool out before sampling, so the per-phylum draw fills from the rest
         d = S.load_assembly_summary(p)
         d = d[~d["assembly_accession"].map(core).isin(taken) & ~d["organism_name"].fillna("").map(
             lambda o: any(o == s or o.startswith(s + " ") for s in species))]
-        trimmed[g] = root / f"assembly_summary_{g}.no_pool_v1.txt"
+        trimmed[g] = root / f"assembly_summary_{g}.no_pool.txt"
         head = p.read_text().splitlines(keepends=True)[:2]  # the reader expects the two header lines
         with open(trimmed[g], "w") as fh:
             fh.writelines(head)

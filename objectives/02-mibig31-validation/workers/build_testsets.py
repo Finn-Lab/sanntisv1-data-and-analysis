@@ -1,8 +1,8 @@
 """The nucleotide test sets: the Test B BGCs (MIBiG 5.0rc1 active + pending, accession >= BGC0002750, locus <= 200 kb,
-objective 01's archives) inserted into the test-background pool of 03_background.sh, written per contig as the tool
-input GenBank (CDS + translations), the CDS truth table and the ground-truth BED that objective 03 consumes.
-Ported from the sanntis_dev nucleotide builders (synthetic_isolate_builder / _shuffled) and the feature-level
-builders of the release run (SanntiS 842675a ``train/testsets.py``); the pool tables replace their inputs.
+objective 01's archives) inserted into the isolate test backbones of negative pool v2 (held out of training) and
+into the gene-shuffled contigs of the test-background genomes of 03_background.sh (none in the pool), written per
+contig as the tool input GenBank (CDS + translations), the CDS truth table and the ground-truth BED that objective
+03 consumes.
 
 - isolate: the pool's isolate test backbones (55 proka + 15 euk, longest BGC-free run >= 50 CDS of a genome),
   sliced first CDS start -> last CDS end; the kingdom's test BGCs dealt round-robin (sorted by accession) over the
@@ -15,8 +15,8 @@ builders of the release run (SanntiS 842675a ``train/testsets.py``); the pool ta
 Draws: ``default_rng(seed + crc32(track) % 1000)`` per set and track; every draw happens in the planning pass, so
 the output does not depend on the order genomes are read.
 
-    python build_testsets.py --archives <01 inputs/mibig_5.0rc1-train> --background <02/background> --out DIR
-        [--seed 0] [--min-genes 60] [--max-genes 400] [--limit N]
+    python build_testsets.py --archives <01 inputs/mibig_5.0rc1-train> --pool <01/pool> --background <02/background>
+        --out DIR [--pool-version v2] [--seed 0] [--min-genes 60] [--max-genes 400] [--limit N]
 
 writes <out>/testsets/<set>/<track>/<track>_contig_<k>.{gbk,cds.parquet,ground_truth.bed} (+ README.txt),
 <out>/test_bgcs.parquet (Test A / B membership, kingdom, lineage, classes; tokens and novelty are added at scoring),
@@ -142,9 +142,20 @@ def load_positives(archives: Path, limit: int | None) -> tuple[pd.DataFrame, dic
 
 
 def pool_tables(background: Path) -> dict[str, pd.DataFrame]:
+    """The test-background build (objective 02, 03_background.sh): genomes, CDS, native mask (shuffled set)."""
     b = background / "background"
     return {n: pd.read_parquet(b / f"{n}.parquet") for n in ("genomes", "cds", "clean_runs", "native_mask",
                                                               "test_backbones")}
+
+
+def negative_pool_tables(build: Path, version: str) -> dict[str, pd.DataFrame]:
+    """The negative pool (objective 01, ``sanntis build-negatives``): its held-out isolate test backbones."""
+    v = build / version
+    cds = pd.read_parquet(v / "cds_tokens.parquet", columns=["genome", "contig", "cds_idx", "start", "end"])
+    return {"genomes": pd.read_parquet(v / "genomes.parquet"), "cds": cds,
+            "clean_runs": pd.read_parquet(v / "clean_runs.parquet"),
+            "native_mask": pd.read_parquet(v / "native_mask.parquet"),
+            "test_backbones": pd.read_parquet(v / "test_backbones.parquet")}
 
 
 # ── planning (every random draw) ─────────────────────────────────────────────
@@ -338,8 +349,9 @@ runs on; .cds.parquet: one row per CDS with source_kind (positive = test BGC, ne
 (MIBiG accession for positives), native_bgc (backbone CDS inside an antiSMASH 8.0.1 region of its genome, shuffled
 set); .ground_truth.bed: BGC spans (0-based half-open). isolate: {n_iso} contigs ({iso_proka} proka + {iso_euk} euk
 BGC-free backbones, several BGCs each); shuffled: one BGC per gene-shuffled genome contig ({n_shuf}). BGCs: MIBiG
-5.0rc1 active + pending, accession >= BGC0002750, locus <= 200 kb ({n_bgc}); backgrounds: {n_genomes} genomes not in
-SanntiS's negative pool v1 (objectives/00-data-collection/accessions/testset_background_genomes.tsv).
+5.0rc1 active + pending, accession >= BGC0002750, locus <= 200 kb ({n_bgc}); isolate backbones: the held-out test
+backbones of SanntiS's negative pool v2; shuffled backgrounds: {n_genomes} genomes not in the pool
+(objectives/00-data-collection/accessions/testset_background_genomes.tsv).
 """
 
 
@@ -350,11 +362,15 @@ def main(a: argparse.Namespace) -> None:
     tests, loci, excluded = load_positives(Path(a.archives), a.limit)
     log.info("test BGCs: %d (Test A %d), excluded %d", len(tests), int(tests["test_a"].sum()), len(excluded))
     pool = pool_tables(Path(a.background))
-    plans = plan_isolate(pool, tests, a.seed) + plan_shuffled(pool, tests, a.seed, a.min_genes, a.max_genes)
+    neg = negative_pool_tables(Path(a.pool), a.pool_version)
+    plans = plan_isolate(neg, tests, a.seed) + plan_shuffled(pool, tests, a.seed, a.min_genes, a.max_genes)
     placed = sorted(acc for p in plans for ins in p.inserts.values() for _, acc in ins)
     if placed != sorted(list(tests["entity_id"]) * 2):
         raise RuntimeError("not every test BGC is placed exactly once per set")
-    native = {(g, c): set(d["cds_idx"].astype(int)) for (g, c), d in pool["native_mask"].groupby(["genome", "contig"])}
+    native = {(s, g, c): set(d["cds_idx"].astype(int))
+              for s, src in (("isolate", neg), ("shuffled", pool))
+              for (g, c), d in src["native_mask"].groupby(["genome", "contig"])}
+    source_dir = {"isolate": Path(a.pool), "shuffled": Path(a.background)}
 
     for s in ("isolate", "shuffled"):
         for t in TRACKS:
@@ -363,16 +379,17 @@ def main(a: argparse.Namespace) -> None:
                 for f in d.iterdir():
                     f.unlink()
     stats = []
-    by_genome: dict[str, list[Plan]] = {}
+    by_genome: dict[tuple[str, str], list[Plan]] = {}
     for p in plans:
-        by_genome.setdefault(p.genome, []).append(p)
-    for n, (genome, ps) in enumerate(sorted(by_genome.items()), 1):
-        recs = {r.id: r for r in read_records(Path(a.background) / "prepared" / genome / "input.gbk")}
+        by_genome.setdefault((p.set_name, p.genome), []).append(p)
+    for n, ((sname, genome), ps) in enumerate(sorted(by_genome.items()), 1):
+        recs = {r.id: r for r in read_records(source_dir[sname] / "prepared" / genome / "input.gbk")}
         pairs_of: dict[str, list] = {}
         for p in ps:
             if p.contig not in pairs_of:
                 pairs_of[p.contig] = cds_features(recs[p.contig])
-            rec, cds, bed = build(p, recs[p.contig], pairs_of[p.contig], loci, native.get((genome, p.contig), set()))
+            rec, cds, bed = build(p, recs[p.contig], pairs_of[p.contig], loci,
+                                  native.get((sname, genome, p.contig), set()))
             stats.append(write_contig(ts, p, rec, cds, bed))
         log.info("[%d/%d] %s: %d contigs", n, len(by_genome), genome, len(ps))
 
@@ -394,7 +411,8 @@ def main(a: argparse.Namespace) -> None:
         "params": {"seed": a.seed, "min_genes": a.min_genes, "max_genes": a.max_genes, "insert_range": [0.4, 0.6],
                    "max_locus_bp": MAX_LOCUS_BP, "v3_max": V3_MAX, "limit": a.limit},
         "sources": {"archives": {p.name: sha256(p) for p in sorted(arch.glob("mibig_5.0rc1-train_*.tar.gz"))},
-                    "background_manifest": sha256(Path(a.background) / "background" / "manifest.json")},
+                    "background_manifest": sha256(Path(a.background) / "background" / "manifest.json"),
+                    "pool_manifest": sha256(Path(a.pool) / a.pool_version / "manifest.json")},
         "test_bgcs": {"test_a": int(tests["test_a"].sum()), "test_b": int(tests["test_b"].sum()),
                       "by_kingdom": tests["kingdom"].value_counts().to_dict(),
                       "by_lineage": tests["lineage"].value_counts().to_dict(),
@@ -407,7 +425,9 @@ def main(a: argparse.Namespace) -> None:
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__.split("\n", 1)[0])
     p.add_argument("--archives", required=True, help="objective 01's inputs/mibig_5.0rc1-train directory")
-    p.add_argument("--background", required=True, help="objective 02's background build directory")
+    p.add_argument("--pool", required=True, help="objective 01's negative-pool build directory (isolate backbones)")
+    p.add_argument("--pool-version", default="v2")
+    p.add_argument("--background", required=True, help="objective 02's background build directory (shuffled set)")
     p.add_argument("--out", required=True)
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--min-genes", type=int, default=60)

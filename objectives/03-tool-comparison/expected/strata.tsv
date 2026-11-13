@@ -1,29 +1,29 @@
 axis	stratum	n	bgc_macro_recall	recall_macro_t	set	tool
-lineage	fungi	27	1	0.986667	A-isolate	SanntiS
-lineage	other eukaryotes	2	1	0.916667	A-isolate	SanntiS
+lineage	fungi	27	0.877778	0.83844	A-isolate	SanntiS
+lineage	other eukaryotes	2	1	1	A-isolate	SanntiS
 lineage	plants	1	1	1	A-isolate	SanntiS
-lineage	prokaryotes	148	0.850427	0.81666	A-isolate	SanntiS
-novelty	near-duplicate	27	1	0.998607	A-isolate	SanntiS
-novelty	novel	50	0.767692	0.660599	A-isolate	SanntiS
-novelty	related	101	0.955556	0.928643	A-isolate	SanntiS
-lineage	fungi	27	0.9	0.885014	A-shuffled	SanntiS
-lineage	other eukaryotes	2	1	0.958333	A-shuffled	SanntiS
+lineage	prokaryotes	148	0.887179	0.820842	A-isolate	SanntiS
+novelty	near-duplicate	26	0.975	0.951136	A-isolate	SanntiS
+novelty	novel	52	0.763736	0.590129	A-isolate	SanntiS
+novelty	related	100	1	0.965096	A-isolate	SanntiS
+lineage	fungi	27	0.9	0.850451	A-shuffled	SanntiS
+lineage	other eukaryotes	2	1	1	A-shuffled	SanntiS
 lineage	plants	1	1	1	A-shuffled	SanntiS
-lineage	prokaryotes	148	0.82735	0.78605	A-shuffled	SanntiS
-novelty	near-duplicate	27	0.975	0.968607	A-shuffled	SanntiS
-novelty	novel	50	0.692308	0.578412	A-shuffled	SanntiS
-novelty	related	101	0.977778	0.948395	A-shuffled	SanntiS
-lineage	fungi	87	0.993939	0.986533	B-isolate	SanntiS
-lineage	other eukaryotes	4	1	0.944444	B-isolate	SanntiS
+lineage	prokaryotes	148	0.823077	0.755317	A-shuffled	SanntiS
+novelty	near-duplicate	26	0.975	0.936995	A-shuffled	SanntiS
+novelty	novel	52	0.708352	0.507572	A-shuffled	SanntiS
+novelty	related	100	0.955556	0.941028	A-shuffled	SanntiS
+lineage	fungi	87	0.885939	0.853786	B-isolate	SanntiS
+lineage	other eukaryotes	4	1	1	B-isolate	SanntiS
 lineage	plants	3	0.75	0.75	B-isolate	SanntiS
-lineage	prokaryotes	281	0.884429	0.858648	B-isolate	SanntiS
-novelty	near-duplicate	75	1	0.995611	B-isolate	SanntiS
-novelty	novel	81	0.77553	0.705085	B-isolate	SanntiS
-novelty	related	219	0.973608	0.950513	B-isolate	SanntiS
-lineage	fungi	87	0.893939	0.885155	B-shuffled	SanntiS
-lineage	other eukaryotes	4	1	0.972222	B-shuffled	SanntiS
+lineage	prokaryotes	281	0.901361	0.854795	B-isolate	SanntiS
+novelty	near-duplicate	74	0.988889	0.984367	B-isolate	SanntiS
+novelty	novel	83	0.780386	0.651748	B-isolate	SanntiS
+novelty	related	218	0.973608	0.95368	B-isolate	SanntiS
+lineage	fungi	87	0.887879	0.850648	B-shuffled	SanntiS
+lineage	other eukaryotes	4	1	1	B-shuffled	SanntiS
 lineage	plants	3	0.75	0.75	B-shuffled	SanntiS
-lineage	prokaryotes	281	0.871202	0.840665	B-shuffled	SanntiS
-novelty	near-duplicate	75	0.988889	0.982594	B-shuffled	SanntiS
-novelty	novel	81	0.732406	0.65348	B-shuffled	SanntiS
-novelty	related	219	0.973608	0.949421	B-shuffled	SanntiS
+lineage	prokaryotes	281	0.866481	0.819912	B-shuffled	SanntiS
+novelty	near-duplicate	74	0.988889	0.981243	B-shuffled	SanntiS
+novelty	novel	83	0.744838	0.591632	B-shuffled	SanntiS
+novelty	related	218	0.957861	0.945942	B-shuffled	SanntiS

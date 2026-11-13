@@ -90,12 +90,14 @@ plantismash_one() {  # <gbk> <out dir>
 }
 
 contigs() {  # <set> <track> <out dir> : "<gbk> <out dir>" per contig of that set and track
+    [[ -d $in/nucleotide_testsets/$1/$2 ]] || return 0  # a trial may have no contigs of a track
     find "$in/nucleotide_testsets/$1/$2" -name '*.gbk' | sort | awk -v o="$3" -v n="${LIMIT:-0}" 'n == 0 || NR <= n {print $1, o}'
 }
 
 gecco() {  # <version>
     local s t o
     for s in "${SETS[@]}"; do for t in proka euk; do
+        [[ -d $in/nucleotide_testsets/$s/$t ]] || continue  # a trial may have no contigs of a track
         o=$tools/gecco_$1/${s}_$t; mkdir -p "$o"
         contigs "$s" "$t" "$o" | awk -v v="$1" '{print v, $0}' | each "${JOBS:-8}" gecco_one
     done; done
@@ -104,6 +106,7 @@ gecco() {  # <version>
 ips576() {  # InterProScan 5.76-107.0 on every contig's proteins (SanntiS 0.9.5's --ip-file input)
     local s t o
     for s in "${SETS[@]}"; do for t in proka euk; do
+        [[ -d $in/nucleotide_testsets/$s/$t ]] || continue  # a trial may have no contigs of a track
         o=$DATA_ROOT/03/ips576/$s/$t; mkdir -p "$o"
         contigs "$s" "$t" "$o" | while read -r g d; do
             echo "${g%.gbk}.cds.parquet $d/$(basename "$g" .gbk).ips576.tsv.gz"
@@ -114,6 +117,7 @@ ips576() {  # InterProScan 5.76-107.0 on every contig's proteins (SanntiS 0.9.5'
 sanntis095() {
     local s t o f
     for s in "${SETS[@]}"; do for t in proka euk; do
+        [[ -d $in/nucleotide_testsets/$s/$t ]] || continue  # a trial may have no contigs of a track
         o=$tools/sanntis_0.9.5.0/${s}_$t; mkdir -p "$o"
         contigs "$s" "$t" "$o" | while read -r g d; do
             f=$DATA_ROOT/03/ips576/$s/$t/$(basename "$g" .gbk).ips576.tsv.gz
@@ -126,6 +130,7 @@ sanntis095() {
 antismash() {  # <strictness> : bacteria on prokaryotic contigs, fungi (fungiSMASH) on eukaryotic ones
     local s t o
     for s in "${SETS[@]}"; do for t in proka euk; do
+        [[ -d $in/nucleotide_testsets/$s/$t ]] || continue  # a trial may have no contigs of a track
         o=$tools/antismash_7.1.0_$1/${s}_$t; mkdir -p "$o"
         contigs "$s" "$t" "$o" | awk -v l="$1" -v x="$([[ $t == proka ]] && echo bacteria || echo fungi)" \
             '{print l, $1, $2, x}' | each "${JOBS:-8}" antismash_one
@@ -158,6 +163,7 @@ prophet() {  # BGC-Prophet 0.1.2 detection on each contig's proteins in gene ord
     export TORCH_HOME=$DATA_ROOT/cache/torch
     host_env "${PROPHET_ENV:-}"
     for s in "${SETS[@]}"; do for t in proka euk; do
+        [[ -d $in/nucleotide_testsets/$s/$t ]] || continue  # a trial may have no contigs of a track
         o=$tools/bgc-prophet_0.1.2/${s}_$t; faa=$DATA_ROOT/03/prophet_in/${s}_$t
         [[ -s $o/prophet.csv ]] && continue
         mkdir -p "$o" "$faa"
@@ -194,6 +200,9 @@ bgcat() {  # BGCat on the biosynthetic genes antiSMASH 7.1.0 (relaxed) finds in 
     fetch "$ESMC_URL" "$wt/esmc_600m_2024_12_v0.pth" "$ESMC_SHA"  # ESM C 600M (EvolutionaryScale licence)
     local home=${BGCAT_HOME:-/opt/bgcat}  # the repository inside the image (or on this machine with IMAGE_bgcat=host)
     host_env "${BGCAT_ENV:-}"            # IMAGE_bgcat=host: weights go in $home/data/weights (no mount)
+    if [[ $(image bgcat) == host ]]; then  # no mount on the host: link the checked weights into the checkout
+        mkdir -p "$home/data/weights" && ln -sfn "$wt/esmc_600m_2024_12_v0.pth" "$home/data/weights/esmc_600m_2024_12_v0.pth"
+    fi
     CTR_BINDS="${CTR_BINDS:-} $wt:$home/data/weights" ctr bgcat sh -c \
         "cd $home && python embed.py $o/bgcs.json $o/features.json && python classify.py $o/features.json $o/predictions.json" \
         > "$o/bgcat.log" 2>&1 || die "BGCat failed ($o/bgcat.log)"
@@ -211,7 +220,8 @@ for r in "${runs[@]}"; do
         bgc-prophet)    step "03_tool_$r" 8 32G 12:00:00 prophet ;;
         antismash-*)    step "03_tool_$r" 16 64G 24:00:00 antismash "${r#antismash-}" ;;
         plantismash)    step "03_tool_$r" 8 32G 12:00:00 plantismash ;;
-        bgcat)          step "03_tool_$r" 8 64G 24:00:00 bgcat ;;
+        bgcat)  # its class model is saved for CUDA: a GPU
+            SLURM_ARGS="${SLURM_ARGS:-} ${BGCAT_SLURM_ARGS:---gres=gpu:1}" step "03_tool_$r" 8 64G 24:00:00 bgcat ;;
         *) die "unknown run '$r'" ;;
     esac
 done

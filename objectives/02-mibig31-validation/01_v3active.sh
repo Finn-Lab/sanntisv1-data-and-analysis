@@ -14,7 +14,7 @@ v3active() {
     "$PYTHON" "$here/workers/v3_archives.py" "$src" "$v3"
     diff -q "$here/expected/v3active_manifest.tsv" "$v3/manifest.tsv" >/dev/null \
         || die "$v3/manifest.tsv differs from expected/v3active_manifest.tsv"
-    expect_count "v3-active BGCs" "$(rows "$v3/manifest.tsv" | wc -l)" 2419
+    expect_count "v3-active BGCs" "$(awk 'NR > 1' "$v3/manifest.tsv" | wc -l)" 2419
 }
 
 step 02_v3active 1 4G 1:00:00 v3active

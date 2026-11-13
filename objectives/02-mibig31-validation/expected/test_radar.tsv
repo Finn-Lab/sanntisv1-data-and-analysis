@@ -1,51 +1,51 @@
 sector	axis	n	recall_t	bgc_recall	set
-class	NRPS	84	0.927609	1	A-isolate
-class	PKS	64	0.957785	1	A-isolate
-class	ribosomal	27	0.783799	0.814815	A-isolate
-class	terpene	20	0.9	0.9	A-isolate
-class	other	20	0.686841	0.7	A-isolate
-lineage	prokaryotes	148	0.863642	0.912162	A-isolate
-lineage	fungi	27	0.975309	1	A-isolate
+class	NRPS	84	0.920832	1	A-isolate
+class	PKS	64	0.924498	1	A-isolate
+class	ribosomal	27	0.737569	0.777778	A-isolate
+class	terpene	20	0.926389	0.95	A-isolate
+class	other	20	0.563837	0.65	A-isolate
+lineage	prokaryotes	148	0.843502	0.918919	A-isolate
+lineage	fungi	27	0.886829	0.925926	A-isolate
 lineage	plants	1	1	1	A-isolate
-lineage	other eukaryotes	2	0.9375	1	A-isolate
-novelty	novel	50	0.660679	0.78	A-isolate
-novelty	related	101	0.96065	0.980198	A-isolate
-novelty	near-duplicate	27	0.998805	1	A-isolate
-class	NRPS	164	0.940415	0.993902	B-isolate
-class	PKS	145	0.955045	0.986207	B-isolate
-class	ribosomal	64	0.767421	0.796875	B-isolate
-class	terpene	43	0.930233	0.930233	B-isolate
-class	saccharide	10	0.990909	1	B-isolate
-class	other	20	0.686841	0.7	B-isolate
-lineage	prokaryotes	281	0.878515	0.918149	B-isolate
-lineage	fungi	87	0.973904	0.988506	B-isolate
+lineage	other eukaryotes	2	1	1	A-isolate
+novelty	novel	52	0.571595	0.75	A-isolate
+novelty	related	100	0.973722	1	A-isolate
+novelty	near-duplicate	26	0.949519	0.961538	A-isolate
+class	NRPS	164	0.93557	0.993902	B-isolate
+class	PKS	145	0.941644	0.986207	B-isolate
+class	ribosomal	64	0.720566	0.765625	B-isolate
+class	terpene	43	0.942506	0.953488	B-isolate
+class	saccharide	10	1	1	B-isolate
+class	other	20	0.563837	0.65	B-isolate
+lineage	prokaryotes	281	0.861625	0.918149	B-isolate
+lineage	fungi	87	0.941006	0.965517	B-isolate
 lineage	plants	3	0.666667	0.666667	B-isolate
-lineage	other eukaryotes	4	0.96875	1	B-isolate
-novelty	novel	81	0.660985	0.753086	B-isolate
-novelty	related	219	0.955884	0.977169	B-isolate
-novelty	near-duplicate	75	0.994519	1	B-isolate
-class	NRPS	84	0.926434	1	A-shuffled
-class	PKS	64	0.954182	1	A-shuffled
-class	ribosomal	27	0.662635	0.703704	A-shuffled
-class	terpene	20	0.894444	0.9	A-shuffled
-class	other	20	0.628937	0.65	A-shuffled
-lineage	prokaryotes	148	0.838248	0.891892	A-shuffled
-lineage	fungi	27	0.934905	0.962963	A-shuffled
+lineage	other eukaryotes	4	1	1	B-isolate
+novelty	novel	83	0.591821	0.746988	B-isolate
+novelty	related	218	0.954934	0.977064	B-isolate
+novelty	near-duplicate	74	0.982264	0.986486	B-isolate
+class	NRPS	84	0.906879	1	A-shuffled
+class	PKS	64	0.923904	1	A-shuffled
+class	ribosomal	27	0.623372	0.62963	A-shuffled
+class	terpene	20	0.875	0.95	A-shuffled
+class	other	20	0.551337	0.6	A-shuffled
+lineage	prokaryotes	148	0.803332	0.878378	A-shuffled
+lineage	fungi	27	0.90667	0.962963	A-shuffled
 lineage	plants	1	1	1	A-shuffled
-lineage	other eukaryotes	2	0.96875	1	A-shuffled
-novelty	novel	50	0.573828	0.7	A-shuffled
-novelty	related	101	0.968133	0.990099	A-shuffled
-novelty	near-duplicate	27	0.954361	0.962963	A-shuffled
-class	NRPS	164	0.940259	0.993902	B-shuffled
-class	PKS	145	0.952624	0.986207	B-shuffled
-class	ribosomal	64	0.674514	0.71875	B-shuffled
-class	terpene	43	0.927649	0.930233	B-shuffled
-class	saccharide	10	0.995455	1	B-shuffled
-class	other	20	0.628937	0.65	B-shuffled
-lineage	prokaryotes	281	0.855899	0.900356	B-shuffled
-lineage	fungi	87	0.959004	0.977011	B-shuffled
+lineage	other eukaryotes	2	1	1	A-shuffled
+novelty	novel	52	0.492918	0.692308	A-shuffled
+novelty	related	100	0.963317	0.98	A-shuffled
+novelty	near-duplicate	26	0.938835	0.961538	A-shuffled
+class	NRPS	164	0.912921	0.981707	B-shuffled
+class	PKS	145	0.941009	0.986207	B-shuffled
+class	ribosomal	64	0.674178	0.6875	B-shuffled
+class	terpene	43	0.918605	0.953488	B-shuffled
+class	saccharide	10	0.978947	1	B-shuffled
+class	other	20	0.551337	0.6	B-shuffled
+lineage	prokaryotes	281	0.835907	0.88968	B-shuffled
+lineage	fungi	87	0.933047	0.965517	B-shuffled
 lineage	plants	3	0.666667	0.666667	B-shuffled
-lineage	other eukaryotes	4	0.984375	1	B-shuffled
-novelty	novel	81	0.587331	0.691358	B-shuffled
-novelty	related	219	0.953746	0.977169	B-shuffled
-novelty	near-duplicate	75	0.979125	0.986667	B-shuffled
+lineage	other eukaryotes	4	1	1	B-shuffled
+novelty	novel	83	0.532701	0.698795	B-shuffled
+novelty	related	218	0.942599	0.958716	B-shuffled
+novelty	near-duplicate	74	0.977896	0.986486	B-shuffled
