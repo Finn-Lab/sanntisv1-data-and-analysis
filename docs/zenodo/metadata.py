@@ -21,7 +21,7 @@ REPO = Path(__file__).resolve().parents[2]
 ANALYSIS = "https://github.com/Finn-Lab/sanntisv1-data-and-analysis"
 SANNTIS = "https://github.com/Finn-Lab/SanntiS"
 HF_DATA = "https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data"
-HF_MODEL, MODEL_TAG = "https://huggingface.co/microbiome-informatics/sanntis", "v1.0.0-beta.1"
+HF_MODEL, MODEL_TAG = "https://huggingface.co/microbiome-informatics/sanntis", "v1.2.0"
 
 CREATORS = [  # Zenodo "Family, Given"; add "orcid": "0000-..." per person
     {"name": "Sanchez Fragoso, Jose Santiago", "affiliation": "European Bioinformatics Institute",
@@ -43,21 +43,21 @@ KEYWORDS = ["biosynthetic gene clusters", "BGC detection", "natural products", "
 
 META = {  # env/zenodo.tsv name -> (title, version, extra keywords)
     "mibig5_train": (
-        "SanntiS 1.0 training archives: MIBiG 5.0rc1 active and pending entries in MIBiG format",
+        "SanntiS training archives: MIBiG 5.0rc1 active and pending entries in MIBiG format",
         "5.0rc1", ["training data"]),
-    "nucleotide_testsets_v2": (
-        "SanntiS 1.0 benchmark test sets (v2): MIBiG BGCs in isolate and shuffled genome backgrounds",
-        "v2", ["benchmark", "test set"]),
-    "v3active_eval_v2": (
-        "SanntiS 1.0 MIBiG 3.1 validation: v3-active model and its evaluation on the v2 test sets",
-        "v2", ["benchmark", "model evaluation"]),
+    "nucleotide_testsets_v3": (
+        "SanntiS benchmark test sets (v3): MIBiG BGCs in isolate and shuffled genome backgrounds",
+        "v3", ["benchmark", "test set"]),
+    "v3active_eval_v3": (
+        "SanntiS 1.2.0 MIBiG 3.1 validation: v3-active model and its evaluation on the v3 test sets",
+        "v3", ["benchmark", "model evaluation"]),
     "sanntis_model": (
-        "SanntiS 1.0 model bundle (release v1.0.0-beta.1)",
-        "v1.0.0-beta.1", ["model", "deep learning"]),
+        "SanntiS 1.2.0 model bundle (release v1.2.0)",
+        "v1.2.0", ["model", "deep learning"]),
 }
 
 LINKS = {  # deposit -> [(relation, other deposit)], resolved through the `record` column
-    "v3active_eval_v2": [("references", "nucleotide_testsets_v2")],
+    "v3active_eval_v3": [("references", "nucleotide_testsets_v3")],
     "sanntis_model": [("isDerivedFrom", "mibig5_train")],
 }
 
@@ -102,9 +102,9 @@ def description(deposit: str, row: dict[str, str]) -> str:
     what = DEPOSITS[deposit][0]
     e = html.escape
     return "".join([
-        f"<p>{e(what[0].upper() + what[1:])}, from <a href=\"{ANALYSIS}\">SanntiS 1.0: data and analyses</a>, "
+        f"<p>{e(what[0].upper() + what[1:])}, from <a href=\"{ANALYSIS}\">SanntiS 1.2: data and analyses</a>, "
         "the runbooks that reproduce the data, models and analyses behind "
-        f"<a href=\"{SANNTIS}\">SanntiS</a> 1.0.</p>",
+        f"<a href=\"{SANNTIS}\">SanntiS</a> 1.2.0.</p>",
         f"<p>Content: {e(row['content'])}.</p>",
         f"<p>Files: <code>{e(row['file'])}</code>; <code>SHA256SUMS</code>, its checksum (also recorded in "
         "<code>env/zenodo.tsv</code> of the repository, which the runbooks check on download); "
