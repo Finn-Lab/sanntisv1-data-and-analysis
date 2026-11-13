@@ -1,4 +1,4 @@
-"""Paired bootstrap of SanntiS 1.0 − each tool on the BGC-level metrics of B-shuffled (D3.2 headline numbers).
+"""Paired bootstrap of SanntiS 1.2.0 − each tool on the BGC-level metrics of B-shuffled (D3.2 headline numbers).
 
     python paired_bgc.py --testsets DIR --tools DIR --model BUNDLE --test-bgcs PARQUET --tokens PARQUET --out TSV
 
@@ -82,7 +82,7 @@ def main() -> None:
         theirs = scopes(sc[tool])
         for scope in ("all", "proka", "euk", "fungi"):
             if scope in ours and scope in theirs:
-                rows += [{"set": f"B-{SET}", "scope": scope, "method_a": "SanntiS 1.0", "method_b": tool, **r}
+                rows += [{"set": f"B-{SET}", "scope": scope, "method_a": "SanntiS 1.2.0", "method_b": tool, **r}
                          for r in S.paired(ours[scope], theirs[scope], n_boot=a.n_boot)]
                 log.info("%s %s done", tool, scope)
     a.out.parent.mkdir(parents=True, exist_ok=True)

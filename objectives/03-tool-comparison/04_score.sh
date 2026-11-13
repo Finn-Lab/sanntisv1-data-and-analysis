@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Score SanntiS 1.2.0 (v3-active model at its t*) and every tool run on the same contigs and CDS, then compare with
-# expected/ once its tables exist for these sets (expected/v1sets/ holds the previous sets' tables).
+# expected/ once its tables exist.
 #   → $DATA_ROOT/03/score/{results.pkl,summary.tsv,metrics.tsv,strata.tsv,radar.tsv,curve.tsv,auprc.tsv,paired.tsv}
 #   → $DATA_ROOT/03/score/paired_bgc.tsv: SanntiS 1.2.0 − each tool, paired bootstrap of the BGC-level metrics on
 #     B-shuffled (scopes all / proka / euk / fungi)

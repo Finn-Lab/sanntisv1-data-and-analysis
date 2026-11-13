@@ -1,4 +1,4 @@
-"""Product classification of the test BGCs: SanntiS 1.0 NPC (v3-active model, true loci) vs BGCat.
+"""Product classification of the test BGCs: SanntiS 1.2.0 NPC (v3-active model, true loci) vs BGCat.
 
     python npc_compare.py --test-bgcs PARQUET --labels DIR --model BUNDLE --bgcat predictions.json \
         --npc-index index_v1.json --out DIR
@@ -100,7 +100,7 @@ def main() -> None:
         subsets.append(("BGCat-covered, not in MIBiG 4.0", [i for i in common if i not in v4], True))
     rows = []
     for subset, sub, both in subsets:
-        rows.append({"method": "SanntiS 1.0 NPC", "subset": subset, "coverage": len(sub) / len(ids),
+        rows.append({"method": "SanntiS 1.2.0 NPC", "subset": subset, "coverage": len(sub) / len(ids),
                      **scores(sub, s_pw, s_sc, truth_pw, truth_sc)})
         if both:
             rows.append({"method": "BGCat", "subset": subset, "coverage": len(sub) / len(ids),

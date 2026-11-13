@@ -110,7 +110,7 @@ PANELS = (("recall_macro_t", "precision_t", "Recall_macro_T", "Precision_T"),
 
 
 def fig_sweep(curve: pd.DataFrame, t_star: float, points: dict[str, dict], title: str, path: Path, *,
-              label: str = "SanntiS 1.0", reference: tuple[str, pd.DataFrame, float] | None = None,
+              label: str = "SanntiS 1.2.0", reference: tuple[str, pd.DataFrame, float] | None = None,
               styles: dict[str, Style] | None = None) -> None:
     """SanntiS threshold sweep (Precision_T vs Recall_macro_T, BGC precision vs BGC macro recall) with its t*; each
     entry of ``points`` (name → metrics) a marker; ``reference``: (label, curve, t*) drawn dashed in grey."""
