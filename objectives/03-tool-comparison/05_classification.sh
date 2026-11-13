@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Product classification of the test BGCs: SanntiS 1.0 NPC (v3-active model, true loci) vs BGCat (02_tools.sh bgcat
+# Product classification of the test BGCs: SanntiS 1.2.0 NPC (v3-active model, true loci) vs BGCat (02_tools.sh bgcat
 # on the v2 isolate set), in the SanntiS NPC label space.
 #   → $DATA_ROOT/03/classification/{classification.tsv,classification_per_bgc.tsv}
 # shellcheck source=SCRIPTDIR/../../common/env.sh

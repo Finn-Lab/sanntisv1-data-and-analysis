@@ -80,8 +80,8 @@ The runs use the following images and environments (`IMAGE_<tool>` / `<TOOL>_ENV
 | `bgcat` | `4f77517` | host venv as its Dockerfile: Python 3.12.13, esm 3.2.3, torch 2.15.0, scikit-learn 1.9.1, rdkit 2026.9.2; checkout with the device patch; ESM C 600M `e4d83bc7`; GPU |
 
 GECCO 0.9.5 and 0.11.0 embed the same CRF model (`gecco/crf/model.pkl.md5` `e7066c9d…`), so their regions are
-identical ([F-03-2](../../docs/FINDINGS.md)). BGC-Prophet keeps one region per 128-gene window, which costs it recall
-on the isolate sets (several BGCs per contig): see [F-03-1](../../docs/FINDINGS.md).
+identical. BGC-Prophet keeps one region per 128-gene window, which costs it recall
+on the isolate sets (several BGCs per contig).
 
 ## Expected (`expected/`)
 

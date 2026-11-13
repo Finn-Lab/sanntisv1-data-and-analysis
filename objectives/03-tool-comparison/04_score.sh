@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Score SanntiS 1.0 (v3-active model at its t*) and every tool run on the same contigs and CDS, then compare with
+# Score SanntiS 1.2.0 (v3-active model at its t*) and every tool run on the same contigs and CDS, then compare with
 # expected/ once its tables exist for these sets (expected/v1sets/ holds the previous sets' tables).
 #   → $DATA_ROOT/03/score/{results.pkl,summary.tsv,metrics.tsv,strata.tsv,radar.tsv,curve.tsv,auprc.tsv,paired.tsv}
-#   → $DATA_ROOT/03/score/paired_bgc.tsv: SanntiS 1.0 − each tool, paired bootstrap of the BGC-level metrics on
-#     B-shuffled (scopes all / proka / euk / fungi; docs/FINDINGS.md F-03-5)
-# Tool outputs: the runs of 02_tools.sh ($DATA_ROOT/03/tools); a tool without a run is left out (SanntiS 1.0 is
+#   → $DATA_ROOT/03/score/paired_bgc.tsv: SanntiS 1.2.0 − each tool, paired bootstrap of the BGC-level metrics on
+#     B-shuffled (scopes all / proka / euk / fungi)
+# Tool outputs: the runs of 02_tools.sh ($DATA_ROOT/03/tools); a tool without a run is left out (SanntiS 1.2.0 is
 # always scored).
 # shellcheck source=SCRIPTDIR/../../common/env.sh
 source "$(dirname "$0")/../../common/env.sh"
@@ -22,7 +22,7 @@ inputs() {  # the arguments shared by score.py and paired_bgc.py
 score() {
     local ARGS=() files=()
     inputs
-    [[ " ${ARGS[*]} " == *" --tools "* ]] || log "no tool runs under $DATA_ROOT/03/tools (02_tools.sh): scoring SanntiS 1.0 only"
+    [[ " ${ARGS[*]} " == *" --tools "* ]] || log "no tool runs under $DATA_ROOT/03/tools (02_tools.sh): scoring SanntiS 1.2.0 only"
     "$PYTHON" "$o/workers/score.py" "${ARGS[@]}" --out "$out"
     if [[ -s $o/expected/summary.tsv ]]; then
         # paired_bgc.tsv is compared by its own step
