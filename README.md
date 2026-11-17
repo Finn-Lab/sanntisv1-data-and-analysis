@@ -28,7 +28,7 @@ Each objective's README lists its inputs (with accessions), steps, outputs, expe
 |---|---|---|
 | SanntiS software | [github.com/Finn-Lab/SanntiS](https://github.com/Finn-Lab/SanntiS), release `v1.2.1`; Zenodo [10.5281/zenodo.24239087](https://doi.org/10.5281/zenodo.24239087) | Apache-2.0 |
 | SanntiS 1.2.1 model | [huggingface.co/microbiome-informatics/sanntis](https://huggingface.co/microbiome-informatics/sanntis), tag `v1.2.1`; Zenodo `sanntis_model` | Apache-2.0 |
-| Training data | [huggingface.co/datasets/microbiome-informatics/sanntis-training-data](https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data), tags `negatives-v2`, `npclassifier-v1`, `mibig-5.0rc1-train`; Zenodo `mibig5_train` | CC BY 4.0 (`negatives/`: CC BY-SA 4.0) |
+| Training data | [huggingface.co/datasets/microbiome-informatics/sanntis-training-data](https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data), tags `negatives-v2`, `npclassifier-v1`, `mibig-5.0rc1-train`, DOI [10.57967/hf/11671](https://doi.org/10.57967/hf/11671); Zenodo `mibig5_train` | CC BY 4.0 (`negatives/`: CC BY-SA 4.0) |
 | Test sets, MIBiG 3.1 evaluation | Zenodo `nucleotide_testsets_v3`, `v3active_eval_v3` | CC BY 4.0 |
 
 The Zenodo records (DOIs in the `record` column of [`env/zenodo.tsv`](env/zenodo.tsv)) are in the
