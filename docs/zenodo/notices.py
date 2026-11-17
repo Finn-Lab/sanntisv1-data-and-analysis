@@ -44,11 +44,11 @@ DEPOSITS = {  # env/zenodo.tsv name -> (what it is, sources it carries)
     "nucleotide_testsets_v3": ("the SanntiS nucleotide test sets (v3): MIBiG test BGCs inserted into the held-out "
                                "test backbones of negative pool v2 and into NCBI genome backgrounds",
                                ["mibig", "ncbi", "antismash8"]),
-    "v3active_eval_v3": ("the v3-active SanntiS 1.2.0 model and its evaluation on the v3 test sets",
+    "v3active_eval_v3": ("the v3-active SanntiS 1.2.1 model and its evaluation on the v3 test sets",
                          ["sanntis_model", "mibig", "ncbi", "interpro", "npclassifier"]),
-    "sanntis_model": ("the SanntiS 1.2.0 model bundle: detection ensemble, filter and class model, natural product "
+    "sanntis_model": ("the SanntiS 1.2.1 model bundle: detection ensemble, filter and class model, natural product "
                       "classifier, model card and validation report (Hugging Face Hub microbiome-informatics/sanntis, "
-                      "release tag v1.2.0)", ["sanntis_model", "mibig", "interpro", "npclassifier"]),
+                      "release tag v1.2.1)", ["sanntis_model", "mibig", "interpro", "npclassifier"]),
 }
 
 LICENCE_URL = {"CC-BY-4.0": "https://creativecommons.org/licenses/by/4.0/",

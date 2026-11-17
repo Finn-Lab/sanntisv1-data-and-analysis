@@ -1,7 +1,7 @@
 # 01 · Production models
 
-**Objective:** build negative pool v2 and train the SanntiS production bundle (released with 1.2.0; SanntiS 1.2.1 ships it unchanged) with `sanntis train`
-on the MIBiG 5.0rc1 active + pending entries (GBKs from the MIBiG 4.0 archive, else NCBI nuccore) and pool v2, with the
+**Objective:** build negative pool v2 and train the SanntiS 1.2.1 production bundle with `sanntis train` on the
+MIBiG 5.0rc1 active + pending entries (GBKs from the MIBiG 4.0 archive, else NCBI nuccore) and pool v2, with the
 default protocol (CV + tuning on the training pool itself).
 
 ```bash
@@ -96,7 +96,7 @@ Counts after the build (`pool/v2/manifest.json`):
 
 ### Recipe
 
-SanntiS 1.2.0's recipe (`recipe.yaml`): fungi only among eukaryotic positives and pool genomes; 30 % of the
+SanntiS 1.2.1's recipe (`recipe.yaml`): fungi only among eukaryotic positives and pool genomes; 30 % of the
 positives placed in runs of 2–4 BGCs separated by 2–40 background CDS; decoding by the mean ORF score, CDS without
 InterPro hits scored as the lower of their annotated neighbours, hysteresis gap 0.05, no merge gap; operating point
 t* = 0.20 (low threshold 0.15).
