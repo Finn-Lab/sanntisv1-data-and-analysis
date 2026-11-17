@@ -61,7 +61,10 @@ in as external data in the MIBiG format (`mibig_5.0rc1-train_{gbk,json}.tar.gz`,
 The archives are written deterministically. `expected/mibig_train_manifest.tsv` lists every BGC (status, GBK source,
 locus, length, CDS, md5 of the sequence and of the proteins as SanntiS reads them) and is what a rebuild must
 reproduce; `env/zenodo.tsv` (`mibig5_train`) pins the deposit file, reproduced by a build with the same SanntiS and
-Biopython (`provenance.json` records both).
+Biopython (`provenance.json` records both). The deposit was built with a SanntiS development version
+(`provenance.json`: `1.0.0b1.dev0`); a rebuild with SanntiS 1.2.0 gave the same archives byte for byte, differing
+only in that version field, and the archive code is unchanged in 1.2.1. A rebuild with the pinned SanntiS
+therefore matches `expected/` but not the deposit sha256 (01_inputs.sh logs the mismatch).
 
 ### Negative pool v2 (`02_plan.sh`, `03_pool.sh`)
 
