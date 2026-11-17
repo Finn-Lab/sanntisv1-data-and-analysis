@@ -1,8 +1,8 @@
 # SanntiS 1.2: data and analyses
 
-Runbooks that reproduce the data, models and analyses behind SanntiS 1.2.0. The tool itself (inference and
+Runbooks that reproduce the data, models and analyses behind SanntiS 1.2.1. The tool itself (inference and
 training) lives in [SanntiS](https://github.com/Finn-Lab/SanntiS) (release
-[`v1.2.0`](https://github.com/Finn-Lab/SanntiS/releases/tag/v1.2.0)); this repository only *calls* it — the
+[`v1.2.1`](https://github.com/Finn-Lab/SanntiS/releases/tag/v1.2.1)); this repository only *calls* it — the
 negative pool through `sanntis plan-negatives` / `build-negatives`, training through `sanntis train`, metrics
 through `sanntis.train.metrics` — so every number here is computed by the same code users run.
 
@@ -16,9 +16,9 @@ GTDB) and checked against a sha256 or a recorded count, and every result is comp
 | | Objective | Produces |
 |---|---|---|
 | [00](objectives/00-data-collection/) | Data collection | MIBiG archives + loci, taxonomy, negative-pool genomes, test backgrounds |
-| [01](objectives/01-production-models/) | Production models | negative pool v2 (lineage-matched) and the SanntiS 1.2.0 model bundle (MIBiG 5.0rc1 active + pending as MIBiG-format archives) with its validation report |
+| [01](objectives/01-production-models/) | Production models | negative pool v2 (lineage-matched) and the SanntiS 1.2.1 model bundle (MIBiG 5.0rc1 active + pending as MIBiG-format archives) with its validation report |
 | [02](objectives/02-mibig31-validation/) | MIBiG 3.1 validation | a model trained on v3-active, scored on Test A / B with isolate and gene-shuffled backgrounds (incl. building those sets) |
-| [03](objectives/03-tool-comparison/) | Tool comparison | detection (antiSMASH / fungiSMASH / plantiSMASH, GECCO, SanntiS 0.9.5, BGC-Prophet) and classification (BGCat) against SanntiS 1.2.0: tables and figures |
+| [03](objectives/03-tool-comparison/) | Tool comparison | detection (antiSMASH / fungiSMASH / plantiSMASH, GECCO, SanntiS 0.9.5, BGC-Prophet) and classification (BGCat) against SanntiS 1.2.1: tables and figures |
 
 Each objective's README lists its inputs (with accessions), steps, outputs, expected numbers and resources.
 
@@ -26,9 +26,9 @@ Each objective's README lists its inputs (with accessions), steps, outputs, expe
 
 | | Where | Licence |
 |---|---|---|
-| SanntiS software | [github.com/Finn-Lab/SanntiS](https://github.com/Finn-Lab/SanntiS), release `v1.2.0`; Zenodo [10.5281/zenodo.24003727](https://doi.org/10.5281/zenodo.24003727) | Apache-2.0 |
-| SanntiS 1.2.0 model | [huggingface.co/microbiome-informatics/sanntis](https://huggingface.co/microbiome-informatics/sanntis), tag `v1.2.0`; Zenodo `sanntis_model` | Apache-2.0 |
-| Training data | [huggingface.co/datasets/microbiome-informatics/sanntis-training-data](https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data), tags `negatives-v2`, `npclassifier-v1`, `mibig-5.0rc1-train`; Zenodo `mibig5_train` | CC BY 4.0 (`negatives/`: CC BY-SA 4.0) |
+| SanntiS software | [github.com/Finn-Lab/SanntiS](https://github.com/Finn-Lab/SanntiS), release `v1.2.1`; Zenodo [10.5281/zenodo.24239087](https://doi.org/10.5281/zenodo.24239087) | Apache-2.0 |
+| SanntiS 1.2.1 model | [huggingface.co/microbiome-informatics/sanntis](https://huggingface.co/microbiome-informatics/sanntis), tag `v1.2.1`; Zenodo `sanntis_model` | Apache-2.0 |
+| Training data | [huggingface.co/datasets/microbiome-informatics/sanntis-training-data](https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data), tags `negatives-v2`, `npclassifier-v1`, `mibig-5.0rc1-train`, DOI [10.57967/hf/11671](https://doi.org/10.57967/hf/11671); Zenodo `mibig5_train` | CC BY 4.0 (`negatives/`: CC BY-SA 4.0) |
 | Test sets, MIBiG 3.1 evaluation | Zenodo `nucleotide_testsets_v3`, `v3active_eval_v3` | CC BY 4.0 |
 
 The Zenodo records (DOIs in the `record` column of [`env/zenodo.tsv`](env/zenodo.tsv)) are in the

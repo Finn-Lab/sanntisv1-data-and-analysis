@@ -1,7 +1,7 @@
 {
-  "title": "SanntiS 1.0: data and analyses",
+  "title": "SanntiS 1.2: data and analyses",
   "upload_type": "software",
-  "description": "<p>Runbooks that reproduce the data, models and analyses behind <a href=\"https://github.com/Finn-Lab/SanntiS\">SanntiS</a> 1.0 (objectives 00-03: data collection, production models, MIBiG 3.1 validation, tool comparison), with the expected results each runbook is checked against.</p><p>Acknowledgement: This work is part of EUREMAP (European Research Infrastructure for Marine Bioprospecting, https://euremap.eu), funded by the European Union's Horizon Europe research and innovation programme under grant agreement No 101131663 (doi:10.3030/101131663). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.</p>",
+  "description": "<p>Runbooks that reproduce the data, models and analyses behind <a href=\"https://github.com/Finn-Lab/SanntiS\">SanntiS</a> 1.2.1 (objectives 00-03: data collection; production models, negative pool v2 and the SanntiS model bundle; MIBiG 3.1 validation on the v3 test sets; tool comparison), with the expected results each runbook is checked against.</p><p>The data the runbooks produce are archived in separate Zenodo records (versions in env/zenodo.tsv): training archives (10.5281/zenodo.23998436), test sets (10.5281/zenodo.23998763), MIBiG 3.1 evaluation (10.5281/zenodo.23998765) and the SanntiS model bundle (10.5281/zenodo.23998767).</p><p>Acknowledgement: This work is part of EUREMAP (European Research Infrastructure for Marine Bioprospecting, https://euremap.eu), funded by the European Union's Horizon Europe research and innovation programme under grant agreement No 101131663 (doi:10.3030/101131663). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.</p>",
   "creators": [
     {
       "name": "Sanchez Fragoso, Jose Santiago",
@@ -34,7 +34,13 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/Finn-Lab/SanntiS",
+      "identifier": "10.5281/zenodo.24239087",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/Finn-Lab/SanntiS/tree/v1.2.1",
       "relation": "isSupplementTo",
       "resource_type": "software",
       "scheme": "url"
@@ -46,15 +52,39 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data",
+      "identifier": "10.57967/hf/11671",
       "relation": "references",
       "resource_type": "dataset",
-      "scheme": "url"
+      "scheme": "doi"
     },
     {
       "identifier": "10.1101/2023.05.23.540769",
       "relation": "references",
       "resource_type": "publication-preprint",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23998436",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23998763",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23998765",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23998767",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
       "scheme": "doi"
     }
   ],
