@@ -1,13 +1,13 @@
 # 03 · Tool comparison
 
-**Objective:** compare SanntiS 1.2.0 with other BGC tools, every method on the same contigs and CDS, scored with the
+**Objective:** compare SanntiS 1.2.1 with other BGC tools, every method on the same contigs and CDS, scored with the
 SanntiS metric code (`sanntis.train.metrics`).
 
 - **Detection** on objective 02's nucleotide test sets (isolate: the MIBiG test BGCs inserted into the BGC-free
   test backbones held out of negative pool v2; shuffled: into gene-shuffled contigs of genomes not in the pool; 445
   contigs, 375 test BGCs): antiSMASH 7.1.0 lineage-matched (bacteria on prokaryotic contigs, fungiSMASH on
   eukaryotic ones, plantiSMASH 1.0 over plant BGCs; strict / relaxed / loose), GECCO 0.9.5 and 0.11.0, SanntiS
-  0.9.5.0, BGC-Prophet 0.1.2, and SanntiS 1.2.0 (the v3-active model of objective 02).
+  0.9.5.0, BGC-Prophet 0.1.2, and SanntiS 1.2.1 (the v3-active model of objective 02).
 - **Product classification:** BGCat vs the SanntiS NPC classifier (NPClassifier pathway / superclass) on the test
   BGCs.
 
@@ -22,11 +22,11 @@ bash objectives/03-tool-comparison/06_report.sh           # report.md + figures
 
 Status: run end to end from scratch on Codon (2026-11-13); every tool ran and the tables equal `expected/`.
 
-Test B (375 BGCs), at each method's own calls (SanntiS 1.2.0 at t* = 0.20):
+Test B (375 BGCs), at each method's own calls (SanntiS 1.2.1 at t* = 0.20):
 
 | Method | isolate F1_macro_T | isolate BGC precision | isolate BGC macro recall | shuffled F1_macro_T | shuffled BGC precision | shuffled BGC macro recall |
 |---|---|---|---|---|---|---|
-| SanntiS 1.2.0 | 0.684 | 0.902 | 0.892 | 0.686 | 0.895 | 0.868 |
+| SanntiS 1.2.1 | 0.684 | 0.902 | 0.892 | 0.686 | 0.895 | 0.868 |
 | antiSMASH 7.1.0 relaxed | 0.614 | 0.985 | 0.840 | 0.568 | 0.997 | 0.779 |
 | antiSMASH 7.1.0 strict | 0.592 | 1.000 | 0.773 | 0.543 | 1.000 | 0.677 |
 | antiSMASH 7.1.0 loose | 0.508 | 0.756 | 0.864 | 0.407 | 0.650 | 0.830 |
@@ -34,7 +34,7 @@ Test B (375 BGCs), at each method's own calls (SanntiS 1.2.0 at t* = 0.20):
 | SanntiS 0.9.5.0 | 0.597 | 0.809 | 0.813 | 0.632 | 0.868 | 0.805 |
 | BGC-Prophet 0.1.2 | 0.524 | 0.745 | 0.523 | 0.743 | 0.840 | 0.800 |
 
-Paired over contigs (SanntiS 1.2.0 − antiSMASH 7.1.0 relaxed, 95 % CI): fungal shuffled contigs F1_macro_T +0.103
+Paired over contigs (SanntiS 1.2.1 − antiSMASH 7.1.0 relaxed, 95 % CI): fungal shuffled contigs F1_macro_T +0.103
 (+0.064 to +0.151), BGC recall +0.103 (+0.046 to +0.172); eukaryotic isolate contigs F1_macro_T +0.085 (+0.030 to
 +0.151); BGC precision not resolved on either scope. On B-shuffled (all), class-averaged BGC recall +0.089 (+0.042
 to +0.145) over antiSMASH relaxed; BGC-level F1 (`f1_macro`) +0.007 (−0.028 to +0.047), as antiSMASH's BGC
@@ -60,7 +60,7 @@ NPClassifier ontology (`index_v1.json`, GitHub commit `78e52f1d`).
 | `01_inputs.sh` | links objective 02's test sets and evaluation | `inputs/{nucleotide_testsets, v3active_eval}` |
 | `02_tools.sh` | runs: `gecco-0.9.5`, `gecco-0.11.0`, `ips576` (InterProScan 5.76-107.0 per contig, protein ids = `/protein_id`), `sanntis-0.9.5`, `bgc-prophet`, `antismash-{relaxed,strict,loose}`, `plantismash`, `bgcat` | `tools/<run>/<set>_<track>/`, `ips576/<set>/<track>/` |
 | `03_sanntis_tokens.sh` | SanntiS tokens of the test proteins: objective 02's (InterProScan 6.0.3.0 / InterPro 107.0 via SanntiS, md5-keyed) | `sanntis/tokens.parquet` |
-| `04_score.sh` | metrics with 95% CIs (bootstrap over source contigs), strata, PR curves, for SanntiS 1.2.0 and every run under `tools/`; subset scopes with CIs: `proka` / `euk` (contigs of that kingdom) and, on the shuffled sets only, `fungi` (contigs whose one BGC is fungal), and `paired.tsv`: SanntiS − antiSMASH relaxed on the `euk` / `fungi` scopes, paired bootstrap over contigs; compares with `expected/` when its tables exist | `score/` |
+| `04_score.sh` | metrics with 95% CIs (bootstrap over source contigs), strata, PR curves, for SanntiS 1.2.1 and every run under `tools/`; subset scopes with CIs: `proka` / `euk` (contigs of that kingdom) and, on the shuffled sets only, `fungi` (contigs whose one BGC is fungal), and `paired.tsv`: SanntiS − antiSMASH relaxed on the `euk` / `fungi` scopes, paired bootstrap over contigs; compares with `expected/` when its tables exist | `score/` |
 | `05_classification.sh` | SanntiS NPC vs BGCat (needs `02_tools.sh bgcat`): top-1 pathway, top-1 / top-3 superclass, coverage | `classification/` |
 | `06_report.sh` | report | `report/report.md`, `report/figures/` |
 

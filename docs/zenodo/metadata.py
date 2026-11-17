@@ -21,6 +21,7 @@ REPO = Path(__file__).resolve().parents[2]
 ANALYSIS = "https://github.com/Finn-Lab/sanntisv1-data-and-analysis"
 SANNTIS = "https://github.com/Finn-Lab/SanntiS"
 HF_DATA = "https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data"
+# the metadata of the published records (env/zenodo.tsv); the model record is the v1.2.0 snapshot (stage.py)
 HF_MODEL, MODEL_TAG = "https://huggingface.co/microbiome-informatics/sanntis", "v1.2.0"
 
 CREATORS = [  # Zenodo "Family, Given"; add "orcid": "0000-..." per person

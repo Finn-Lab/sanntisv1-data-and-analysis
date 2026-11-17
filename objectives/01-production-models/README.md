@@ -1,7 +1,7 @@
 # 01 · Production models
 
-**Objective:** build negative pool v2 and train the SanntiS 1.2.0 production bundle with `sanntis train` on the
-MIBiG 5.0rc1 active + pending entries (GBKs from the MIBiG 4.0 archive, else NCBI nuccore) and pool v2, with the
+**Objective:** build negative pool v2 and train the SanntiS production bundle (released with 1.2.0; SanntiS 1.2.1 ships it unchanged) with `sanntis train`
+on the MIBiG 5.0rc1 active + pending entries (GBKs from the MIBiG 4.0 archive, else NCBI nuccore) and pool v2, with the
 default protocol (CV + tuning on the training pool itself).
 
 ```bash

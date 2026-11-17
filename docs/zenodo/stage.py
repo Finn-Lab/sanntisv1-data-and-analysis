@@ -25,6 +25,8 @@ from notices import notice  # docs/zenodo/notices.py: NOTICE.md next to each tar
 REPO = Path(__file__).resolve().parents[2]
 DATA_ROOT = Path(os.environ.get("DATA_ROOT",
                                 "/nfs/production/rdf/metagenomics/projects/sanntisv1-data-and-analysis/data"))
+# v1.2.0, not the pinned v1.2.1 (env/sanntis.ref): the Hub tags hold the same files, and the published record
+# (env/zenodo.tsv sanntis_model) is the v1.2.0 snapshot, whose SOURCE.txt names its tag
 MODEL_REPO, MODEL_TAG = "microbiome-informatics/sanntis", "v1.2.0"
 BUILT = {  # env/zenodo.tsv deposit -> the tarball a runbook built
     "nucleotide_testsets_v3": DATA_ROOT / "02" / "deposit" / "sanntisv1_nucleotide_testsets_v3.tar.gz",
